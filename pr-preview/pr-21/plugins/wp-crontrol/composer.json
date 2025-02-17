@@ -1,0 +1,91 @@
+{
+	"name": "johnbillion/wp-crontrol",
+	"description": "Take control of the cron events on your WordPress website",
+	"homepage": "https://wp-crontrol.com",
+	"license": "GPL-2.0-or-later",
+	"type": "wordpress-plugin",
+	"authors": [
+		{
+			"name": "John Blackbourn",
+			"homepage": "https://johnblackbourn.com/"
+		},
+		{
+			"name": "Edward Dale",
+			"homepage": "http://scompt.com/"
+		}
+	],
+	"config": {
+		"sort-packages": true,
+		"preferred-install": "dist",
+		"prepend-autoloader": false,
+		"classmap-authoritative": true,
+		"allow-plugins": {
+			"composer/installers": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"roots/wordpress-core-installer": true
+		}
+	},
+	"require-dev": {
+		"codeception/module-asserts": "^1.0",
+		"codeception/module-db": "^1.0",
+		"codeception/module-webdriver": "^1.0",
+		"codeception/util-universalframework": "^1.0",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+		"johnbillion/plugin-infrastructure": "dev-trunk",
+		"johnbillion/wp-compat": "0.2.3",
+		"lucatume/wp-browser": "3.2.1",
+		"phpcompatibility/phpcompatibility-wp": "2.1.5",
+		"phpstan/phpstan": "1.12.2",
+		"roots/wordpress-core-installer": "1.100.0",
+		"roots/wordpress-full": "*",
+		"szepeviktor/phpstan-wordpress": "1.3.5",
+		"wp-coding-standards/wpcs": "3.1.0"
+	},
+	"require": {
+		"php": ">=7.4",
+		"composer/installers": "^1.0 || ^2.0"
+	},
+	"autoload": {
+		"classmap": [
+			"src"
+		]
+	},
+	"extra": {
+		"wordpress-install-dir": "vendor/wordpress/wordpress"
+	},
+	"scripts": {
+		"build-vendor": [
+			"build-vendor"
+		],
+		"test": [
+			"@composer validate --strict --no-check-lock",
+			"@test:phpstan",
+			"@test:phpcs",
+			"tests-start",
+			"@test:acceptance",
+			"tests-stop"
+		],
+		"test:acceptance": [
+			"acceptance-tests"
+		],
+		"test:phpcs": [
+			"phpcs -nps --colors --report-code --report-summary --report-width=80 --cache=tests/cache/phpcs.json --basepath=./ ."
+		],
+		"test:phpstan": [
+			"codecept build #",
+			"phpstan analyze -v --memory-limit=1024M"
+		]
+	},
+	"support": {
+		"issues": "https://github.com/johnbillion/wp-crontrol/issues",
+		"forum": "https://wordpress.org/support/plugin/wp-crontrol",
+		"source": "https://github.com/johnbillion/wp-crontrol",
+		"security": "https://patchstack.com/database/vdp/wp-crontrol"
+	},
+	"funding": [
+		{
+			"type": "github",
+			"url": "https://github.com/sponsors/johnbillion"
+		}
+	]
+}
