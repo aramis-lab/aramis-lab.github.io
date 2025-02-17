@@ -1,0 +1,36 @@
+.rsssl-modal.rsssl-onboarding {
+  width: clamp(300px, 100ch, 100vw );
+  padding-top: var(--rsp-spacing-m);
+  line-height: 2.2;
+  min-height:295px;
+  .rsssl-logo {
+    height: 26px;
+  }
+  .rsssl-modal-content{
+    display:flex;
+    min-height:295px;
+    .rsssl-onboarding-placeholder {
+      flex-grow:1
+    }
+    &-step {
+      display:flex;
+      flex-direction: column;
+      width:100%;
+    }
+    .rsssl-processing {
+      opacity:0.5;
+    }
+
+    ul{
+      li {
+        .rsssl-icon{
+          margin-top: 7px;
+        }
+        .components-button.is-link {
+          padding:5px 0;
+        }
+      }
+    }
+  }
+
+}

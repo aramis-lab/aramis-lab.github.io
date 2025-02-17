@@ -1,0 +1,48 @@
+a.rsssl-skip-link {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 20px;
+}
+
+.rsssl-two_fa_users div[data-column-id="5"].rdt_TableCol {
+  display: none;
+}
+
+.rsssl-two_fa_users .rdt_TableRow .rdt_TableCell:last-child {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+.rsssl-two_fa_users .rdt_TableHeadRow .rdt_TableCol:last-child {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rsssl-two_fa_general,
+.rsssl-two_fa_email,
+.rsssl-two_fa_totp,
+.rsssl-two_fa_users {
+  .MuiPopper-root, .MuiPaper-root {
+    max-height: 30px;
+    z-index: 15;
+
+    div {
+      font-family: inherit !important;
+    }
+
+    ul {
+      max-height: initial;
+    }
+  }
+}
+
+.rsssl-add-button__inner .button {
+  display: flex;
+  align-items: center;
+}
+
+.rsssl-add-button__inner .button .icon {
+  margin-left: 8px; /* Adjust the spacing as needed */
+}
