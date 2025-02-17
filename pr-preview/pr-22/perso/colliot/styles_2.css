@@ -1,0 +1,75 @@
+body { 
+
+	margin : 0;  
+	background-color:#FFFFFF; 
+	margin-left:auto; /* nécessaire pour que le site soit centré*/
+	margin-right:auto; /* nécessaire pour que le site soit centré*/
+	width: 900px ; /* ancienne valeur site Cogimage 598px;*/ /* Largeur ARAMIS : 960px; */
+	border-style : solid;
+	border-color : #018C6D;
+	border-width : 0px;
+} 
+
+hr   { color: #282828;}
+
+a:link  {color : #008C9E;; text-decoration : none;} /*text-decoration : underline; } */
+a:visited {color : #008C9E;; text-decoration : none; } /* text-decoration : underline; } */
+a:hover {color : #000000; text-decoration : underline; } 
+
+table {
+    border-collapse: collapse;}   
+
+ul {list-style-position : outside; list-style-type:square; 
+    list-style-image:url('images_styles/puce.gif')}
+                  
+p  {margin-top : 5px; margin-bottom : 5px; }                      
+ul {margin-top : 5px; margin-bottom : 5px; }  
+
+td, p, div  
+          {font-family : Arial, Helvetica, sans-serif; font-size : 12px; 
+           color : #666666; 
+           vertical-align : top;
+           text-align: left;}
+	
+p.titre 
+          {font-size : 14px; color : #556268; font-weight: bold;}
+
+span.petit, ul ul, p.petit
+          {font-size : 10px; color: #282828; }         
+             
+p.intertitre
+          {color: #A5B8C9; font-weight: bold; font-size : 12px!;}   
+                
+p.intertitre a:link, 
+p.intertitre a:visited 
+          {color: #018C6D; font-weight: bold;  font-size : 12px;
+           text-decoration : none; }
+           
+p.intertitre a:hover 
+          {color: #015C48; font-weight: bold;  font-size : 12px;
+           text-decoration : none; }  
+
+ul.liste-liens a:link    {color : #000000; text-decoration : none; font-weight: bold;} 
+ul.liste-liens a:visited {color : #000000; text-decoration : none; font-weight: bold;} 
+ul.liste-liens a:hover   {color : #000000; text-decoration : underline; font-weight: bold;}            
+
+table.table-avec-bordures, table.table-avec-bordures td, 
+table.table-avec-bordures th
+{
+	border-style : solid;
+	border-color : #339966;
+	border-width : 1px;
+	border-collapse:collapse;
+}      
+
+table.table-sans-bordures, table.table-sans-bordures td,
+table.table-sans-bordures th {
+	border-width : 0px ;
+}                      
+
+td.separateur { background-color: #018C6D; }
+
+     
+         
+         
+      
