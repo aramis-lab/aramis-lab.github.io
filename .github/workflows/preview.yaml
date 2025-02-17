@@ -1,5 +1,4 @@
 name: Deploy PR previews
-concurrency: preview-${{ github.ref }}
 on:
   pull_request:
     types:
@@ -7,6 +6,8 @@ on:
       - reopened
       - synchronize
       - closed
+
+concurrency: preview-${{ github.ref }}
 
 permissions:
   contents: read
@@ -22,5 +23,3 @@ jobs:
       - uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: docs
-          preview-branch: gh-pages
-          pages-base-path: docs
