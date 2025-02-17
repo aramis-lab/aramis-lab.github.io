@@ -118,13 +118,10 @@
                   </li>
                 </ul>
               </div>                    
-              <!-- /Navigation -->
-                  
             </div>
           </div>
         </div>
       </nav>
-      <!-- /Navigation -->  
     </header>
     <!-- /Header -->
 
@@ -150,235 +147,222 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <article id="post-22" class="post-22 page type-page status-publish hentry">
-              <div class="entry-content content">
-                <h1 class="pagetitle">CONTEXT AND GENERAL AIM</h1>
-                <br>
-                <br>
-                <div class="row">
-                  <div class="classictext">
-                    The tremendous progress of neuroimaging, genomic and biomarker technologies has allowed 
-                    capturing various characteristics of brain diseases in living patients. Collection of multimodal data in large patient databases
-                    provides a comprehensive view of brain alterations, biological processes, genetic risk factors and symptoms. The team aims to build numerical 
-                    models of brain diseases from multimodal patient based on appropriate data-driven approaches. To this end, we develop new data representations 
-                    and statistical learning approaches that can integrate multiple types of data: neuroimaging, peripheral biomarkers, clinical and omics data 
-                    (genetics, transcriptomics).
-                  </div>
-                  <div class="classictext">
-                    In particular, we develop methods to highlight networks of interactions among multiple sources of data, to track data changes during disease progression, 
-                    and to automatically predict current or future clinical outcomes from these data. We apply these models to neurodegenerative diseases (Alzheimer&#8217;s 
-                    disease and other dementias, multiple sclerosis, Parkinson&#8217;s disease&#8230;). They shall allow deepening our understanding of neurological diseases 
-                    and developing new decision support systems for diagnosis, prognosis and design of clinical trials.
-                  </div>
+            <div class="entry-content content">
+              <h1 class="pagetitle">CONTEXT AND GENERAL AIM</h1>
+              <br>
+              <br>
+                <div class="classictext">
+                  The tremendous progress of neuroimaging, genomic and biomarker technologies has allowed 
+                  capturing various characteristics of brain diseases in living patients. Collection of 
+                  multimodal data in large patient databases provides a comprehensive view of brain alterations, 
+                  biological processes, genetic risk factors and symptoms. The team aims to build numerical 
+                  models of brain diseases from multimodal patient based on appropriate data-driven approaches. 
+                  To this end, we develop new data representations and statistical learning approaches that can 
+                  integrate multiple types of data: neuroimaging, peripheral biomarkers, clinical and omics data 
+                  (genetics, transcriptomics).
+                  <br>
+                  In particular, we develop methods to highlight networks of interactions among multiple sources 
+                  of data, to track data changes during disease progression, and to automatically predict current 
+                  or future clinical outcomes from these data. We apply these models to neurodegenerative diseases 
+                  (Alzheimer's disease and other dementias, multiple sclerosis, Parkinson's disease, etc.). They shall 
+                  allow deepening our understanding of neurological diseases and developing new decision support 
+                  systems for diagnosis, prognosis and design of clinical trials.
                 </div>
-                <br>
-                <hr>
-                <br>
-                <!-- <div class="su-divider su-divider-style-default" ></div> -->
-                <h2 style="text-align: center;">New representations from multimodal medical images</h2>
-                <br>
-                <div class="row">
-                  <div class="col-md-8 classictext">Combining multiple neuroimaging modalities is necessary to obtain a comprehensive picture of alterations in brain diseases 
-                    (atrophy, anatomical disconnections, functional connectivity alterations, metabolic alterations, abnormal protein deposits…). Such a combination is a 
-                    non-trivial task because different types of information are conveyed by the different modalities, which in turns leads to different natural data 
-                    representations (meshes and curves for geometrical information, signals, networks). We propose to build new integrated data representations from multiple 
-                    modalities. Such representations will be subsequently entered into statistical models and decision support systems. Specifically, we will introduce 
-                    representations that can integrate geometrical information (anatomical surfaces extracted from anatomical MRI, white matter tracts extracted from diffusion 
-                    MRI) together with functional (PET, ASL, EEG/MEG) and microstructural information.
-                  </div>
-                  <div class="col-md-4">
-                    <img decoding="async" src="../images/img/img_topics_3.png" alt="" width="100%"/>
-                  </div>
-                </div>
+              </div>
+              <br>
+              <hr>
+              <br>
+              <h1 class="pagetitle">MAIN RESEARCH AXES</h1>
+              <h2 style="text-align: center;">Neuroimaging biomarkers and decision support systems</h2>
+              <br>
+              <div class="classictext" style="text-align:justify">
+                <p style="text-align:center">PIs involved: N. Burgos, O. Colliot</p>
+                Neuroimaging provides critical information on anatomical and functional alterations as well as on 
+                specific molecular and cellular processes. Our work is focused on the development of computational 
+                approaches to extract biomarkers and build computer-aided diagnosis (CAD) systems from MRI and PET 
+                data. More specifically, we develop: i) image translation models that can generate biomarkers of 
+                specific pathological processes from unspecific routine imaging data; ii) approaches for detecting 
+                local abnormalities; iii) frameworks for reproducible and reliable evaluation of CAD systems; iv)
+                methods for training and validating from large-scale hospital data warehouses.
+              </div>
+              <br>
+              <hr>
+              <br>
+              <h2 style="text-align: center;">Disease progression modeling with longitudinal data</h2>
+              <br>
+              <div class="classictext" style="text-align:justify">
+                <p style="text-align:center">PIs involved: S. Tezenas du Montcel, S. Durrleman</p>
+                Longitudinal data sets contain observations of multiple subjects observed at multiple time-points. 
+                They offer a unique opportunity to understand temporal processes such as ageing or disease progression. 
+                We develop a new generation of statistical methods to infer the dynamics of changes of a series of data 
+                such as biomarkers, images or clinical endpoints, together with the variability of such multivariate 
+                trajectories within a population of reference. We apply these new models across an array of neurodegenerative 
+                diseases to i) understand the heterogeneity in disease progression, in particular how genetic factors may 
+                control variations in disease progression, ii) forecast the progression of a new patient at entry of a clinical 
+                trial for stratification purposes and iii) the design of new clinical scales for use as outcomes in trials.
+                <!-- <img decoding="async" src="../images/img/img_long_topics.png" alt="" width="100%"/> -->
+              </div>
+              <br>
+              <hr>
+              <br>                
+              <h2 style="text-align: center;">High-dimensional multimodal data (genetic, environment, imaging)</h2>
+              <br>
+              <div class="classictext" style="text-align:justify">
+                <p style="text-align:center">PIs involved: B. Couvy-Duchesne, O. Colliot</p>
+                The field of neuroimaging is at a turning point, owing to the availability of several large research datasets 
+                such as the UKBiobank, which comprises more than 50,000 volunteers from the general population with deep phenotyping, 
+                multimodal MRI and genotyping data. Such large data promise a finer understanding of the brain association with 
+                phenotypic data and disorders as well as improved risk prediction, though they also raise computational and methodological 
+                challenges. We work on introducing new efficient algorithms and models that can scale up to the data and that can combine 
+                information of different nature (genetic, environment, neuroimaging) and from several independent samples. 
+              </div>
+              <br>
+              <hr>
+              <br> 
+              <h2 style="text-align: center;">Computational pathology and high-content microscopy</h2>
+              <br>
+              <div class="classictext" style="text-align:justify">
+                <p style="text-align:center">PIs involved: D. Racoceanu, S. Durrleman</p>
+                Computational approaches can help characterize diseases at the microscopic level, from whole slide images 
+                in histopathology to high-content microscopy. Benefiting from state-of-the-art deep learning approaches 
+                with an increasing interest in explainable and responsible models, these modalities are likely to generate 
+                a whole new systemic knowledge. Analyzing morphological and topological micro-heterogeneity allows a deeper 
+                understanding of the disease, by providing novel quantitative insights allowing designing multi-scale and 
+                multimodal algorithms, able to generate new morphological and topological correlations with patient's 
+                stratification. Combined with omics signature, such multi-scale prints (pathomics, radiomics) open the path 
+                towards a systemic understanding of complex processes, by providing a knowledgeable assessment, as well as 
+                more efficient and reliable predictive simulations. Examples of applications include the characterization of 
+                pathological protein aggregates in Alzheimer disease and the study of microglia-like cells integrated into 
+                brain organoids.
+              </div>
+              <br>
+              <hr>
+              <br> 
+              <h1 class="pagetitle">COLLABORATIONS</h1>
+              <h2 style="text-align: center;">External collaborations</h2>
+              <br>
+              <h4>Methodological collaborations</h4>
+              <ul class="collab">
+                <li>
+                  King&#8217;s College London, UK (<a href="https://www.kcl.ac.uk/people/sebastien-ourselin" target="_blank" rel="noopener noreferrer">Sébastien Ourselin</a>)
+                </li>
+                <li>
+                  <a href="https://www.ucl.ac.uk/medical-image-computing" target="_blank" rel="noopener noreferrer">Center for Medical Image Computing</a>, University College London, UK (<a href="http://www0.cs.ucl.ac.uk/staff/D.Alexander/" target="_blank" rel="noopener noreferrer">Daniel Alexander</a>)
+                </li>
+                <li>
+                  <a href="https://www.erasmusmc.nl/?lang=en">Erasmus Medical Center (EMC)</a>, Rotterdam, Netherlands (<a href="http://bigr.nl/people/StefanKlein/">Stefan Klein</a>, <a href="https://www.erasmusmc.nl/schildkliercentrum/centrum/medewerkers/vernooij/">Meike W. Vernooij</a>, <a href="http://bigr.nl/people/WiroNiessen/">Wiro Niessen</a>)
+                </li>
+                <li>
+                  Tandon School of Engineering, New York University, USA (<a href="http://www.sci.utah.edu/~gerig/" target="_blank" rel="noopener noreferrer">Guido Gerig</a>)
+                </li>
+                <li>
+                  Departement of Physics. <a href="http://ph.qmul.ac.uk/" target="_blank" rel="noopener noreferrer">Queen Mary</a> <a href="http://ph.qmul.ac.uk/" target="_blank" rel="noopener noreferrer">University of London</a>, UK (<a href="http://www.maths.qmul.ac.uk/~latora/" target="_blank" rel="noopener noreferrer">Vito Latora</a>)
+                </li>
+                <li>
+                  <a href="https://www.cmrr.umn.edu/" target="_blank" rel="noopener noreferrer">Center for Magnetic Resonance Research</a>, University of Minnesota, USA<br/>
+                  (<a href="http://www.cmrr.umn.edu/facultystaff/pfvdm.shtml" target="_blank" rel="noopener noreferrer">Pierre-François Van de Moortele</a>, Tom Henry, <a href="http://www.neurosci.umn.edu/faculty/ugurbil.html" target="_blank" rel="noopener noreferrer">Kamil Ugurbil</a>)
+                </li>
+                <li>
+                  Inria<a href="https://team.inria.fr/epione/"> Epione</a>, Sophia-Antipolis, France (<a href="http://www-sop.inria.fr/members/Nicholas.Ayache/ayache.html" target="_blank" rel="noopener noreferrer">Nicholas Ayache</a>)
+                </li>
+                <li>
+                  Center for Applied Mathematics, <a href="http://ens-paris-saclay.fr/" target="_blank" rel="noopener noreferrer">ENS Paris-Saclay</a> (<a href="http://atrouve.perso.math.cnrs.fr/" target="_blank" rel="noopener noreferrer">Alain Trouvé</a>)
+                </li>
+                <li>
+                  <a href="http://www.parisdescartes.fr/" target="_blank" rel="noopener noreferrer">Université Paris-Descartes</a> (<a href="http://www.mi.parisdescartes.fr/~glaunes/" target="_blank" rel="noopener noreferrer">Joan Glaunès</a>)
+                </li>
+                <li>
+                  <a href="http://www.anthropobiologie.fr/index.php?clear=1" target="_blank" rel="noopener noreferrer">Laboratoire AMIS</a>, Université Paul Sabatier, Toulouse (<a href="http://www.anthropobiologie.fr/content.php?itemId=6&amp;id=6" target="_blank" rel="noopener noreferrer">José Braga</a>, <a href="http://www.anthropobiologie.fr/content.php?itemId=115&amp;id=6&amp;cur=0&amp;date&amp;manager&amp;categPath&amp;" target="_blank" rel="noopener noreferrer">Jean Dumoncel</a>)
+                </li>
+                <li>
+                  <a href="https://www.pasteur.fr/en" target="_blank" rel="noopener noreferrer">Institut Pasteur</a>, Paris (<a href="http://www.ura2182.cnrs-bellevue.fr/rtoro/" target="_blank" rel="noopener noreferrer">Roberto Toro)</a>
+                </li>
+                <li>
+                  <a href="https://www.insead.edu/" target="_blank" rel="noopener noreferrer">INSEAD</a>, Fontainebleau (<a href="https://www.insead.edu/faculty-research/faculty/theodoros-evgeniou" target="_blank" rel="noopener noreferrer">Theodoros Evgeniou</a>)
+                </li>
+                <li>
+                  <a href="http://www-dsv.cea.fr/dsv/instituts/institut-d-imagerie-biomedicale-i2bm/services/neurospin-neurospin" target="_blank" rel="noopener noreferrer">Neurospin</a> (<a href="http://www.lnao.fr/spip.php?rubrique7" target="_blank" rel="noopener noreferrer">Jean-François Mangin</a>, Alexandre Vignaud, <a href="http://www.eu-aims.eu/the-group/consortium/neurospin-cea/" target="_blank" rel="noopener noreferrer">Vincent Frouin</a>, <a href="http://www-dsv.cea.fr/dsv/instituts/institut-d-imagerie-biomedicale-i2bm/services/neurospin-neurospin/recherche/unites-de-recherche/unite-de-recherche-en-neuroimagerie-applicative-clinique-et-translationnelle-uniact" target="_blank" rel="noopener noreferrer">Lucie Hertz-Pannier</a>)
+                </li>
+              </ul>
+              <br><br>
+              <h4>Medical collaborations</h4>
+              <ul class="collab">
+                <li>
+                  <a href="http://www.ch-sainte-anne.fr/" target="_blank" rel="noopener noreferrer">Sainte-Anne Hospital</a>, Paris (<a href="http://scholar.google.fr/citations?user=CBzHpxEAAAAJ&amp;hl=fr" target="_blank" rel="noopener noreferrer">Catherine Oppenheim</a>, Marie Sarazin)
+                </li>
+                <li>
+                  <a href="http://www.cyceron.fr/" target="_blank" rel="noopener noreferrer">Cycéron</a>, Caen University Hospital (<a href="http://www.u1077.caen.inserm.fr/multimodal-imaging-of-brain-pathologies/?lang=en" target="_blank" rel="noopener noreferrer">Gaël Chételat</a>, <a href="http://www.u1077.caen.inserm.fr/" target="_blank" rel="noopener noreferrer">Francis Eustache</a>, Béatrice Desgranges)
+                </li>
+                <li>
+                  <a href="https://www.irccs-fatebenefratelli.it/sito/pagine/fatebenefratelli.php">Fatebene Fratelli</a>, Brescia, Italy (<a href="https://www.unige.ch/medecine/psyat/fr/groupes-de-recherche/frisoni/membres/frisoni/">Giovanni Frisoni</a>, <a href="https://www.researchgate.net/profile/Alberto_Redolfi">Alberto Redolfi</a>,Damiano Archetti)
+                </li>
+              </ul>
+              <br>
+              <hr>
+              <!-- <div class="su-divider su-divider-style-default" ></div> -->
 
-                <br>
-                <hr>
-                <br>
-                <!-- <div class="su-divider su-divider-style-default" ></div> -->
-                <h2 style="text-align: center;">Network theoretic approaches to integrate heterogeneous brain networks</h2>
-                <br>
-                <div class="row">
-                  <div class="col-md-4">
-                    <img decoding="async" src="../images/img/img_network_2.png" alt="" width="100%"/>
-                  </div>
-                  <div class="classictext col-md-8">
-                    The complexity of biological systems often emerges from interactions between components at multiple spatial and temporal scales. Neglecting this 
-                    information, and analyzing separately the levels of such scales, is an oversimplification of the real phenomenon. We propose a methodological framework 
-                    that aims, on the one hand, to integrate information from networks describing different modes of connectivity (e.g. multi-modal, cross-frequency) and, on 
-                    the other hand, to statistically model the organizational mechanisms of temporally dynamic networks (e.g. nonstationary, longitudinal). Target applications 
-                    include: i) human learning in brain-computer interface, ii) prediction of neurodegenerative disease progression, and iii) identification of driving nodes 
-                    in biological pathways (gene expression networks).
-                  </div>
-                </div>
-                <br>
-                <hr>
-                <br>
-                <!-- <div class="su-divider su-divider-style-default" ></div> -->
-                <h2 style="text-align: center;">Spatio-temporal models to build trajectories of disease progression from longitudinal data</h2>
-                <br>
-                <div class="row">
-                  <div class="classictext col-md-8">
-                    <p>
-                      Longitudinal data sets are collected to capture variable temporal phenomena, which may be due to ageing or disease progression for instance. 
-                      They consist in the observation of several individuals, each of them being observed at multiple points in time. The statistical exploitation of such 
-                      data sets is notably difficult since data of each individual follow a different trajectory of changes and at its own pace. Our team has contributed to 
-                      the definition of a generic theoretical and algorithmic framework for learning typical trajectories from longitudinal data sets. This framework is built 
-                      on tools from Riemannian geometry and the inference is based on a stochastic Expectation Maximization (EM) algorithm coupled with Markov Chain Monte Carlo 
-                      methods.
-                    </p>
-                  </div>
-                  <div class="col-md-4">
-                    <img decoding="async" src="../images/img/img_long_topics.png" alt="" width="100%"/>
-                  </div>
-                </div>
-                <br>
-                <hr>
-                <br>
-                <!-- <div class="su-divider su-divider-style-default" ></div> -->
-                <h2 style="text-align: center;">Decision support systems for diagnosis, prognosis and design of clinical trials</h2>
-                <br>
-                <div class="row">
-                  <div class="col-md-4">
-                    <img decoding="async" class="wp-image-1500 alignright" src="../images/captures/Capture-d’écran-2018-11-22-à-18.26.12.png" alt="" width="100%" srcset="../images/captures/Capture-d’écran-2018-11-22-à-18.26.12.png 714w, images/captures/Capture-d’écran-2018-11-22-à-18.26.12-300x180.png 300w" sizes="(max-width: 714px) 100vw, 714px"/>
-                  </div>
-                  <div class="classictext col-md-8">
-                    Based on the new representations and statistical models, we design decision support systems for diagnosis, prognosis and design of clinical trials. These 
-                    systems are based on: i) personalization of statistical models to predict evolution at the patient level; ii) new machine learning approches for 
-                    classification and regression on high-dimensional and structured data; iii) content-based retrieval techniques.
-                  </div>
-                </div>
-                <br>
-                <hr>
-                <br>
-                <!-- <div class="su-divider su-divider-style-default" ></div> -->
-                <h2 style="text-align: center;">External collaborations</h2>
-                <br>
-                <h4>Methodological collaborations</h4>
-                <ul class="collab">
-                  <li>
-                    King&#8217;s College London, UK (<a href="http://cmic.cs.ucl.ac.uk/staff/sebastien_ourselin/" target="_blank" rel="noopener noreferrer">Sébastien Ourselin</a>)
-                  </li>
-                  <li>
-                    <a href="http://www.ucl.ac.uk/cmic/homepage" target="_blank" rel="noopener noreferrer">Center for Medical Image Computing</a>, University College London, UK (<a href="http://www0.cs.ucl.ac.uk/staff/D.Alexander/" target="_blank" rel="noopener noreferrer">Daniel Alexander</a>)
-                  </li>
-                  <li>
-                    <a href="https://www.erasmusmc.nl/?lang=en">Erasmus Medical Center (EMC)</a>, Rotterdam, Netherlands (<a href="http://bigr.nl/people/StefanKlein/">Stefan Klein</a>, <a href="https://www.erasmusmc.nl/schildkliercentrum/centrum/medewerkers/vernooij/">Meike W. Vernooij</a>, <a href="http://bigr.nl/people/WiroNiessen/">Wiro Niessen</a>)
-                  </li>
-                  <li>
-                    Tandon School of Engineering, New York University, USA (<a href="http://www.sci.utah.edu/~gerig/" target="_blank" rel="noopener noreferrer">Guido Gerig</a>)
-                  </li>
-                  <li>
-                    Departement of Physics. <a href="http://ph.qmul.ac.uk/" target="_blank" rel="noopener noreferrer">Queen Mary</a> <a href="http://ph.qmul.ac.uk/" target="_blank" rel="noopener noreferrer">University of London</a>, UK (<a href="http://www.maths.qmul.ac.uk/~latora/" target="_blank" rel="noopener noreferrer">Vito Latora</a>)
-                  </li>
-                  <li>
-                    <a href="https://www.cmrr.umn.edu/" target="_blank" rel="noopener noreferrer">Center for Magnetic Resonance Research</a>, University of Minnesota, USA<br/>
-                    (<a href="http://www.cmrr.umn.edu/facultystaff/pfvdm.shtml" target="_blank" rel="noopener noreferrer">Pierre-François Van de Moortele</a>, Tom Henry, <a href="http://www.neurosci.umn.edu/faculty/ugurbil.html" target="_blank" rel="noopener noreferrer">Kamil Ugurbil</a>)
-                  </li>
-                  <li>
-                    Inria<a href="https://team.inria.fr/epione/"> Epione</a>, Sophia-Antipolis, France (<a href="http://www-sop.inria.fr/members/Nicholas.Ayache/ayache.html" target="_blank" rel="noopener noreferrer">Nicholas Ayache</a>)
-                  </li>
-                  <li>
-                    Center for Applied Mathematics, <a href="http://ens-paris-saclay.fr/" target="_blank" rel="noopener noreferrer">ENS Paris-Saclay</a> (<a href="http://atrouve.perso.math.cnrs.fr/" target="_blank" rel="noopener noreferrer">Alain Trouvé</a>)
-                  </li>
-                  <li>
-                    <a href="http://www.parisdescartes.fr/" target="_blank" rel="noopener noreferrer">Université Paris-Descartes</a> (<a href="http://www.mi.parisdescartes.fr/~glaunes/" target="_blank" rel="noopener noreferrer">Joan Glaunès</a>)
-                  </li>
-                  <li>
-                    <a href="http://www.anthropobiologie.fr/index.php?clear=1" target="_blank" rel="noopener noreferrer">Laboratoire AMIS</a>, Université Paul Sabatier, Toulouse (<a href="http://www.anthropobiologie.fr/content.php?itemId=6&amp;id=6" target="_blank" rel="noopener noreferrer">José Braga</a>, <a href="http://www.anthropobiologie.fr/content.php?itemId=115&amp;id=6&amp;cur=0&amp;date&amp;manager&amp;categPath&amp;" target="_blank" rel="noopener noreferrer">Jean Dumoncel</a>)
-                  </li>
-                  <li>
-                    <a href="https://www.pasteur.fr/en" target="_blank" rel="noopener noreferrer">Institut Pasteur</a>, Paris (<a href="http://www.ura2182.cnrs-bellevue.fr/rtoro/" target="_blank" rel="noopener noreferrer">Roberto Toro)</a>
-                  </li>
-                  <li>
-                    <a href="https://www.insead.edu/" target="_blank" rel="noopener noreferrer">INSEAD</a>, Fontainebleau (<a href="https://www.insead.edu/faculty-research/faculty/theodoros-evgeniou" target="_blank" rel="noopener noreferrer">Theodoros Evgeniou</a>)
-                  </li>
-                  <li>
-                    <a href="http://www-dsv.cea.fr/dsv/instituts/institut-d-imagerie-biomedicale-i2bm/services/neurospin-neurospin" target="_blank" rel="noopener noreferrer">Neurospin</a> (<a href="http://www.lnao.fr/spip.php?rubrique7" target="_blank" rel="noopener noreferrer">Jean-François Mangin</a>, Alexandre Vignaud, <a href="http://www.eu-aims.eu/the-group/consortium/neurospin-cea/" target="_blank" rel="noopener noreferrer">Vincent Frouin</a>, <a href="http://www-dsv.cea.fr/dsv/instituts/institut-d-imagerie-biomedicale-i2bm/services/neurospin-neurospin/recherche/unites-de-recherche/unite-de-recherche-en-neuroimagerie-applicative-clinique-et-translationnelle-uniact" target="_blank" rel="noopener noreferrer">Lucie Hertz-Pannier</a>)
-                  </li>
-                </ul>
-                <br><br>
-                <h4>Medical collaborations</h4>
-                <ul class="collab">
-                  <li>
-                    <a href="http://www.ch-sainte-anne.fr/" target="_blank" rel="noopener noreferrer">Sainte-Anne Hospital</a>, Paris (<a href="http://scholar.google.fr/citations?user=CBzHpxEAAAAJ&amp;hl=fr" target="_blank" rel="noopener noreferrer">Catherine Oppenheim</a>, Marie Sarazin)
-                  </li>
-                  <li>
-                    <a href="http://www.cyceron.fr/" target="_blank" rel="noopener noreferrer">Cycéron</a>, Caen University Hospital (<a href="http://www.u1077.caen.inserm.fr/multimodal-imaging-of-brain-pathologies/?lang=en" target="_blank" rel="noopener noreferrer">Gaël Chételat</a>, <a href="http://www.u1077.caen.inserm.fr/" target="_blank" rel="noopener noreferrer">Francis Eustache</a>, Béatrice Desgranges)
-                  </li>
-                  <li>
-                    <a href="https://www.irccs-fatebenefratelli.it/sito/pagine/fatebenefratelli.php">Fatebene Fratelli</a>, Brescia, Italy (<a href="https://www.unige.ch/medecine/psyat/fr/groupes-de-recherche/frisoni/membres/frisoni/">Giovanni Frisoni</a>, <a href="https://www.researchgate.net/profile/Alberto_Redolfi">Alberto Redolfi</a>,Damiano Archetti)
-                  </li>
-                </ul>
-                <br>
-                <hr>
-                <!-- <div class="su-divider su-divider-style-default" ></div> -->
-
-                <br>
-                <h2 style="text-align: center;">Local collaborations</h2>
-                <br>
-                <h4>Methodological collaborations</h4>
-                <ul class="collab">
-                  <li>
-                    <a href="http://www.cenir.org/fr/equipe-irm.html" target="_blank" rel="noopener noreferrer">CENIR MRI</a> core facility (<a href="http://www.cenir.org/equipe-irm/7-stephane-l.html" target="_blank" rel="noopener noreferrer">Stéphane Lehéricy</a>, Eric Bardinet, Romain Valabrègue)
-                  </li>
-                  <li>
-                    <a href="http://www.cenir.org/fr/lequipe-meg-eeg.html" target="_blank" rel="noopener noreferrer">CENIR MEG/EEG</a> core facility (Nathalie George, Denis Schwartz, Laurent Hugueville)
-                  </li>
-                  <li>
-                    ICM <a href="https://icm-institute.org/fr/iconics-the-bioinformatics-and-biostatistics-core-facility/">iCONICS</a> Bioinformatics/biostatistics core facility (Ivan Moszer)
-                  </li>
-                  <li>
-                    <a href="http://www.imed.jussieu.fr/en/" target="_blank" rel="noopener noreferrer">Laboratoire d&#8217;Imagerie Biomédicale</a> (Marie-Odile Habert)
-                  </li>
-                </ul>
-                <br><br>
-                <h4>Medical collaborations</h4>
-                <ul class="collab">
-                  <li>
-                    IM2A / ICM <a href="http://research.icm-institute.org/team/35/homepage" target="_blank" rel="noopener noreferrer">Bruno Dubois&#8217;s team</a> (Bruno Dubois, Harald Hampel, Marc Teichmann, Isabelle Le Ber)
-                  </li>
-                  <li>
-                    ICM <a href="http://research.icm-institute.org/team/30/homepage" target="_blank" rel="noopener noreferrer">Alexis Brice&#8217;s team</a> (Alexis Brice, Isabelle Le Ber, Christel Depienne, Jean-Christophe Corvol)
-                  </li>
-                  <li>
-                    ICM <a href="http://conam.synology.me/marie/Home.html" target="_blank" rel="noopener noreferrer">Marie Vidailhet / Stéphane Lehéricy&#8217;s team</a> (Marie Vidailhet, Stéphane Lehéricy, Andreas Hartmann, Yulia Worbe)
-                  </li>
-                  <li>
-                    ICM <a href="http://icm-institute.org/en/team/team-lubetzki-stankoff/" target="_blank" rel="noopener noreferrer">Catherine Lubetzki / Bruno Stankoff&#8217;s team</a> (Bruno Stankoff, Benedetta Bodini)
-                  </li>
-                  <li>
-                    ICM <a href="http://icm-institute.org/en/team/team-baron-nait-oumesmar/" target="_blank" rel="noopener noreferrer">Brahim Nait Oumesmar / Anne Baron Van Evercooren&#8217;s team</a> (Violetta Zujovic)
-                  </li>
-                  <li>
-                    Department of Neuroradiology, <a href="http://pitiesalpetriere.aphp.fr/" target="_blank" rel="noopener noreferrer">Pitié-Salpêtrière Hospital</a>
-                  </li>
-                </ul>
-                <br>
-                <hr>
-                <br>
-                <!-- <div class="su-divider su-divider-style-default" ></div> -->
-                <div id="funding"></div>
-                <h2 style="text-align: center;">Funding / main grants</h2>
-                <ul class="fundings">
-                  <li>European Union <a href="https://ec.europa.eu/programmes/horizon2020/en/">H2020 program</a>, project <a href="http://europond.eu/">EuroPOND</a></li>
-                  <li>European Union <a href="https://ec.europa.eu/programmes/horizon2020/en/">H2020 program</a>, project VirtualBrainCloud</li>
-                  <li><a href="https://icm-institute.org/fr/missions-ihu/">IHU ICM</a>, Investissements d&#8217;avenir</li>
-                  <li><a href="https://prairie-institute.fr/">PRAIRIE 3IA Institute</a>, Investissements d&#8217;avenir</li>
-                  <li><a href="https://erc.europa.eu/">ERC</a> Starting Grant, project LEASP (S. Durrleman)</li>
-                  <li><a href="https://www.nsf.gov/">NSF</a>/<a href="https://www.nih.gov/">NIH</a>/<a href="http://www.agence-nationale-recherche.fr/">ANR</a> program “Collaborative Research in Computational Neuroscience”, project HIPLAY7</li>
-                  <li><a href="https://www.nsf.gov/">NSF</a>/<a href="https://www.nih.gov/">NIH</a>/<a href="http://www.agence-nationale-recherche.fr/">ANR</a> program “Collaborative Research in Computational Neuroscience”, project NetBCI</li>
-                  <li><a href="http://www.agence-nationale-recherche.fr/">ANR</a>, project PREVDEMALS</li>
-                  <li><a href="https://icm-institute.org/fr/">ICM</a> Big Brain Theory Program (project DYNAMO, project PredictICD, project SEMAPHORE, project Attack)</li>
-                  <li><a href="https://www.inria.fr/en/research/research-teams/inria-project-labs">Inria Project Lab Program</a> (project <a href="https://project.inria.fr/neuromarkers/">Neuromarkers</a>)</li>
-                  <li><a href="https://alzheimer-recherche.org/">Fondation pour la Recherche sur Alzheimer</a> (project HistoMRI)</li>
-                  <li><a href="https://www.fondation-abeona.org/">Abeona Foundation</a> (project <a href="https://www.fondation-abeona.org/project-brain-at-scale-en">Brain@Scale</a>)</li>
-                  <li><a href="https://www.vaincrealzheimer.org/">Fondation Vaincre Alzheimer</a></li>
-                  <li>IDEX <a href="http://www.sorbonne-universites.fr/">Sorbonne Universités</a>, project LearnPETMR</li>
-                </ul>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-              </div><!-- .entry-content -->
-            </article><!-- #post-## -->
+              <br>
+              <h2 style="text-align: center;">Local collaborations</h2>
+              <br>
+              <h4>Methodological collaborations</h4>
+              <ul class="collab">
+                <li>
+                  ICM <a href="https://cenir.institutducerveau.org/" target="_blank" rel="noopener noreferrer">CENIR</a> Neuroimaging Platform (Stéphane Lehéricy, Eric Bardinet, Romain Valabrègue)
+                </li>
+                <li>
+                  ICM <a href="https://dac.institutducerveau.org/">Data Analysis Core</a> (Violetta Zujovic, Stephen Whitmarsh)
+                </li>
+              </ul>
+              <br><br>
+              <h4>Medical collaborations</h4>
+              <ul class="collab">
+                <li>
+                  ICM <a href="https://parisbraininstitute.org/paris-brain-institute-research-teams/neurogen-brain-development-and-dysfunction-neurogenetic-diseases" target="_blank" rel="noopener noreferrer">NeuroGen team</a> (Alexandra Durr)
+                </li>
+                <li>
+                  ICM <a href="https://parisbraininstitute.org/paris-brain-institute-research-teams/regain-ms-repair-demyelinating-diseases-biology-clinical-translation" target="_blank" rel="noopener noreferrer">REGAIN-MS team</a> (Bruno Stankoff, Benedetta Bodini, Céline Louapre)
+                </li>
+                <li>
+                  ICM <a href="https://parisbraininstitute.org/paris-brain-institute-research-teams/frontlab-prefrontal-cortex-critical-hub-higher-cognitive-functions-health-disease" target="_blank" rel="noopener noreferrer">Frontlab team</a> (Isabelle Le Ber, Lara Migliaccio)
+                </li>
+                <li>
+                  ICM <a href="https://parisbraininstitute.org/paris-brain-institute-research-teams/movit-movement-cognition-insights-motor-disorders" target="_blank" rel="noopener noreferrer">MOV'IT team</a> (Marie Vidailhet, Stéphane Lehéricy)
+                </li>
+                <li>
+                  ICM <a href="https://parisbraininstitute.org/paris-brain-institute-research-teams/mpp-molecular-pathophysiology-parkinsons-disease" target="_blank" rel="noopener noreferrer">MPP+ team</a> (Jean-Christophe Corvol)
+                </li>
+                <li>
+                  ICM <a href="https://parisbraininstitute.org/paris-brain-institute-research-teams/cerebral-small-vessel-disease-and-neurodegeneration" target="_blank" rel="noopener noreferrer">Cerebral SVD and neurodegeneration team</a> (Hugues Chabriat)
+                </li>
+                <li>
+                  <a href="http://research.icm-institute.org/team/35/homepage" target="_blank" rel="noopener noreferrer">IM2A</a> (Bruno Dubois)
+                </li>
+                <li>
+                  Department of Neuroradiology, <a href="http://pitiesalpetriere.aphp.fr/" target="_blank" rel="noopener noreferrer">Pitié-Salpêtrière Hospital</a>
+                </li>
+              </ul>
+              <br>
+              <hr>
+              <br>
+              <!-- <div class="su-divider su-divider-style-default" ></div> -->
+              <div id="funding"></div>
+              <h1 class="pagetitle">FUNDING & MAIN GRANTS</h1>
+              <ul class="fundings">
+                <li>European Union <a href="https://ec.europa.eu/programmes/horizon2020/en/">Horizon Europe program</a>, project <a href="https://www.clara-center.eu/">CLARA</a></li>
+                <li>European Union <a href="https://ec.europa.eu/programmes/horizon2020/en/">H2020 program</a>, project <a href="https://e-dads.github.io/">E-DADS</a></li>
+                <li>European Union <a href="https://ec.europa.eu/programmes/horizon2020/en/">H2020 program</a>, project <a href="https://www.neurodegenerationresearch.eu/wp-content/uploads/2022/06/PROJECT-LeMeReND.pdf">Lemerend</a></li>
+                <li>European Union <a href="https://ec.europa.eu/programmes/horizon2020/en/">H2020 program</a>, project <a href="https://www.ejprarediseases.org/cadanhis/">CADANHIS</a></li>
+                <li><a href="https://erc.europa.eu/">ERC</a> Starting Grant, project LEASP (S. Durrleman)</li>
+                <li>Investissements d'avenir, <a href="https://icm-institute.org/fr/missions-ihu/">IHU ICM</a></li>
+                <li>France 2030, <a href="https://prairie-institute.fr/">PRAIRIE-PSAI AI Cluster</a></li>
+                <li>France 2030, <a href="https://pepr-santenum.fr/">PEPR Santé Numérique</a>, Project <a href="https://pepr-santenum.fr/2023/11/06/rewind/">REWIND</a></li>
+                <li>France 2030, <a href="https://anr.fr/fr/france-2030/france2030/call/recherche-hospitalo-universitaire-en-sante-rhu-appel-a-projets-vague-6-edition-2023/">RHU</a>, Project Secret-Gift</li>
+                <li><a href="http://www.agence-nationale-recherche.fr/">ANR JCJC</a>, project ANO-NEURO</li>
+                <li>Inserm <a href="https://iresp.net/financements/programmes-et-appels/programme-messidore/">MESSIDORE program</a>, project GALAN</li>
+                <li><a href="https://www.3ds.com/newsroom/press-releases/meditwin-launch">MEDITWIN project</a>, Use case Alzheimer</li>
+                <li><a href="https://icm-institute.org/fr/">ICM</a> Big Brain Theory Program (project ImagingDealInMS, project StratifIAD)</li>
+              </ul>
+            </div><!-- .entry-content -->
           </div>
         </div>
       </div>
@@ -464,7 +448,7 @@
                   <div class="textwidget custom-html-widget">
                     <br>
                       olivier.colliot@cnrs.fr<br>
-                      ninon.burgos@icm-institute.org
+                      ninon.burgos@cnrs.fr
                   </div>
                 </div>
               </div>
