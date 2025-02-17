@@ -10,7 +10,12 @@ on:
 concurrency: preview-${{ github.ref }}
 
 permissions:
-  contents: read
+  contents: write
+  issues: write
+  pull-requests: write
+  id-token: write
+  pages: write
+  deployments: write
 
 jobs:
   deploy-preview:
