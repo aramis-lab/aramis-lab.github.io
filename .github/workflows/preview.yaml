@@ -18,6 +18,6 @@ jobs:
       - uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: docs
-          preview-branch: main
+          preview-branch: gh-pages
           umbrella-dir: docs/pr-preview
           pages-base-path: docs
