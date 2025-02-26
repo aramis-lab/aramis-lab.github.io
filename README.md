@@ -68,37 +68,15 @@ Add the photo in `images/people/carre/new_member.jpg` (ensure it’s in a square
 
 To add a publication, use the following template:
 
-#### 1 - In `latest_publications.html`
-
-```html
-<!-- Example HTML code for a publication -->
-<div class="col-md-12">
-  <a class="publi-link" href="link to my last publication on HAL">
-    <h3>My last publication</h3>
-  </a>
-  <p style="font-size:13px;">
-    By John Doe, John Doe, Johne Doe
-  </p>
-  <p>
-    <span class="keyword-tag">keyword 1</span>
-    <span class="keyword-tag">keyword 2</span>
-    <span class="keyword-tag">keyword 3</span>
-  </p>
-  <hr>
-</div>
-
-```
-#### 2 - In `overview.html`
-
 ```html
 <!-- Example HTML code for a publication -->
 <li>
-  Koval I, Schiratti JB, Routier A, Bacci M, Colliot M, Allassonnière S, Durrleman S.
-  <em>Spatiotemporal propagation of the cortical atrophy: population and individual patterns</em>. In 
-  <strong><em><u>Frontiers in Neurology</u></em></strong> 9, 2018. 
-  <a class="pdf-color" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5945895/" target="_blank" rel="noopener noreferrer">
-    PDF<img decoding="async" loading="lazy" src="../../images/icons/pdf/pdf_logo.png" alt="PDF" width="20" height="17"/>
-  </a>
+    Bottani, Simona, Ninon Burgos, Aurélien Maire, Dario Saracino, Sebastian Stroër, Didier Dormont, and Olivier Colliot. 
+    2023. 
+    ‘Evaluation of MRI-Based Machine Learning Approaches for Computer-Aided Diagnosis of Dementia in a Clinical Data Warehouse’. 
+    <i>Medical Image Analysis</i> 89:102903. 
+    doi: <a href="https://doi.org/10.1016/j.media.2023.102903">10.1016/j.media.2023.102903</a>.
+    <a href="https://hal.science/hal-03656136/document" target="_blank" rel="noopener noreferrer"><img decoding="async" loading="lazy" src="../images/icons/pdf/pdf_logo.png" alt="Paper in pdf" width="20" height="17"/></a>
 </li>
 ```
 
