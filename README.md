@@ -26,7 +26,17 @@ Please adhere to the following guidelines to maintain consistency in style:
 
 ### 1 - Adding a Team Member
 
-To add a team member, update the `docs/pages/people.html` page using the following template:
+#### Add the new member photo to the website's assets
+
+First, make sure the picture you have is in a **square format**.
+
+Then, add the photo of the new team member in `docs/images/people/carre/`.
+
+Make sure to name it using the following convention: `first-name_last-name.jpg` (example: `john_doe.jpg`).
+
+#### Update the html page
+
+To add a team member, update the `docs/pages/people.html` page using the following template (make sure to update the relevant fields like the link to the picture you just added):
 
 ```html
 <!-- Example HTML code for a team member -->
@@ -61,8 +71,6 @@ To add a team member, update the `docs/pages/people.html` page using the followi
 </div>
 ```
 
-And add the photo in `docs/images/people/carre/new_member.jpg` (ensure it’s in a square format).
-
 ### 2 - Adding a Publication 
 
 To add a publication, update the `docs/pages/publications.html` page using the following template:
@@ -81,7 +89,13 @@ To add a publication, update the `docs/pages/publications.html` page using the f
 
 ### 3 - Adding a Job Offer
 
-To add a job offer, update the `docs/pages/job_offers.html` page using the following template:
+#### Add the job description to the website's assets
+
+Make sure to add the full job description in PDF format in `docs/job_offers/year/month` (you might have to create the year and month folders corresponding to your offer).
+
+#### Update the html page
+
+To add a job offer, update the `docs/pages/job_offers.html` page using the following template (make sure to update the relevant fields like the link to the job offer you just added):
 
 ```html
 <!-- Example HTML code for a publication -->
