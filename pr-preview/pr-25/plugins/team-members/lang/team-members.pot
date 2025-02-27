@@ -1,0 +1,439 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Team Members\n"
+"POT-Creation-Date: 2018-02-27 10:01+0000\n"
+"PO-Revision-Date: 2018-02-27 10:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.13\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: tmm.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: inc/tmm-admin-scripts.php:24 inc/tmm-save-metaboxes.php:71
+msgid "Untitled"
+msgstr ""
+
+#: inc/tmm-admin-scripts.php:25
+msgid "Add at least <strong>1</strong> member to preview the team."
+msgstr ""
+
+#: inc/tmm-admin-scripts.php:26
+msgid ""
+"This is only a preview, shortcodes used in the fields will not be rendered "
+"and results may vary depending on your container's width."
+msgstr ""
+
+#: inc/tmm-metaboxes-help.php:8
+msgid "Shortcode"
+msgstr ""
+
+#: inc/tmm-metaboxes-help.php:27
+msgid "<strong>Publish</strong> your team before you can see you shortcode."
+msgstr ""
+
+#: inc/tmm-metaboxes-help.php:32
+msgid ""
+"To display your team on your site, copy-paste the <strong>[Shortcode]</"
+"strong> above in your post/page."
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:6
+msgid "-"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:7
+msgid "Twitter"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:8
+msgid "LinkedIn"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:9
+msgid "YouTube"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:10
+msgid "Google+"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:11
+msgid "Facebook"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:12
+msgid "VK"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:13
+msgid "Instagram"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:14
+msgid "Tumblr"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:15
+msgid "Research Gate"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:16
+msgid "Email"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:17
+msgid "Website"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:18
+msgid "Other links"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:29
+msgid "Team editor"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:66
+msgid "Close preview"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:74
+msgid "Update"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:77
+msgid "Cancel"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:84
+msgid "Expand all"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:85
+msgid "Collapse all"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:86
+msgid "Instant preview"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:117 inc/tmm-metaboxes-members.php:293
+msgid "Clone"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:125 inc/tmm-metaboxes-members.php:301
+msgid "Member details"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:130 inc/tmm-metaboxes-members.php:306
+msgid "First name"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:132 inc/tmm-metaboxes-members.php:308
+msgid "e.g. John"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:137 inc/tmm-metaboxes-members.php:313
+msgid "Lastname"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:139 inc/tmm-metaboxes-members.php:315
+msgid "e.g. Doe"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:144 inc/tmm-metaboxes-members.php:320
+msgid "Job/role"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:146 inc/tmm-metaboxes-members.php:322
+msgid "e.g. Project manager"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:151 inc/tmm-metaboxes-members.php:327
+msgid "Description/biography"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:152 inc/tmm-metaboxes-members.php:328
+msgid ""
+"Edit your member's biography by clicking the button below. Once updated, it "
+"will show up here."
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:159 inc/tmm-metaboxes-members.php:335
+msgid "Edit biography"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:166 inc/tmm-metaboxes-members.php:342
+msgid "Social links"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:167 inc/tmm-metaboxes-members.php:343
+msgid "These links will appear below your members' biography."
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:172 inc/tmm-metaboxes-members.php:350
+msgid "Link type"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:183 inc/tmm-metaboxes-members.php:362
+msgid "Title attribute"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:184 inc/tmm-metaboxes-members.php:363
+msgid "Optional. This is the HTML <a> tag's title attribute."
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:186
+msgid "e.g. Faceook page"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:191 inc/tmm-metaboxes-members.php:370
+msgid "Link URL"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:193 inc/tmm-metaboxes-members.php:372
+msgid "e.g. http://fb.com/member-profile"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:207 inc/tmm-metaboxes-members.php:386
+msgid "e.g. Twitter page"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:211 inc/tmm-metaboxes-members.php:390
+msgid "e.g. http://tw.com/member-profile"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:225 inc/tmm-metaboxes-members.php:404
+msgid "e.g. Google+ page"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:229 inc/tmm-metaboxes-members.php:408
+msgid "e.g. http://gp.com/member-profile"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:235 inc/tmm-metaboxes-members.php:414
+msgid ""
+"Your member's email address must be entered in the Link URL field. Title "
+"attribute can be left blank."
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:241 inc/tmm-metaboxes-members.php:420
+msgid "Photo"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:247 inc/tmm-metaboxes-members.php:426
+msgid "Member's photo"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:248 inc/tmm-metaboxes-members.php:427
+msgid "We recommend square images (e.g. 250x250px)."
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:256 inc/tmm-metaboxes-members.php:435
+msgid "Upload photo"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:264 inc/tmm-metaboxes-members.php:443
+msgid "Photo link"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:265 inc/tmm-metaboxes-members.php:444
+msgid ""
+"Your visitors will be redirected to this link if they click the member's "
+"photo."
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:267 inc/tmm-metaboxes-members.php:446
+msgid "e.g. http://your-site.com/full-member-page/"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:365
+msgid "e.g. Facebook page"
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:460
+msgid ""
+"Create your team by <strong>adding members</strong> to it.<br/>Click the "
+"button below to get started."
+msgstr ""
+
+#: inc/tmm-metaboxes-members.php:466
+msgid "Add a member"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:6
+msgid "Theme's font"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:7
+msgid "Default font"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:16
+msgid "New window"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:17
+msgid "Same window"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:26
+msgid "Center"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:27
+msgid "Left"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:28
+msgid "Right"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:29
+msgid "Justify"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:38
+msgid "1 per line"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:39
+msgid "2 per line"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:40
+msgid "3 per line"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:41
+msgid "4 per line"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:42
+msgid "5 per line"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:53
+msgid "Settings"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:95
+msgid "General"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:101
+msgid "Members per line"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:113
+msgid "Desc. alignment"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:125
+msgid "Photo link behavior"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:137
+msgid "Font to use"
+msgstr ""
+
+#: inc/tmm-metaboxes-settings.php:149
+msgid "Main color"
+msgstr ""
+
+#: inc/tmm-post-type.php:9 inc/tmm-post-type.php:11
+msgid "Teams"
+msgstr ""
+
+#: inc/tmm-post-type.php:10 inc/tmm-post-type.php:12
+msgid "Team"
+msgstr ""
+
+#: inc/tmm-post-type.php:13
+msgid "Add New"
+msgstr ""
+
+#: inc/tmm-post-type.php:14
+msgid "Add New Team"
+msgstr ""
+
+#: inc/tmm-post-type.php:15
+msgid "New Team"
+msgstr ""
+
+#: inc/tmm-post-type.php:16
+msgid "Edit Team"
+msgstr ""
+
+#: inc/tmm-post-type.php:17
+msgid "View Team"
+msgstr ""
+
+#: inc/tmm-post-type.php:18
+msgid "All Teams"
+msgstr ""
+
+#: inc/tmm-post-type.php:19
+msgid "Search Teams"
+msgstr ""
+
+#: inc/tmm-post-type.php:20
+msgid "No Teams found."
+msgstr ""
+
+#: inc/tmm-post-type.php:21
+msgid "No Teams found in Trash."
+msgstr ""
+
+#: inc/tmm-post-type.php:53 inc/tmm-post-type.php:54
+msgid "Team updated."
+msgstr ""
+
+#: inc/tmm-post-type.php:55
+msgid "Team published."
+msgstr ""
+
+#: inc/tmm-post-type.php:56
+msgid "Team saved."
+msgstr ""
+
+#: inc/tmm-post-type.php:57
+msgid "Team draft updated."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Team Members"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wpdarko.com/team-members"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A responsive, simple and clean way to display your team. Create new members, "
+"add their positions, bios, social links and copy-paste the shortcode into "
+"any post/page. Find help and information on our <a href=\"https://wpdarko."
+"com/ask-for-support/\">support site</a>. This free version is NOT limited "
+"and does not contain any ad. Check out the <a href='https://wpdarko.com/team-"
+"members'>PRO version</a> for more great features."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WP Darko"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wpdarko.com"
+msgstr ""

@@ -1,0 +1,158 @@
+<?php
+defined( 'ABSPATH' ) or die();
+
+add_filter( 'rsssl_fields', function( $fields ) {
+	return array_merge( $fields,
+		[
+
+			[
+				'id'                 => 'disable_anyone_can_register',
+				'menu_id'            => 'hardening-basic',
+				'group_id'           => 'hardening-basic',
+				'type'               => 'checkbox',
+				'label'              => __( "Disable \"anyone can register\"", 'really-simple-ssl' ),
+				'disabled'           => false,
+				'default'            => false,
+				'help'               => [
+					'label' => 'default',
+					'url'   => 'definition/what-are-hardening-features',
+					'title' => __( "About Hardening", 'really-simple-ssl' ),
+					'text'  => __( 'Hardening features limit the possibility of potential weaknesses and vulnerabilities which can be misused.', 'really-simple-ssl' ),
+				],
+				'recommended'        => true,
+			],
+			[
+				'id'                 => 'disable_file_editing',
+				'menu_id'            => 'hardening-basic',
+				'group_id'           => 'hardening-basic',
+				'type'               => 'checkbox',
+				'label'              => __( "Disable the built-in file editors", 'really-simple-ssl' ),
+				'disabled'           => false,
+				'default'            => false,
+				'recommended'        => true,
+			],
+			[
+				'id'                 => 'block_code_execution_uploads',
+				'menu_id'            => 'hardening-basic',
+				'group_id'           => 'hardening-basic',
+				'type'               => 'checkbox',
+				'label'              => __( "Prevent code execution in the public 'Uploads' folder", 'really-simple-ssl' ),
+				'disabled'           => false,
+				'default'            => false,
+				'recommended' => true,
+			],
+			[
+				'id'       => 'hide_wordpress_version',
+				'menu_id'  => 'hardening-basic',
+				'group_id' => 'hardening-basic',
+				'type'     => 'checkbox',
+				'label'    => __( "Hide your WordPress version", 'really-simple-ssl' ),
+				'disabled' => false,
+				'default'  => false,
+				'recommended' => true,
+			],
+			[
+				'id'       => 'disable_login_feedback',
+				'menu_id'  => 'hardening-basic',
+				'group_id' => 'hardening-basic',
+				'type'     => 'checkbox',
+				'tooltip'  => __( "By default, WordPress shows if a username or email address exists when a login fails. This will change it to generic feedback.", 'really-simple-ssl' ),
+				'label'    => __( "Prevent login feedback", 'really-simple-ssl' ),
+				'disabled' => false,
+				'default'  => false,
+				'recommended' => true,
+			],
+			[
+				'id'                 => 'disable_indexing',
+				'menu_id'            => 'hardening-basic',
+				'group_id'           => 'hardening-basic',
+				'type'               => 'checkbox',
+				'label'              => __( "Disable directory browsing", 'really-simple-ssl' ),
+				'disabled'           => false,
+				'default'            => false,
+				'recommended' => true,
+			],
+			[
+				'id'                 => 'disable_user_enumeration',
+				'menu_id'            => 'hardening-basic',
+				'group_id'           => 'hardening-basic',
+				'type'               => 'checkbox',
+				'label'              => __( "Disable user enumeration", 'really-simple-ssl' ),
+				'disabled'           => false,
+				'default'            => false,
+				'recommended' => true,
+			],
+			[
+				'id'       => 'disable_x_powered_by_header',
+				'menu_id'  => 'hardening-basic',
+				'group_id' => 'hardening-basic',
+				'type'     => 'checkbox',
+				'label'    => __( "Unset X-Powered-By header", 'really-simple-ssl' ),
+				'disabled' => false,
+				'default'  => false,
+				'recommended'        => true,
+			],
+			[
+				'id'                 => 'rename_admin_user',
+				'menu_id'            => 'hardening-basic',
+				'warning'     			=> true,
+				'group_id'           => 'hardening-basic',
+				'type'               => 'checkbox',
+				'label'              => __( "Block the username 'admin'", 'really-simple-ssl' ),
+				'email'              => [
+					'title'   => __( "Settings update: Username 'admin' renamed", 'really-simple-ssl' ),
+					'message' => sprintf(__( "As a security precaution, the username ‘admin’ has been changed on %s. From now on, you can login with '%s' or an email address.", 'really-simple-ssl' ), '{site_url}','{username}'),
+					'url'     => 'https://really-simple-ssl.com/instructions/locked-out-after-renaming-the-admin-username',
+					'condition'    => 'rsssl_username_admin_changed',
+				],
+				'tooltip'            => __( "If the username 'admin' currently exists, you can rename it here. Please note that you can no longer use this username, and should use the new username or an email address",
+					'really-simple-ssl' ),
+				'disabled'           => false,
+				'default'            => false,
+			],
+			[
+				'id'                 => 'new_admin_user_login',
+				'menu_id'            => 'hardening-basic',
+				'group_id'           => 'hardening-basic',
+				'type'               => 'text',
+				'label'              => __( "Choose new username to replace 'admin'", 'really-simple-ssl' ),
+				'disabled'           => false,
+				'default'            => '',
+				'required'           => true,
+				'condition_action'   => 'hide',
+				'react_conditions' => [
+					'relation' => 'AND',
+					[
+						'rename_admin_user' => 1,
+					]
+				],
+				'server_conditions' => [
+					'relation' => 'AND',
+					[
+						'rsssl_has_admin_user()' => true,
+					]
+				],
+
+			],
+			[
+				'id'       => 'disable_xmlrpc',
+				'menu_id'  => 'hardening-basic',
+				'group_id' => 'hardening-basic',
+				'type'     => 'checkbox',
+				'label'    => __( "Disable XML-RPC", 'really-simple-ssl' ),
+				'disabled' => false,
+				'default'  => false,
+			],
+			[
+				'id'       => 'block_display_is_login',
+				'menu_id'  => 'hardening-basic',
+				'group_id' => 'hardening-basic',
+				'type'     => 'checkbox',
+				'label'    => __( "Block user registrations when login and display name are the same", 'really-simple-ssl' ),
+				'disabled' => false,
+				'default'  => false,
+				'recommended' => true,
+			],
+		]
+	);
+}, 200 );
