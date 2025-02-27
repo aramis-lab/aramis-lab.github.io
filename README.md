@@ -7,9 +7,7 @@ the website is organized as follows:
 ```
 ├── apprimage.html
 ├── docs/
-│   ├── publications/
-│   │	├── latest-publications.html
-│   │	└── overview.html
+│   ├── publications.html
 │   ├── job_offers.html
 │   ├── people.html
 │   ├── research_topics.html
@@ -20,16 +18,15 @@ the website is organized as follows:
 ## Contributing
 
 This website is designed to be collaborative. We encourage every team member to submit a 
-Pull Request (PR) if they notice any issues or wish to propose a new feature or improvement. 
+[Pull Request (PR)](https://github.com/aramis-lab/aramis-lab.github.io/pulls) if they notice any issues or wish to propose a new feature or improvement. 
 For those unfamiliar with the process, refer to [GitHub's guide on creating a pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
-for detailed instructions. Several additions are possible on the site. 
-Please adhere to the following guidelines to maintain consistency in style:
+for detailed instructions. Several additions are possible on the site.
 
+Please adhere to the following guidelines to maintain consistency in style:
 
 ### 1 - Adding a Team Member
 
-To add a team member, update the `the_team/people.html`.
-Add the photo in `images/people/carre/new_member.jpg` (ensure it’s in a square format).
+To add a team member, update the `docs/pages/people.html` page using the following template:
 
 ```html
 <!-- Example HTML code for a team member -->
@@ -64,9 +61,11 @@ Add the photo in `images/people/carre/new_member.jpg` (ensure it’s in a square
 </div>
 ```
 
+And add the photo in `docs/images/people/carre/new_member.jpg` (ensure it’s in a square format).
+
 ### 2 - Adding a Publication 
 
-To add a publication, use the following template:
+To add a publication, update the `docs/pages/publications.html` page using the following template:
 
 ```html
 <!-- Example HTML code for a publication -->
@@ -82,7 +81,7 @@ To add a publication, use the following template:
 
 ### 3 - Adding a Job Offer
 
-To add a publication, use the following template and add it in the correct section in `job_offers.html`
+To add a job offer, update the `docs/pages/job_offers.html` page using the following template:
 
 ```html
 <!-- Example HTML code for a publication -->
