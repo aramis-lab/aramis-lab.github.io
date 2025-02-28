@@ -1,0 +1,1 @@
+jQuery((function(i){i(".siteorigin-notice-dismiss").on("click",(function(e){e.preventDefault(),i.get(i(this).data("url")),i("#siteorigin-panels-use-classic-notice").slideUp((function(){i(this).remove()}))}))}));
