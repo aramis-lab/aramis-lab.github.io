@@ -27,17 +27,15 @@
   <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-
-
-
-  <link href="css/swiper.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
 
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
 </head>
 
@@ -69,7 +67,7 @@
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://clinicadl.readthedocs.io/en/latest/"> Documentation</a>
+                <a class="nav-link" href="https://clinicadl.readthedocs.io/en/stable/"> Documentation</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="publications.html">Publications</a>
@@ -106,7 +104,7 @@
                 </h1>
       
                 <h2>
-                  Open source deep learning software for reproducible neuroimaging studies 
+                  Open source deep learning python package for reproducible neuroimaging studies 
                 </h2>
                 
               </p>
@@ -172,7 +170,7 @@
           </div>     
           <div class="col-md-2 btn-box">
             <a class="" href="https://clinicadl.readthedocs.io/en/latest/installation.html">
-              &nbsp;INSTALLATION&nbsp;
+              INSTALLATION
             </a>
           </div>
         </div>
@@ -197,7 +195,7 @@
           </div>
           <div class="col-md-8">
             <p>
-              ClinicaDL is an <b>open-source deep learning software for reproducible neuroimaging processing</b>. It can be seen as the deep learning extension of Clinica, an open-source Python library for 
+              ClinicaDL is an <b>open-source deep learning python package for reproducible neuroimaging processing</b>. It can be seen as the deep learning extension of Clinica, an open-source Python library for 
               neuroimaging preprocessing and analysis. The combination of <b>ClinicaDL and Clinica</b> allows performing an end-to-end neuroimaging analysis, from the download of raw data sets to the interpretation 
               of trained networks, including neuroimaging preprocessing, quality check, label definition, architecture search, and network training and evaluation
             </p>
@@ -441,9 +439,11 @@
             </a>
           </div>
         </div>
+        
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
+      
 
       
     </div>
@@ -541,9 +541,29 @@
   <!-- owl slider -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
+  
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".mySwiper", {
+            slidesPerView: 5,   // Afficher 5 éléments à la fois
+            slidesPerGroup: 1,  // Glisser 1 élément à la fois
+            loop: true,         // Boucle infinie
+            autoplay: {
+                delay: 3000,     // Défiler toutes les 2 secondes
+                disableOnInteraction: false,  // Continue après une interaction
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        });
+    });
+  </script>
   <!-- custom js -->
   <script type="text/javascript" src="js/custom.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
