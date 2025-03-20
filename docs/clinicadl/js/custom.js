@@ -45,21 +45,3 @@ function myMap() {
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
 
-
-/** slider  **/
-
-document.addEventListener("DOMContentLoaded", function () {
-    new Swiper(".mySwiper", {
-        slidesPerView: 5,   // Afficher 5 éléments à la fois
-        slidesPerGroup: 1,  // Glisser 1 élément à la fois
-        loop: true,         // Boucle infinie
-        autoplay: {
-            delay: 3000,     // Défiler toutes les 2 secondes
-            disableOnInteraction: false,  // Continue après une interaction
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        }
-    });
-});
