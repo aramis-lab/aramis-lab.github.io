@@ -183,7 +183,7 @@ a:focus {
   height: 35px;
   padding: 0;
   border: none;
-  color: #ffffff;
+  color: #af2828;
 }
 
 .custom_nav-container .nav_search-btn:hover {
@@ -192,6 +192,7 @@ a:focus {
 
 .custom_nav-container .navbar-toggler {
   outline: none;
+  color: #262626;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -206,7 +207,7 @@ a:focus {
   display: block;
   width: 35px;
   height: 4px;
-  background-color: #ffffff;
+  background-color: #262626;
   margin: 7px 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -221,7 +222,7 @@ a:focus {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #262626;
   top: -10px;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
@@ -334,7 +335,7 @@ a:focus {
 /* SWIPER SECTION  */
 
 /* Center the Swiper container */
-.swiper-section {
+.swiper-section .mySwiper{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,7 +365,7 @@ a:focus {
 
 .swiper-section .swiper .swiper-wrapper {
 
-  /* padding: 75px 75px; */
+  padding: 75px 75px;
   background-color: #ffffff;
 }
 
@@ -397,11 +398,11 @@ a:focus {
 , .swiper-section .swiper .swiper-button-prev{
   background-color: #ffffff;
   color: #b393ba;
-  padding-left: -50px;
+  /* padding-left: -50px; */
   position: absolute;
   top:50%;
   transform: translateY(-50%); 
-  width: 50px;
+  width: 5%;
   height: 100px;
   z-index: 10;
   display: flex;
@@ -414,12 +415,12 @@ a:focus {
 /* Ajuster la position des flèches */
 .swiper-button-next {
   right: -13px; /* Ajuste la position vers l'extérieur */
-  /* bottom: 30px; */
+  margin-right: -13px;
 }
 
 .swiper-button-prev {
-  left: -13px; /* Ajuste la position vers l'extérieur */
-  /* bottom: 30px; */
+  left: -13px;
+  margin-left: -13px;
 }
 
 
@@ -729,11 +730,14 @@ text-align: center;
 .doctor_section .btn-box a {
   display: inline-block;
   padding: 10px 20px;
+  margin-top: 10px;
   background-color: #d991eb;
   color: #ffffff;
   border-radius: 5px;
-  /* -webkit-transition: all 0.3s; */
-  /* transition: all 0.3s; */
+  max-width: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow-wrap: break-word;
   /* border: 1px solid #ffffff; */
 }
 
@@ -741,6 +745,11 @@ text-align: center;
   background-color: #b679c6;
   color: #ffffff;
 }
+
+
+
+
+/* CONTACT SECTION */
 
 .contact_section {
   position: relative;
