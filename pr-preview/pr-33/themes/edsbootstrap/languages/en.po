@@ -1,0 +1,1119 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: edsbootstrap\n"
+"POT-Creation-Date: 2017-02-13 01:55+0600\n"
+"PO-Revision-Date: 2017-02-13 01:56+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:21
+msgid "Oooops!"
+msgstr ""
+
+#: 404.php:22
+msgid "404 Not Found"
+msgstr ""
+
+#: 404.php:23
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:26
+msgid "Back to home"
+msgstr ""
+
+#: archive.php:63 index.php:77 search.php:64
+msgid "Previous"
+msgstr ""
+
+#: archive.php:64 index.php:78 search.php:65
+msgid "Next"
+msgstr ""
+
+#: archive.php:65 index.php:79 search.php:66
+msgid "&nbsp;"
+msgstr ""
+
+#: comments.php:29
+msgid "Recent Comments"
+msgstr ""
+
+#: comments.php:41 comments.php:63
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:44 comments.php:66
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:45 comments.php:67
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:80
+msgid "Comments are closed."
+msgstr ""
+
+#: customizer/class-customize.php:74 inc/customizer.php:168
+msgid "Lite Theme Options"
+msgstr ""
+
+#: customizer/class-customize.php:89 inc/customizer.php:183
+msgid "Show Social Buttons on Header"
+msgstr ""
+
+#: customizer/class-customize.php:106 inc/customizer.php:200
+msgid "Show Social Buttons on Footer"
+msgstr ""
+
+#: customizer/class-customize.php:121 inc/customizer.php:215
+msgid "Show Contact Info on Header"
+msgstr ""
+
+#: customizer/class-customize.php:137 inc/customizer.php:231
+msgid "Show Sidebar Inside page layout"
+msgstr ""
+
+#: customizer/class-customize.php:155 inc/customizer.php:249
+msgid "Post show"
+msgstr ""
+
+#: customizer/class-customize.php:160 inc/customizer.php:254
+msgid "Show excerpt"
+msgstr ""
+
+#: customizer/class-customize.php:161 inc/customizer.php:255
+msgid "Show full post"
+msgstr ""
+
+#: customizer/class-customize.php:172 inc/customizer.php:266
+msgid "Contact Location"
+msgstr ""
+
+#: customizer/class-customize.php:176 inc/customizer.php:270
+msgid "Contact Email"
+msgstr ""
+
+#: customizer/class-customize.php:180 inc/customizer.php:274
+msgid "Contact Phone"
+msgstr ""
+
+#: customizer/class-customize.php:188 inc/customizer.php:282
+msgid "Facebook URL"
+msgstr ""
+
+#: customizer/class-customize.php:192 inc/customizer.php:286
+msgid "Twitter URL"
+msgstr ""
+
+#: customizer/class-customize.php:196 inc/customizer.php:290
+msgid "Google-plus URL"
+msgstr ""
+
+#: customizer/class-customize.php:200 inc/customizer.php:294
+msgid "pinterest URL"
+msgstr ""
+
+#: customizer/class-customize.php:208 inc/customizer.php:302
+msgid "Copyright Text"
+msgstr ""
+
+#: customizer/class-customize.php:217 inc/customizer.php:311 index.php:34
+msgid "Blog - Posts List"
+msgstr ""
+
+#: customizer/class-customize.php:221 inc/customizer.php:315
+msgid "Blog Posts List Page Title"
+msgstr ""
+
+#: customizer/class-customize.php:233 inc/customizer.php:327 index.php:35
+msgid "There are many variations of passages"
+msgstr ""
+
+#: customizer/class-customize.php:237 inc/customizer.php:331
+msgid "Blog Posts List Page Sub Title"
+msgstr ""
+
+#: customizer/class-customize.php:274
+msgid "eds bootstrap Pro"
+msgstr ""
+
+#: customizer/class-customize.php:275
+msgid "Go Pro"
+msgstr ""
+
+#: footer.php:40
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: footer.php:40
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:43
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#. Author URI of the plugin/theme
+#: footer.php:43
+msgid "https://edatastyle.com"
+msgstr ""
+
+#. Author of the plugin/theme
+#: footer.php:43
+msgid "eDataStyle"
+msgstr ""
+
+#: functions.php:47
+msgid "Primary"
+msgstr ""
+
+#: functions.php:102
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:104 functions.php:113
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:111
+msgid "Footer"
+msgstr ""
+
+#: header.php:85
+msgid "Toggle Navigation"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:328
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:330
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:334
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:336
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:340
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:347
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:354
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:368
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:375
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:381
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:387
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:393
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:398
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:400
+#: inc/class-tgm-plugin-activation.php:847
+#: inc/class-tgm-plugin-activation.php:2553
+#: inc/class-tgm-plugin-activation.php:3601
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:402
+#: inc/class-tgm-plugin-activation.php:3180
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:404
+#: inc/class-tgm-plugin-activation.php:2973
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:406
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:408
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:410
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:412
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:414
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:416
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:541
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:542
+msgid "Update Required"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:954
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:954
+#: inc/class-tgm-plugin-activation.php:957
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:957
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1141
+#: inc/class-tgm-plugin-activation.php:2969
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2002
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2293
+msgid "Required"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2296
+msgid "Recommended"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2312
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2315
+msgid "External Source"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2318
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2335
+msgid "Not Installed"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2339
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2341
+msgid "Active"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2347
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2350
+msgid "Requires Update"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2353
+msgid "Update recommended"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2362
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2408
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:2412
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:2416
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:2420
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:2502
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2510
+msgid "Installed version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2518
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2530
+msgid "Available version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2553
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2567
+msgid "Plugin"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2568
+msgid "Source"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2569
+msgid "Type"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2573
+msgid "Version"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2574
+msgid "Status"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2623
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2628
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2634
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2704
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2737
+msgid "Install"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2743
+msgid "Update"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2746
+msgid "Activate"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2777
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2779
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2821
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2823
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2929
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2955
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3179
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3519
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3522
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3524
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3528
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3530
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3530
+#: inc/class-tgm-plugin-activation.php:3538
+msgid "Show Details"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3530
+#: inc/class-tgm-plugin-activation.php:3538
+msgid "Hide Details"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3531
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3533
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3536
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3538
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3539
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3541
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/comment-helper.php:14
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/comment-helper.php:18
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/comment-helper.php:26
+msgid "(Edit)"
+msgstr ""
+
+#: inc/comment-helper.php:47
+msgid "Name"
+msgstr ""
+
+#: inc/comment-helper.php:49
+msgid "Email"
+msgstr ""
+
+#: inc/comment-helper.php:51
+msgid "Website"
+msgstr ""
+
+#: inc/comment-helper.php:62
+msgid "Comment"
+msgstr ""
+
+#: inc/customizer.php:21
+msgid "Upgrade pro"
+msgstr ""
+
+#: inc/customizer.php:34
+msgid "Slider Section"
+msgstr ""
+
+#: inc/customizer.php:35
+msgid "Allows you to set up Slider section for OnePage Theme."
+msgstr ""
+
+#: inc/customizer.php:42
+msgid "Slider # 1"
+msgstr ""
+
+#: inc/customizer.php:42
+msgid "Slider # 2"
+msgstr ""
+
+#: inc/customizer.php:42
+msgid "Slider # 3"
+msgstr ""
+
+#: inc/customizer.php:42
+msgid "Slider # 4"
+msgstr ""
+
+#: inc/customizer.php:50
+msgid "Allows you to set up slider one for eDS Bootstrap Theme."
+msgstr ""
+
+#: inc/customizer.php:64
+msgid "Image"
+msgstr ""
+
+#: inc/customizer.php:65
+msgid "Upload image for slider"
+msgstr ""
+
+#: inc/customizer.php:81
+msgid "Heading"
+msgstr ""
+
+#: inc/customizer.php:82
+msgid "Enter heading for slider"
+msgstr ""
+
+#: inc/customizer.php:98 inc/customizer.php:116
+msgid "Dscription"
+msgstr ""
+
+#: inc/customizer.php:99 inc/customizer.php:117
+msgid "Enter dscription for slider"
+msgstr ""
+
+#: inc/customizer.php:134
+msgid "Button Text"
+msgstr ""
+
+#: inc/customizer.php:135
+msgid "Enter text for button"
+msgstr ""
+
+#: inc/customizer.php:151
+msgid "Button Link"
+msgstr ""
+
+#: inc/customizer.php:152
+msgid "Enter the button link"
+msgstr ""
+
+#: inc/customizer.php:370
+msgid ""
+" get more social media link(linkedin, youtube, vimeo, instagram, vk, reddit, "
+"digg), Powerful theme options And Lot of ......."
+msgstr ""
+
+#: inc/customizer.php:411
+msgid "Demo PRO version"
+msgstr ""
+
+#: inc/customizer.php:412
+msgid "Get PRO Version"
+msgstr ""
+
+#: inc/template-tags.php:29
+#, php-format
+msgid "%s post date"
+msgstr ""
+
+#: inc/template-tags.php:35
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:52 template-parts/single.php:47
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:63
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:70 template-parts/content-page.php:42
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:36
+#: inc/wp-admin/edsbootstrap-admin-page.php:112
+msgid "About"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:74
+msgid "Action failed. Please refresh the page and retry."
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:79
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:93
+msgid "Dismiss"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:94
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing edsbootstrap! To fully take advantage of the "
+"best our theme can offer please make sure you visit our %1$swelcome page%2$s."
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:96
+msgid "Get started with edsbootstrap"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:119
+msgid "Theme Info"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:121
+msgid "View Demo"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:123
+msgid "View PRO version Demo"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:125
+msgid "Rate this theme"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:140
+msgid "Free Vs PRO"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:143
+msgid "Changelog"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:178
+msgid "Theme Customizer"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:179
+msgid "All Theme Options are available via Customize screen."
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:180
+msgid "Customize"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:184
+msgid "Got theme support question?"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:185
+msgid "Please put it in our support forum."
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:186
+msgid "Support"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:190
+msgid "Need more features?"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:191
+#: inc/wp-admin/edsbootstrap-admin-page.php:274
+msgid "Upgrade to PRO version for more exciting features."
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:192
+msgid "Info about PRO version"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:202
+msgid "Return to Updates"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:202
+msgid "Return to Dashboard &rarr; Updates"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:205
+msgid "Go to Dashboard &rarr; Home"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:205
+msgid "Go to Dashboard"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:222
+msgid "View changelog below:"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:279
+msgid "Features"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+#: inc/wp-admin/edsbootstrap-admin-page.php:280
+msgid "edsbootstrap"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:281
+msgid "edsbootstrap PRO"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:286
+msgid "24/7 Priority Support"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:291
+msgid "Navigation Style"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:296
+msgid "Navigation Color"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:301
+msgid "Responsive Design"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:307
+msgid "4 Post format"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:312
+msgid "Change Background"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:317
+msgid "Unlimited Text Color"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:322
+msgid "Logo Upload"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:327
+msgid "Choose Social Icon "
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:332
+msgid "jQuery Lightbox Popup "
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:340
+msgid "Slider,Video & Image, Header Parallax  (Welcome section)"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:341
+msgid " Slider only "
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:342
+msgid "All"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:345
+msgid "Extended Theme Options Panel"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:346
+msgid "Customizer"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:350
+msgid "Styling for all sections"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:355
+msgid "Google Fonts Supported (500+ Fonts)"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:360
+msgid "Homepage Sections"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:365
+msgid "Welcome Section"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:370
+msgid "Brands/Service/offer Section"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:375
+msgid "Features Section"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:380
+msgid "Projects Grid Section"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:385
+msgid "Portfolio Grid Section"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:390
+msgid "Testimonials Section"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:395
+msgid "Team Members Section"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:400
+msgid "Call-to-Action 1 Section"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:405
+msgid "Call-to-Action 2 Section"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:410
+msgid "About Section"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:415
+msgid "Skills Section"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:420
+msgid " Latest Posts Section"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:425
+msgid "Related Posts Box"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:430
+msgid "Contact Section"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:435
+#: inc/wp-admin/edsbootstrap-admin-page.php:440
+msgid "Page Layout Style"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:445
+msgid "Blog Layout Style"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:450
+msgid "Blog Gird Style"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:455
+msgid "Breadcrumb"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:460
+msgid "6+ Shortcodes"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:465
+msgid "10+ Shortcodes"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:470
+msgid " Font switcher"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:478
+msgid "  Footer/Copyright Section"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:490
+msgid "View PRO version demo"
+msgstr ""
+
+#: inc/wp-admin/edsbootstrap-admin-page.php:491
+msgid "More Information"
+msgstr ""
+
+#: search.php:20
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content-audio.php:40 template-parts/content-video.php:39
+#: template-parts/content.php:51
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: template-parts/content-audio.php:45 template-parts/content-page.php:30
+#: template-parts/content-video.php:44 template-parts/content.php:57
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-audio.php:53 template-parts/content-search.php:45
+#: template-parts/content-video.php:52 template-parts/content.php:65
+msgid "Continue Reading"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:21
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/single.php:50
+#, php-format
+msgid " %1$s"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://edatastyle.com/demo/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"edsBootstrap is a modern and elegant One-Page WordPress Theme with a bold "
+"look, perfect for creative people, suitable for any type of business, built "
+"for any needs. Every single detail is carefully designed and crafted, in "
+"order to create a seamless and wonderful user experience. edsBootstrap was "
+"built with awesome Twitter Bootstrap v3 and it huge features cool page "
+"builder elements, unlimited colour schemes, responsive, the layout will "
+"adapt to different screen sizes which will make your website be compatible "
+"with any device such as smart phones, tablets or desktop computers."
+msgstr ""
