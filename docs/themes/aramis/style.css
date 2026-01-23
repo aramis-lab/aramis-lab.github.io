@@ -6,6 +6,31 @@
  Version:      0.1.0
 */
 
+a {
+  color: #00AFD7;
+}
+
+ /* unvisited link */
+a:link {
+  color: #00AFD7;
+}
+
+/* visited link */
+a:visited {
+  color: #00AFD7;
+}
+
+/* mouse over link */
+a:hover {
+  color: #00AFD7;
+}
+
+/* selected link */
+a:active {
+  color: #00AFD7;
+} 
+
+
 body {
 	font-family: 'Raleway';
 }
