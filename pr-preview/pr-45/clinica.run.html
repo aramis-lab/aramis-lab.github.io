@@ -1,0 +1,2212 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+    <head>
+        <script src="//archive.org/includes/athena.js" type="text/javascript"></script>
+        <script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app28.us.archive.org';v.server_ms=1087;archive_analytics.send_pageview({});});</script>
+        <script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=7YQSqjSh" charset="utf-8"></script>
+        <script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+        <script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+        <script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+        <script type="text/javascript">
+            __wm.init("https://web.archive.org/web");
+        __wm.wombat("https://aramislab.paris.inria.fr/clinica/docs/public/latest/Installation/","20240918060327","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+                "1726639407");
+        </script>
+        <link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=p7PEIJWi" />
+        <link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+        <!-- End Wayback Rewrite JS Include -->
+
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="Software platform for clinical neuroimaging studies">
+        <meta name="author" content="Clinica contributors">
+        <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.6">
+
+        <link rel="canonical" href="https://web.archive.org/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/dev/Installation/">
+        <link rel="prev" href="..">
+        <link rel="next" href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Third-party/">
+        <link rel="icon" href="/web/20240918060327im_/https://aramislab.paris.inria.fr/clinica/docs/public/latest/assets/images/favicon.png">
+        
+    
+      
+        <title>Installation - Clinica Documentation</title>
+      
+    
+    
+        <link rel="stylesheet" href="/web/20240918060327cs_/https://aramislab.paris.inria.fr/clinica/docs/public/latest/assets/stylesheets/main.50c56a3b.min.css">
+        <link rel="stylesheet" href="/web/20240918060327cs_/https://aramislab.paris.inria.fr/clinica/docs/public/latest/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="preconnect" href="https://web.archive.org/web/20240918060327/https://fonts.gstatic.com/" crossorigin>
+        <link rel="stylesheet" href="https://web.archive.org/web/20240918060327cs_/https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="/web/20240918060327cs_/https://aramislab.paris.inria.fr/clinica/docs/public/latest/css/clinica.css">
+    
+        <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="light-blue"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=https%3A//web.archive.org/web/20240918060327/https%3A//aramislab.paris.inria.fr/clinica/docs/public/latest/Installation/"
+	    scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><div id="wm-ipp-inside">
+  <div id="wm-toolbar" style="position:relative;display:flex;flex-flow:row nowrap;justify-content:space-between;">
+    <div id="wm-logo" style="/*width:110px;*/padding-top:12px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-100.png, https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, https://web-static.archive.org/_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0" /></a>
+    </div>
+    <div class="c" style="display:flex;flex-flow:column nowrap;justify-content:space-between;flex:1;">
+      <form class="u" style="display:flex;flex-direction:row;flex-wrap:nowrap;" target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="https://aramislab.paris.inria.fr/clinica/docs/public/latest/Installation/" onfocus="this.focus();this.select();" style="flex:1;"/><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20240918060327" /><input type="submit" value="Go" />
+      </form>
+      <div style="display:flex;flex-flow:row nowrap;align-items:flex-end;">
+                <div class="s" id="wm-nav-captures" style="flex:1;">
+                    <a class="t" href="/web/20240918060327*/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Installation/" title="See a list of every capture for this URL">6 captures</a>
+          <div class="r" title="Timespan for captures of this URL">17 Apr 2021 - 18 Sep 2024</div>
+          </div>
+        <div class="k">
+          <a href="" id="wm-graph-anchor">
+            <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+              <canvas id="wm-sparkline-canvas" width="750" height="27" border="0"></canvas>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="n">
+      <table>
+        <tbody>
+          <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+          <tr class="m">
+            <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20220525141316/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Installation/" title="25 May 2022"><strong>May</strong></a></td>
+            <td class="c" id="displayMonthEl" title="You are here: 06:03:27 Sep 18, 2024">SEP</td>
+            <td class="f" nowrap="nowrap">Oct</td>
+          </tr>
+          <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+          <tr class="d">
+            <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20220525141316/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Installation/" title="14:13:16 May 25, 2022"><img src="https://web-static.archive.org/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a></td>
+            <td class="c" id="displayDayEl" style="width:34px;font-size:22px;white-space:nowrap;" title="You are here: 06:03:27 Sep 18, 2024">18</td>
+            <td class="f" nowrap="nowrap"><img src="https://web-static.archive.org/_static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0" /></td>
+          </tr>
+          <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+          <tr class="y">
+            <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20220525141316/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Installation/" title="25 May 2022"><strong>2022</strong></a></td>
+            <td class="c" id="displayYearEl" title="You are here: 06:03:27 Sep 18, 2024">2024</td>
+            <td class="f" nowrap="nowrap">2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="r" style="display:flex;flex-flow:column nowrap;align-items:flex-end;justify-content:space-between;">
+      <div id="wm-btns" style="text-align:right;height:23px;">
+                <span class="xxs">
+          <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="#" title="Share via My Web Archive" >
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php" title="Sign In" id="wm-sign-in">
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        </span>
+                <a class="xxs" href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+        <a id="wm-tb-close" href="#close" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" class="xxs">
+        <a href="/web/20240918060327/http://web.archive.org/screenshot/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Installation/"
+           id="wm-screenshot"
+           title="screenshot">
+          <span class="wm-icon-screen-shot"></span>
+        </a>
+        <a href="#" id="wm-video" title="video">
+          <span class="iconochive-movies"></span>
+        </a>
+        <a id="wm-share-facebook" href="#" data-url="https://web.archive.org/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Installation/" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+        <a id="wm-share-twitter" href="#" data-url="https://web.archive.org/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Installation/" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+      <div style="padding-right:2px;text-align:right;white-space:nowrap;">
+        <a id="wm-expand" class="wm-btn wm-closed" href="#expand"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs" style="font-size:80%;">About this capture</span></a>
+      </div>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+        <div id="wm-capinfo-notice" source="api"></div>
+                <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/commoncrawl)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/commoncrawl" target="_new"><span class="wm-title">Common Crawl</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Web crawl data from Common Crawl.
+	</div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="https://web-static.archive.org/_static/images/loading.gif" alt="loading" /></div>
+    </div>
+    </div>
+  </div></div></div></div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Installation/</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(750,27,25,2,"web","https://aramislab.paris.inria.fr/clinica/docs/public/latest/Installation/","20240918060327",1996,"https://web-static.archive.org/_static/",["https://web-static.archive.org/_static/css/banner-styles.css?v=p7PEIJWi","https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+ 
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#installation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Clinica Documentation" class="md-header__button md-logo" aria-label="Clinica Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Clinica Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Installation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://web.archive.org/web/20240918060327/https://github.com/aramis-lab/clinica" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    aramislab/clinica
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Clinica Documentation" class="md-nav__button md-logo" aria-label="Clinica Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Clinica Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://web.archive.org/web/20240918060327/https://github.com/aramis-lab/clinica" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    aramislab/clinica
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prepare-your-python-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prepare your Python environment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-clinica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Clinica
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-of-the-third-party-software-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation of the third-party software packages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shell-completion-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shell completion (optional)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-the-clinica-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the Clinica environment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Run the Clinica environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activation-of-the-clinica-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activation of the Clinica environment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deactivation-of-the-clinica-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deactivation of the Clinica environment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developer-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Developer instructions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Third-party/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Third-party
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Clinica environment
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Clinica environment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/WhatIsClinica/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What is Clinica?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/InteractingWithClinica/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interacting with Clinica
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/BIDS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BIDS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4">
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CAPS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            CAPS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/CAPS/Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/CAPS/Specifications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Specifications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Atlases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atlases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pipelines
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Pipelines
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1">
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Anatomical MRI
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Anatomical MRI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Pipelines/T1_Linear/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    T1 Linear processing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Pipelines/FLAIR_Linear/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FLAIR Linear processing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Pipelines/T1_Volume/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Volume processing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Pipelines/T1_FreeSurfer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FreeSurfer processing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Pipelines/T1_FreeSurfer_Longitudinal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FreeSurfer longitudinal processing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2">
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DWI
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            DWI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Pipelines/DWI_Preprocessing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-processing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Pipelines/DWI_DTI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DTI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Pipelines/DWI_Connectome/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connectome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3">
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PET
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            PET
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Pipelines/PET_Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Pipelines/PET_Linear/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear processing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Pipelines/PET_Volume/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Volume processing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Pipelines/PET_Surface/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Surface processing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Pipelines/PET_Surface_Longitudinal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Surface longitudinal processing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Statistics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Statistics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Pipelines/Stats_Surface/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Surface-based mass-univariate analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Pipelines/Stats_Volume/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Volume-based mass-univariate analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5">
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Machine Learning
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Machine Learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Pipelines/MachineLearning_PrepareSVM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prepare input data for spatially regularized SVM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Pipelines/MachineLearning_Classification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classification based on machine learning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Dataset converters
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Dataset converters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Converters/ADNI2BIDS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ADNI to BIDS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Converters/AIBL2BIDS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AIBL to BIDS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Converters/GENFItoBIDS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GENFI to BIDS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Converters/HABS2BIDS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HABS to BIDS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Converters/NIFD2BIDS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NIFD to BIDS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Converters/OASIS2BIDS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OASIS to BIDS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Converters/OASIS3TOBIDS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OASIS-3 to BIDS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Converters/UKBtoBIDS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UK Biobank to BIDS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    I/O tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            I/O tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/IO#create-subjects-visits-generate-the-list-all-subjects-and-visits-of-a-given-dataset" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    create-subjects-visits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/IO#check-missing-modalities-check-missing-modalities-for-each-subject" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    check-missing-modalities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/IO#check-missing-processing-check-missing-processing-in-a-caps-directory" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    check-missing-processing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/IO#merge-tsv-gather-bids-and-caps-data-into-a-single-tsv-file" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    merge-tsv
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/IO#center-nifti-center-the-nifti-files-of-a-bids-directory" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    center-nifti
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7">
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Presentations &amp; demos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Presentations &amp; demos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/ClinicaConferences#neuro-openscience-workshop-2023" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NOW 2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/ClinicaConferences#neuro-openscience-workshop-2019" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NOW 2019
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/ClinicaConferences#educational-course-on-pattern-recognition-for-clinical-neuroimaging-ohbm-2018" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OHBM 2018
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/CHANGELOG/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What's new
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prepare-your-python-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prepare your Python environment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-clinica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Clinica
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-of-the-third-party-software-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation of the third-party software packages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shell-completion-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shell completion (optional)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-the-clinica-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the Clinica environment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Run the Clinica environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activation-of-the-clinica-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activation of the Clinica environment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deactivation-of-the-clinica-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deactivation of the Clinica environment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#developer-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Developer instructions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<!-- markdownlint-disable MD046 -->
+<h1 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h1>
+<p>You will find below the steps for installing Clinica on Linux or Mac.
+Please do not hesitate to contact us on the
+<a href="https://web.archive.org/web/20240918060327/https://groups.google.com/forum/#!forum/clinica-user">forum</a> or
+<a href="https://web.archive.org/web/20240918060327/https://github.com/aramis-lab/clinica/issues">GitHub</a>
+if you encounter any issues.</p>
+<h2 id="prepare-your-python-environment">Prepare your Python environment<a class="headerlink" href="#prepare-your-python-environment" title="Permanent link">&para;</a></h2>
+<p>You will need a Python environment to run Clinica.</p>
+<p>We advise you to use <a href="https://web.archive.org/web/20240918060327/https://docs.conda.io/en/latest/miniconda.html">Miniconda</a>.
+Miniconda allows you to install, run, and update Python packages and their dependencies.
+It can also create environments to isolate your libraries.
+To install Miniconda, open a new terminal and type the following commands:</p>
+<ul>
+<li>If you are on Linux:</li>
+</ul>
+<div class="bash highlight"><pre><span></span><code>curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -o /tmp/miniconda-installer.sh
+bash /tmp/miniconda-installer.sh
+</code></pre></div>
+<ul>
+<li>If you are on Mac:</li>
+</ul>
+<div class="bash highlight"><pre><span></span><code>curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -o /tmp/miniconda-installer.sh
+bash /tmp/miniconda-installer.sh
+</code></pre></div>
+<p><a href="https://web.archive.org/web/20240918060327/https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> will ask you where to install it.
+Do not forget to copy the <code>export PATH</code> given at the end of the installation.
+If everything went fine, open a new terminal and type <code>conda info</code>, it will verify if
+Conda is installed, check the version and show your Miniconda path.</p>
+<h2 id="install-clinica">Install Clinica<a class="headerlink" href="#install-clinica" title="Permanent link">&para;</a></h2>
+<p>The latest release of Clinica can be installed by using the conventional
+<a href="https://web.archive.org/web/20240918060327/https://pypi.org/project/clinica/">PyPI package manager</a> as follows:</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>clinicaEnv<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10
+conda<span class="w"> </span>activate<span class="w"> </span>clinicaEnv
+pip<span class="w"> </span>install<span class="w"> </span>clinica
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Since Clinica <code>v0.3.5</code>, Conda installation is no longer available (i.e.
+<code>conda create --name clinicaEnv python=3.6 clinica -c Aramislab -c conda-forge</code>
+will only install Clinica <code>v0.3.4</code>).
+Pip is now the only way to install the latest version of Clinica.</p>
+</div>
+<h2 id="installation-of-the-third-party-software-packages">Installation of the third-party software packages<a class="headerlink" href="#installation-of-the-third-party-software-packages" title="Permanent link">&para;</a></h2>
+<p>Depending on the pipeline that you want to use, you need to install <strong>pipeline-specific interfaces</strong>.
+Not all the dependencies are necessary to run Clinica.
+Please refer to <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/Third-party">this section</a> to determine which third-party libraries you need to install.</p>
+<h2 id="shell-completion-optional">Shell completion (optional)<a class="headerlink" href="#shell-completion-optional" title="Permanent link">&para;</a></h2>
+<p>Shell completion for Clinica is available for <a href="https://web.archive.org/web/20240918060327/https://www.gnu.org/software/bash/">Bash</a>,
+<a href="https://web.archive.org/web/20240918060327/https://fishshell.com/docs/current/">Fish</a>, and <a href="https://web.archive.org/web/20240918060327/https://zsh.sourceforge.io/Doc/">Zsh</a>.</p>
+<p>For Bash, add this to <code>~/.bashrc</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span><span class="nv">_CLINICA_COMPLETE</span><span class="o">=</span>source_bash<span class="w"> </span>clinica<span class="k">)</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p>For Fish, add this to <code>~/.config/fish/completions/clinica.fish</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">eval</span><span class="w"> </span><span class="o">(</span>env<span class="w"> </span><span class="nv">_CLINICA_COMPLETE</span><span class="o">=</span>source_fish<span class="w"> </span>clinica<span class="o">)</span>
+</code></pre></div>
+<p>For Zsh, add this to <code>~/.zshrc</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span><span class="nv">_CLINICA_COMPLETE</span><span class="o">=</span>source_zsh<span class="w"> </span>clinica<span class="k">)</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p>Finally, open a new shell to enable completion.</p>
+<h2 id="run-the-clinica-environment">Run the Clinica environment<a class="headerlink" href="#run-the-clinica-environment" title="Permanent link">&para;</a></h2>
+<h3 id="activation-of-the-clinica-environment">Activation of the Clinica environment<a class="headerlink" href="#activation-of-the-clinica-environment" title="Permanent link">&para;</a></h3>
+<p>Now that you have created the Clinica environment, you can activate it:</p>
+<div class="bash highlight"><pre><span></span><code>conda activate clinicaEnv
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Congratulations, you have installed Clinica! At this point, you can try the
+basic <code>clinica</code> command and get the following help screen:</p>
+<div class="highlight"><pre><span></span><code><span class="gp gp-VirtualEnv">(clinicaEnv)</span><span class="gp">$ </span>clinica
+<span class="go">Usage: clinica [OPTIONS] COMMAND [ARGS]...</span>
+
+<span class="go">Options:</span>
+<span class="go">  --version      Show the version and exit.</span>
+<span class="go">  -v, --verbose  Increase logging verbosity.</span>
+<span class="go">  -h, --help     Show this message and exit.</span>
+
+<span class="go">Commands:</span>
+<span class="go">  convert   Convert popular neuroimaging datasets to the BIDS format.</span>
+<span class="go">  generate  Instantiate a new pipeline from available templates.</span>
+<span class="go">  iotools   Tools to handle BIDS/CAPS datasets.</span>
+<span class="go">  run       Run pipelines on BIDS and CAPS datasets.</span>
+</code></pre></div>
+</div>
+<p>If you have successfully installed the third-party software packages, you are
+ready to run any of the pipelines proposed by Clinica.</p>
+<p>You can now learn how to <a href="/web/20240918060327/https://aramislab.paris.inria.fr/clinica/docs/public/latest/InteractingWithClinica">interact with Clinica</a>.</p>
+<h3 id="deactivation-of-the-clinica-environment">Deactivation of the Clinica environment<a class="headerlink" href="#deactivation-of-the-clinica-environment" title="Permanent link">&para;</a></h3>
+<p>At the end of your session, remember to deactivate your Conda environment:</p>
+<div class="bash highlight"><pre><span></span><code>conda deactivate
+</code></pre></div>
+<h2 id="developer-instructions">Developer instructions<a class="headerlink" href="#developer-instructions" title="Permanent link">&para;</a></h2>
+<p>This section is intended for users who plan to contribute to Clinica or test the current development version.</p>
+<p>Clinica uses <a href="https://web.archive.org/web/20240918060327/https://python-poetry.org/">Poetry</a> to manage its development environment.
+Please follow these <a href="https://web.archive.org/web/20240918060327/https://python-poetry.org/docs/#installation">installation instructions</a> and verify the <code>poetry</code> command is correctly setup.</p>
+<p>Clone the development branch of Clinica:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>--branch<span class="w"> </span>dev<span class="w"> </span>https://github.com/aramis-lab/clinica.git
+<span class="nb">cd</span><span class="w"> </span>clinica
+</code></pre></div>
+<p>Create an environment for development:</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>environment.yml
+</code></pre></div>
+<p>Install Clinica with the necessary development dependencies:</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>activate<span class="w"> </span>clinica_env
+poetry<span class="w"> </span>install
+</code></pre></div>
+<p>In case you need to test the documentation locally, install the additional dependencies with:</p>
+<div class="highlight"><pre><span></span><code>poetry<span class="w"> </span>install<span class="w"> </span>--extras<span class="w"> </span>docs
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2016-2024 Clinica contributors
+    </div>
+  
+  
+    Made with
+    <a href="https://web.archive.org/web/20240918060327/https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://web.archive.org/web/20240918060327/https://github.com/aramis-lab/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://web.archive.org/web/20240918060327/https://twitter.com/clinica_run" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23Z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://web.archive.org/web/20240918060327/http://www.aramislab.fr/" target="_blank" rel="noopener" title="www.aramislab.fr" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M17.9 17.39c-.26-.8-1.01-1.39-1.9-1.39h-1v-3a1 1 0 0 0-1-1H8v-2h2a1 1 0 0 0 1-1V7h2a2 2 0 0 0 2-2v-.41a7.984 7.984 0 0 1 2.9 12.8M11 19.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.22.21-1.79L9 15v1a2 2 0 0 0 2 2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="/web/20240918060327js_/https://aramislab.paris.inria.fr/clinica/docs/public/latest/assets/javascripts/bundle.e1c3ead8.min.js"></script>
+      
+        <script src="https://web.archive.org/web/20240918060327js_/https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      
+    
+  </body>
+</html>

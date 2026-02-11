@@ -1,0 +1,31 @@
+.rsssl-vulnerability-action {
+  a.button {
+    margin-left:10px;
+  }
+}
+
+.rsssl-processing {
+  opacity:0.5;
+}
+.rsssl-vulnerabilities_measures-overview {
+  .allowRowEvents {
+    .wp-core-ui select {
+      max-width: 100%;
+    }
+  }
+  .rdt_TableCell {
+    &:nth-child(2) {
+      select {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.rsssl-vulnerabilities_measures {
+  .rsssl-locked-overlay {
+    input[type=checkbox] {
+      margin-top: 0;
+    }
+  }
+}
