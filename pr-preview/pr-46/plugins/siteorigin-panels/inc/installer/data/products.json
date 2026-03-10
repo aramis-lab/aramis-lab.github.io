@@ -1,0 +1,68 @@
+{
+  "siteorigin-premium" : {
+    "name" : "SiteOrigin Premium",
+    "description" : "SiteOrigin Premium is a collection of powerful addons that enhance every aspect of our products. They improve existing features and add entirely new functionality. You'll love all the power they offer you.",
+    "documentation" : "https://siteorigin.com/premium-documentation/",
+    "weight" : 100,
+    "version" : 1,
+    "type" : "plugins"
+  },
+  "siteorigin-panels" : {
+    "name" : "Page Builder by SiteOrigin",
+    "documentation" : "https://siteorigin.com/page-builder/documentation/",
+    "weight" : 95,
+    "type" : "plugins"
+  },
+  "so-widgets-bundle" : {
+    "name" : "SiteOrigin Widgets Bundle",
+    "weight" : 90,
+    "documentation" : "https://siteorigin.com/widgets-bundle/getting-started/",
+    "type" : "plugins"
+  },
+  "so-css" : {
+    "name" : "SiteOrigin CSS",
+    "documentation" : "https://siteorigin.com/css/getting-started/",
+    "weight" : 85,
+    "type" : "plugins"
+  },
+   "siteorigin-corp" : {
+    "name" : "Corp",
+    "demo" : "https://demo.siteorigin.com/corp/",
+    "documentation" : "https://siteorigin.com/corp-documentation/",
+    "screenshot" : "https://ts.w.org/wp-content/themes/siteorigin-corp/screenshot.jpg",
+    "weight" : 80,
+    "type" : "themes"
+  },
+  "siteorigin-unwind" : {
+    "name" : "Unwind",
+    "demo" : "https://demo.siteorigin.com/unwind/",
+    "documentation" : "https://siteorigin.com/unwind-documentation/",
+    "screenshot" : "https://ts.w.org/wp-content/themes/siteorigin-unwind/screenshot.jpg",
+    "weight" : 75,
+    "type" : "themes"
+  },
+  "siteorigin-north" : {
+    "name" : "North",
+    "demo" : "https://demo.siteorigin.com/north/",
+    "documentation" : "https://siteorigin.com/north-documentation/",
+    "screenshot" : "https://ts.w.org/wp-content/themes/siteorigin-north/screenshot.jpg",
+    "weight" : 70,
+    "type" : "themes"
+  },
+  "vantage" : {
+    "name" : "Vantage",
+    "demo" : "https://demo.siteorigin.com/vantage/",
+    "documentation" : "https://siteorigin.com/vantage-documentation/",
+    "screenshot" : "https://ts.w.org/wp-content/themes/vantage/screenshot.jpg",
+    "weight" : 65,
+    "type" : "themes"
+  },
+  "origami" : {
+    "name" : "Origami",
+    "demo" : "https://demo.siteorigin.com/origami/",
+    "documentation" : "https://siteorigin.com/origami-documentation/",
+    "screenshot" : "https://ts.w.org/wp-content/themes/origami/screenshot.png",
+    "weight" : 60,
+    "type" : "themes"
+  }
+}
