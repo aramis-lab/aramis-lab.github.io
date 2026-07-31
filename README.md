@@ -86,6 +86,28 @@ These are the files that change most often. Team members edit them via **Pull Re
 
 ---
 
+## Pull Request Workflow
+
+**All changes must go through a Pull Request — no direct commits to `main`.**
+
+### How to create a PR on GitHub:
+
+1. Go to the repository on GitHub
+2. Navigate to `docs/data/` → click the file to edit (e.g., `people.yaml`)
+3. Click the pencil icon ✏️ to edit
+4. Make your changes
+5. At the bottom, select **"Create a new branch for this commit and start a pull request"**
+6. Enter a short branch name (e.g., `add-member-john-doe`)
+7. Click **"Propose changes"**
+8. On the next page, click **"Create pull request"**
+9. Add a title and description, then click **"Create pull request"**
+10. Request review from a maintainer (add as reviewer)
+11. Once approved & merged → GitHub Pages auto-deploys (~1 minute)
+
+This ensures changes are reviewed and avoids accidental breaks.
+
+---
+
 ## Advanced Updates (Maintainers)
 
 These files change less frequently. Require familiarity with YAML structure.
@@ -154,28 +176,6 @@ funding:
   - name: "Grant Name"
     url: "https://..."
 ```
-
----
-
-## Pull Request Workflow
-
-**All changes must go through a Pull Request — no direct commits to `main`.**
-
-### How to create a PR on GitHub:
-
-1. Go to the repository on GitHub
-2. Navigate to `docs/data/` → click the file to edit (e.g., `people.yaml`)
-3. Click the pencil icon ✏️ to edit
-4. Make your changes
-5. At the bottom, select **"Create a new branch for this commit and start a pull request"**
-6. Enter a short branch name (e.g., `add-member-john-doe`)
-7. Click **"Propose changes"**
-8. On the next page, click **"Create pull request"**
-9. Add a title and description, then click **"Create pull request"**
-10. Request review from a maintainer (add as reviewer)
-11. Once approved & merged → GitHub Pages auto-deploys (~1 minute)
-
-This ensures changes are reviewed and avoids accidental breaks.
 
 ---
 
