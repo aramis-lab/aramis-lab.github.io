@@ -27,7 +27,7 @@
         </button>
         <ul class="nav-list" id="nav-menu">
           <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="research.html" class="nav-link">Research topics</a></li>
+          <li><a href="research.html" class="nav-link">Our research</a></li>
           <li><a href="people.html" class="nav-link active">Team Members</a></li>
           <li><a href="publications.html" class="nav-link">Publications</a></li>
           <li><a href="software.html" class="nav-link">Software</a></li>
@@ -49,6 +49,14 @@
         <div id="team-grid" class="team-grid" role="list" aria-label="Team members">
           <!-- Team grid rendered by JavaScript -->
         </div>
+
+        <!-- Alumni section -->
+        <section class="alumni-section" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--color-border);">
+          <h2 style="text-align: center; margin-bottom: 2rem; color: var(--color-secondary);">Alumni</h2>
+          <div id="alumni-list" style="max-width: 800px; margin: 0 auto;">
+            <!-- Alumni rendered by JavaScript -->
+          </div>
+        </section>
       </div>
     </section>
   </main>
@@ -96,6 +104,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       Renderers.TeamGrid.init('team-grid', 'data/people.yaml');
+      Renderers.TeamGrid.renderAlumni('alumni-list', 'data/people.yaml');
     });
   </script>
   <script src="assets/script.js"></script>

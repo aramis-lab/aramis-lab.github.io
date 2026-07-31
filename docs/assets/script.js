@@ -25,14 +25,13 @@ const DataLoader = {
 const Renderers = {
   // Team grid with category filtering
   TeamGrid: {
-    categories: ['faculty', 'postdocs', 'phd', 'engineers', 'support staff', 'alumni'],
+    categories: ['faculty', 'postdocs', 'phd', 'engineers', 'support staff'],
     categoryLabels: {
       'faculty': 'Faculty',
       'postdocs': 'Postdocs',
       'phd': 'PhD Students',
       'engineers': 'Engineers',
-      'support staff': 'Support Staff',
-      'alumni': 'Alumni'
+      'support staff': 'Support Staff'
     },
 
     init(containerId, dataPath) {
@@ -74,7 +73,7 @@ const Renderers = {
 
     render(data) {
       const filtered = this.currentFilter === 'all'
-        ? data
+        ? data.filter(p => !['alumni'].includes(p.category))
         : data.filter(p => p.category === this.currentFilter);
 
       this.container.innerHTML = filtered.map(person => this.cardHTML(person)).join('');
@@ -96,6 +95,56 @@ const Renderers = {
           </div>
         </article>
       `;
+    },
+
+    // Render alumni list
+    async renderAlumni(containerId, dataPath) {
+      const container = document.getElementById(containerId);
+      if (!container) return;
+      const data = await DataLoader.loadYAML(dataPath);
+      const alumni = data.filter(p => p.category === 'alumni');
+
+      if (alumni.length === 0) return;
+
+      // Group alumni by year/era
+      const groups = {
+        'Left for Nerv team in 2024': [
+          { name: 'Fabrizio De Vico Fallani', role: 'Former PI' },
+          { name: 'Tristan Venot', role: 'Former PhD student & Research engineer' },
+          { name: 'Camile Bousfiah', role: 'Former PhD student' },
+          { name: 'Wafa Skhiri', role: 'Former PhD student' },
+          { name: 'Marie Constance Corsi', role: 'Former permanent researcher' },
+          { name: 'Camilla Mannino', role: 'Former PhD student' },
+          { name: 'Arthur Desbois', role: 'Former Research engineer' }
+        ],
+        'Left in 2024': [
+          { name: 'Ghislain Vaillant', role: 'Former Research engineer' },
+          { name: 'Lisa Hemforth', role: 'Former PhD student' },
+          { name: 'Nemo Fournier', role: 'Former PhD student' }
+        ]
+      };
+
+      let html = '';
+      for (const [groupTitle, members] of Object.entries(groups)) {
+        html += `
+          <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--color-secondary);">${groupTitle}</h3>
+          <ul style="list-style: none; padding: 0; max-width: 600px; margin: 0 auto;">
+            ${members.map(m => `<li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-border);"><strong>${m.name}</strong> — ${m.role}</li>`).join('')}
+          </ul>
+        `;
+      }
+      // Add existing alumni from data
+      const dataAlumni = alumni.filter(a => !groups['Left for Nerv team in 2024'].some(m => m.name === a.name) && !groups['Left in 2024'].some(m => m.name === a.name));
+      if (dataAlumni.length > 0) {
+        html += `
+          <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--color-secondary);">Other Alumni</h3>
+          <ul style="list-style: none; padding: 0; max-width: 600px; margin: 0 auto;">
+            ${dataAlumni.map(a => `<li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-border);"><strong>${a.name}</strong> — ${a.role}</li>`).join('')}
+          </ul>
+        `;
+      }
+
+      container.innerHTML = html;
     }
   },
 
@@ -158,15 +207,14 @@ const Renderers = {
     },
 
     itemHTML(p) {
-      const highlightClass = p.highlight ? ' highlight' : '';
       const authors = Array.isArray(p.authors) ? p.authors.join(', ') : p.authors;
       return `
-        <article class="publication-item${highlightClass}">
+        <article class="publication-item">
           <h4 class="publication-title">${p.title}</h4>
           <p class="publication-meta">${authors}. ${p.year}. <em>${p.venue}</em>.</p>
           <div class="publication-links">
             ${p.doi ? `<a href="https://doi.org/${p.doi}" target="_blank" rel="noopener">DOI: ${p.doi}</a>` : ''}
-            ${p.pdf ? `<a class="pdf-link" href="${p.pdf}" target="_blank" rel="noopener"><img src="images/icons/pdf.svg" alt=""> PDF</a>` : ''}
+            ${p.pdf ? `<a class="pdf-link" href="${p.pdf}" target="_blank" rel="noopener">PDF</a>` : ''}
           </div>
         </article>
       `;
@@ -196,14 +244,14 @@ const Renderers = {
         <details class="accordion">
           <summary>References (${s.references.length})</summary>
           <div class="accordion-content">
-            ${s.references.map(r => `<p>${r.authors ? r.authors + '. ' : ''}<em>${r.title}</em>. ${r.venue}, ${r.year}. ${r.doi ? `<a href="https://doi.org/${r.doi}" target="_blank" rel="noopener">${r.doi}</a>` : ''}${r.pdf ? ` <a class="pdf-link" href="${r.pdf}" target="_blank" rel="noopener"><img src="images/icons/pdf.svg" alt=""> PDF</a>` : ''}</p>`).join('')}
+            ${s.references.map(r => `<p>${r.authors ? r.authors + '. ' : ''}<em>${r.title}</em>. ${r.venue}, ${r.year}. ${r.doi ? `<a href="https://doi.org/${r.doi}" target="_blank" rel="noopener">${r.doi}</a>` : ''}${r.pdf ? ` <a class="pdf-link" href="${r.pdf}" target="_blank" rel="noopener">PDF</a>` : ''}</p>`).join('')}
           </div>
         </details>
       ` : '';
 
       return `
         <article class="software-card">
-          ${icon ? `<img class="software-icon" src="${icon}" alt="${s.name}" loading="lazy">` : ''}
+          ${icon ? `<img class="software-icon" src="${icon}" alt="${s.name}" loading="lazy" onerror="this.style.display='none'">` : ''}
           <h3 class="software-title">${s.name}</h3>
           <div class="software-desc">${marked.parse(s.description || '')}</div>
           ${refs}
@@ -330,8 +378,8 @@ const Renderers = {
       // Funding
       if (data.funding && data.funding.length) {
         html += `
-          <section class="research-section">
-            <h2>Funding & Main Grants</h2>
+          <section class="research-section" id="funding">
+            <h2>Main funding sources</h2>
             <ul class="funding-list">
               ${data.funding.map(f => `<li><a href="${f.url}" target="_blank" rel="noopener">${f.name}</a></li>`).join('')}
             </ul>
@@ -340,6 +388,41 @@ const Renderers = {
       }
 
       this.container.innerHTML = html;
+
+      // Add table of contents after rendering
+      this.addTableOfContents();
+    },
+
+    addTableOfContents() {
+      const headings = this.container.querySelectorAll('h2, h3');
+      if (headings.length < 3) return;
+
+      const toc = document.createElement('nav');
+      toc.className = 'table-of-contents';
+      toc.innerHTML = `
+        <button class="toc-toggle" aria-label="Toggle table of contents">
+          <span class="toc-icon">☰</span> Contents
+        </button>
+        <ul class="toc-list" hidden>
+          ${Array.from(headings).map(h => {
+            const id = h.id || h.textContent.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+            h.id = id;
+            const level = h.tagName.toLowerCase();
+            return `<li class="toc-${level}"><a href="#${id}">${h.textContent}</a></li>`;
+          }).join('')}
+        </ul>
+      `;
+
+      // Insert at the beginning of the container
+      this.container.insertBefore(toc, this.container.firstChild);
+
+      // Toggle functionality
+      const toggle = toc.querySelector('.toc-toggle');
+      const list = toc.querySelector('.toc-list');
+      toggle.addEventListener('click', () => {
+        const hidden = list.toggleAttribute('hidden');
+        toggle.setAttribute('aria-expanded', !hidden);
+      });
     },
 
     collabGroup(title, items) {
