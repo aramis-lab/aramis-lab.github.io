@@ -1,11 +1,2 @@
-# Python and system files
-
-.DS_Store
-
-# Editor's files
-.idea
-.vscode
-.env
-.DS_Store
-.DS_Store
-.DS_Store
+node_modules/
+package-lock.json
