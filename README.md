@@ -35,7 +35,7 @@ docs/
 
 ## Quick Updates (Most Common Changes)
 
-These are the files that change most often. Team members can edit them via **Pull Requests**:
+These are the files that change most often. Team members edit them via **Pull Requests**.
 
 ### 1. Adding a Team Member
 
@@ -57,8 +57,7 @@ These are the files that change most often. Team members can edit them via **Pul
 1. Add square photo to `docs/images/people/carre/` (naming: `first-last.jpg`)
 2. Open `docs/data/people.yaml` on GitHub → pencil icon ✏️
 3. Add entry at appropriate position (categories grouped)
-4. **Create a Pull Request** (not direct commit to `main`)
-5. Once approved & merged → site updates automatically (~1 min)
+4. **Follow the PR workflow below**
 
 ### 2. Adding a Job Offer
 
@@ -81,7 +80,7 @@ These are the files that change most often. Team members can edit them via **Pul
 1. Add PDF to `docs/jobs/YYYY/` (create year folder if needed)
 2. Open `docs/data/jobs.yaml` on GitHub → pencil icon ✏️
 3. Add entry at top (sorted by date)
-4. **Create a Pull Request**
+4. **Follow the PR workflow below**
 5. Only entries with `active: true` appear on the Jobs page
 6. Set `active: false` to archive old positions
 
@@ -158,17 +157,23 @@ funding:
 
 ---
 
-## Contribution Workflow
+## Pull Request Workflow
 
-**All changes must go through a Pull Request:**
+**All changes must go through a Pull Request — no direct commits to `main`.**
+
+### How to create a PR on GitHub:
 
 1. Go to the repository on GitHub
 2. Navigate to `docs/data/` → click the file to edit (e.g., `people.yaml`)
 3. Click the pencil icon ✏️ to edit
-4. Make changes
-5. **Create a new branch** → **Propose changes** → **Create Pull Request**
-6. Request review from a maintainer
-7. Once approved & merged → GitHub Pages auto-deploys (~1 minute)
+4. Make your changes
+5. At the bottom, select **"Create a new branch for this commit and start a pull request"**
+6. Enter a short branch name (e.g., `add-member-john-doe`)
+7. Click **"Propose changes"**
+8. On the next page, click **"Create pull request"**
+9. Add a title and description, then click **"Create pull request"**
+10. Request review from a maintainer (add as reviewer)
+11. Once approved & merged → GitHub Pages auto-deploys (~1 minute)
 
 This ensures changes are reviewed and avoids accidental breaks.
 
