@@ -1,110 +1,179 @@
 # ARAMIS Website
 
-This website is developed using HTML, CSS, and JavaScript. It is designed to showcase the 
-research activities, software tools, and team contributions of ARAMIS. The structure of 
-the website is organized as follows:
+This website is developed using clean HTML, CSS, and vanilla JavaScript. It showcases the research activities, software tools, and team contributions of the ARAMIS Lab. The site is deployed via GitHub Pages from the `docs/` folder.
+
+## Structure
 
 ```
-├── apprimage.html
-├── docs/
-│   ├── publications.html
-│   ├── job_offers.html
-│   ├── people.html
-│   ├── research_topics.html
-│   └── software.html
-└── index.html
+docs/
+├── index.html              # Homepage
+├── people.html             # Team Members
+├── publications.html       # Publications
+├── software.html           # Software
+├── research.html           # Research Topics
+├── jobs.html               # Job Offers
+├── assets/
+│   ├── style.css           # Single stylesheet with CSS variables
+│   └── script.js           # JavaScript renderers
+├── data/                   # Content data (edit these to update the site)
+│   ├── people.yaml
+│   ├── publications.yaml
+│   ├── software.yaml
+│   ├── research.yaml
+│   └── jobs.yaml
+├── images/                 # Images (team photos, logos, etc.)
+├── icons/                  # Icons
+├── jobs/                   # Job offer PDFs (organized by year)
+└── CNAME                   # Custom domain
 ```
 
-## Contributing
+## How It Works
 
-This website is designed to be collaborative. We encourage every team member to submit a 
-[Pull Request (PR)](https://github.com/aramis-lab/aramis-lab.github.io/pulls) if they notice any issues or wish to propose a new feature or improvement. 
-For those unfamiliar with the process, refer to [GitHub's guide on creating a pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
-for detailed instructions. Several additions are possible on the site.
+- **No build step** — Pure static files. Open `docs/index.html` in a browser to preview locally.
+- **Data-driven** — Content lives in YAML files in `docs/data/`. JavaScript loads YAML and renders HTML components.
+- **GitHub Pages** — Push to `main` branch → automatic deployment.
 
-Please adhere to the following guidelines to maintain consistency in style:
+## Updating Content (No Code Required)
 
-### 1 - Adding a Team Member
+Team members can edit content directly on GitHub.com:
 
-#### Add the new member photo to the website's assets
+1. Go to the repository on GitHub
+2. Navigate to `docs/data/`
+3. Click the file to edit (e.g., `people.yaml`)
+4. Click the pencil icon ✏️ to edit
+5. Make changes, commit directly to `main`
+6. Site updates automatically (~1 minute)
 
-First, make sure the picture you have is in a **square format**.
+### Adding a Team Member
 
-Then, add the photo of the new team member in `docs/images/people/carre/`.
+Edit `docs/data/people.yaml`:
 
-Make sure to name it using the following convention: `first-name_last-name.jpg` (example: `john_doe.jpg`).
-
-#### Update the html page
-
-To add a team member, update the `docs/pages/people.html` page using the following template (make sure to update the relevant fields like the link to the picture you just added):
-
-```html
-<!-- Example HTML code for a team member -->
-<div class="tmm_member people_border">
-  <div class="tmm_photo peopleimg tmm_pic_phd-students_12" style="background: url(../images/people/carre/unknown.png);"></div>
-  <div class="tmm_textblock">
-    <div class="tmm_names">
-      <span class="tmm_fname">Léo</span> 
-      <span class="tmm_lname">Guillon</span>
-    </div>
-    <div class="tmm_scblock">
-      <a target="_blank" class="tmm_sociallink" href="https://fr.linkedin.com/">
-	<img alt="" src="../plugins/team-members/inc/img/links/linkedin.png"/>
-      </a>
-      <a class="tmm_sociallink" href="mailto:hugues.roy@icm-institute.org">
-	<img alt="" src="../plugins/team-members/inc/img/links/email.png"/>
-      </a>
-      <a target="_blank" class="tmm_sociallink" href="https://www.researchgate.net/">
-	<img alt="" src="../plugins/team-members/inc/img/links/researchgate.png"/>
-      </a>
-      <a target="_blank" class="tmm_sociallink" href="https://scholar.google.com/" title="Google Scholar">
-	<img alt="Google Scholar" src="../plugins/team-members/inc/img/links/customlink.png"/>
-      </a>
-      <a target="_blank" class="tmm_sociallink" href="aramis">
-	<img alt="" src="../plugins/team-members/inc/img/links/website.png"/>
-      </a>
-      <a target="_blank" class="tmm_sociallink" href="https://twitter.com/"> <!-- a bannir-->
-	<img alt="" src="../plugins/team-members/inc/img/links/twitter.png"/>
-      </a>
-    </div>
-  </div>
-</div>
+```yaml
+- name: "First Last"
+  role: "Title (Affiliation)"
+  category: "faculty"  # faculty | postdocs | phd | engineers | support staff | alumni
+  photo: "images/people/carre/first_last.jpg"
+  email: "email@domain.org"
+  website: "https://personal-website.org"
+  scholar: "https://scholar.google.com/citations?user=..."
+  linkedin: "https://linkedin.com/in/..."
+  twitter: "https://twitter.com/..."
 ```
 
-### 2 - Adding a Publication 
+- Add photo to `docs/images/people/carre/` (square format, naming: `first-last.jpg`)
+- Commit → appears on People page with category filter
 
-To add a publication, update the `docs/pages/publications.html` page using the following template:
+### Adding a Publication
 
-```html
-<!-- Example HTML code for a publication -->
-<li>
-    Bottani, Simona, Ninon Burgos, Aurélien Maire, Dario Saracino, Sebastian Stroër, Didier Dormont, and Olivier Colliot. 
-    2023. 
-    ‘Evaluation of MRI-Based Machine Learning Approaches for Computer-Aided Diagnosis of Dementia in a Clinical Data Warehouse’. 
-    <i>Medical Image Analysis</i> 89:102903. 
-    doi: <a href="https://doi.org/10.1016/j.media.2023.102903">10.1016/j.media.2023.102903</a>.
-    <a href="https://hal.science/hal-03656136/document" target="_blank" rel="noopener noreferrer"><img decoding="async" loading="lazy" src="../images/icons/pdf/pdf_logo.png" alt="Paper in pdf" width="20" height="17"/></a>
-</li>
+Edit `docs/data/publications.yaml`:
+
+```yaml
+- title: "Paper Title"
+  authors:
+    - "Author, First"
+    - "Author, Second"
+  venue: "Journal Name"
+  year: 2025
+  doi: "10.1016/j.xxx.2025.xxxxxx"
+  pdf: "https://hal.science/hal-xxxxxx/document"
+  highlight: true          # optional, highlights in the list
+  axis: "neuroimaging-biomarkers"  # for grouping
 ```
 
-### 3 - Adding a Job Offer
+### Adding Software
 
-#### Add the job description to the website's assets
+Edit `docs/data/software.yaml`:
 
-Make sure to add the full job description in PDF format in `docs/job_offers/year/month` (you might have to create the year and month folders corresponding to your offer).
-
-#### Update the html page
-
-To add a job offer, update the `docs/pages/job_offers.html` page using the following template (make sure to update the relevant fields like the link to the job offer you just added):
-
-```html
-<!-- Example HTML code for a publication -->
-<br>
-  <li>
-    <a href="job_offers/2025/01/JobOffer_ARAMIS.pdf">Name of the job offer</a> <br>
-    <span style="font-weight: bold;">Duration:</span> x months &#8211; 
-    <span style="font-weight: bold;">Starting date:</span>  01/01/2025 &#8211; 
-    <span style="font-weight: bold;">Contact:</span> name.lastname@icm-instituite.org
-  </li>
+```yaml
+- name: "Software Name"
+  icon: "images/icons/software/icon.png"
+  description: |
+    Multi-line description of the software.
+    Supports plain text (Markdown not needed here).
+  references:
+    - title: "Reference paper title"
+      venue: "Journal"
+      year: 2024
+      doi: "10.xxxx/xxxx"
+      pdf: "https://..."
+  github: "https://github.com/aramis-lab/..."
+  website: "https://software-website.org"
+  email: "contact@domain.org"
 ```
 
+### Updating Research Content
+
+Edit `docs/data/research.yaml`. Supports Markdown in text fields:
+
+```yaml
+context: |
+  Intro paragraph with **bold** and [links](url).
+
+axes:
+  - title: "Axis Title"
+    pis: ["PI Name 1", "PI Name 2"]
+    content: |
+      Detailed description with *markdown* support.
+
+collaborations:
+  external:
+    methodical:
+      - name: "Institution"
+        pi: "PI Name"
+        url: "https://..."
+    medical: [...]
+  local: { ... }
+
+funding:
+  - name: "Grant Name"
+    url: "https://..."
+```
+
+### Adding a Job Offer
+
+1. Add PDF to `docs/jobs/YYYY/` (create year folder if needed)
+2. Edit `docs/data/jobs.yaml`:
+
+```yaml
+- title: "PhD: Project Title"
+  year: 2025
+  month: 9
+  category: "phd"          # phd | postdoc | engineer | intern
+  duration: "3 years"
+  start_date: "2025-10-01"
+  contact: "email@domain.org"
+  pdf: "jobs/2025/filename.pdf"
+  active: true             # false to hide
+  description: ""          # optional, shown on job card
+```
+
+- Only entries with `active: true` appear on the Jobs page
+- Set `active: false` to archive old positions
+
+## Design Customization
+
+Colors and spacing are defined as CSS variables in `docs/assets/style.css`:
+
+```css
+:root {
+  --color-primary: #281e78;    /* Dark blue */
+  --color-secondary: #fa4616;  /* Orange */
+  --color-accent: #fa4616;     /* Orange for links */
+  --font-family: 'Raleway', system-ui, sans-serif;
+  --container-max: 1000px;
+}
+```
+
+## Local Preview
+
+Simply open `docs/index.html` in a browser — no server required.
+
+## Deployment
+
+1. All changes in `docs/` on `main` branch deploy automatically via GitHub Pages
+2. Check deployment status in repo Settings → Pages
+3. Custom domain configured via `CNAME` file
+
+## Legacy Content
+
+The old WordPress-exported pages in `docs/pages/` and `docs/themes/`, `docs/plugins/` are preserved but no longer used. The new site uses only the files listed in the structure above.

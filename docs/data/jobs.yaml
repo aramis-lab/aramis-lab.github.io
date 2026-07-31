@@ -1,0 +1,32 @@
+- title: "PhD: Probabilistic Non-Rigid Image Registration for Safe Brain Tumor Surgery"
+  year: 2026
+  month: 9
+  category: "phd"
+  duration: "3 years"
+  start_date: "2026-09-01"
+  contact: "reuben.dorent@inria.fr"
+  pdf: "jobs/2026/2026_BrainTumorRegistration_phd.pdf"
+  active: true
+  description: ""
+
+- title: "Internship: Optimal Transport for Medical Imaging"
+  year: 2026
+  month: 3
+  category: "intern"
+  duration: "6 months"
+  start_date: "2026-03-01"
+  contact: "ninon.burgos@icm-institute.org"
+  pdf: "jobs/2026/2026_OptimalT_internship.pdf"
+  active: true
+  description: ""
+
+- title: "Internship: Synthetic Quality Control for Brain MRI"
+  year: 2026
+  month: 4
+  category: "intern"
+  duration: "6 months"
+  start_date: "2026-04-01"
+  contact: "ninon.burgos@icm-institute.org"
+  pdf: "jobs/2026/2026_SynthQC_internship.pdf"
+  active: true
+  description: ""

@@ -1,0 +1,18 @@
+{
+  "name": "aramis-lab.github.io",
+  "version": "1.0.0",
+  "description": "This website is developed using HTML, CSS, and JavaScript. It is designed to showcase the  research activities, software tools, and team contributions of ARAMIS. The structure of  the website is organized as follows:",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^22.1.0"
+  }
+}

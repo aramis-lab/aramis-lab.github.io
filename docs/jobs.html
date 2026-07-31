@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Job Offers — ARAMIS Lab</title>
+  <meta name="description" content="ARAMIS Lab job offers: PhD positions, postdoctoral fellowships, research engineer roles, and internships.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="images/icons/aramis/cropped-icon_ARAMISLAB_rvb-32x32.png" sizes="32x32">
+  <link rel="icon" href="images/icons/aramis/cropped-icon_ARAMISLAB_rvb-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="images/icons/aramis/cropped-icon_ARAMISLAB_rvb-192x192.png">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="ARAMIS Lab Home">
+        <img src="images/icons/aramis/cropped-logo_ARAMISLAB_rvb-1.png" alt="ARAMIS Lab Logo" width="240" height="97">
+      </a>
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-list" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="research.html" class="nav-link">Research topics</a></li>
+          <li><a href="people.html" class="nav-link">Team Members</a></li>
+          <li><a href="publications.html" class="nav-link">Publications</a></li>
+          <li><a href="software.html" class="nav-link">Software</a></li>
+          <li><a href="jobs.html" class="nav-link active">Job offers</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <header class="page-header">
+      <div class="container">
+        <h1>Job Offers</h1>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="intro-text" style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+          <p>If you are interested in joining the team, do not hesitate to send us an email stating your field of interest and a CV. We may have other open positions than those advertised below.</p>
+          <p>You can directly contact one of the <a href="people.html">faculty members</a> of the team, or the <a href="mailto:olivier.colliot@cnrs.fr,ninon.burgos@cnrs.fr">heads</a> of the team for a general inquiry. Our team is pluridisciplinary and we welcome applicants with different profiles and expertise (computer science, electrical engineering, neuroimaging, neuroscience, medicine, etc.).</p>
+          <p>You can also check the <a href="https://offres.institutducerveau-icm.org/en/jobs" target="_blank" rel="noopener">ICM</a>, <a href="https://jobs.inria.fr" target="_blank" rel="noopener">Inria</a> or <a href="https://emploi.cnrs.fr/default.aspx" target="_blank" rel="noopener">CNRS</a> websites to find our job offers.</p>
+        </div>
+
+        <div id="job-list" role="list" aria-label="Active job offers">
+          <!-- Jobs rendered by JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <div class="footer-partners">
+            <img src="images/icons/inserm/insermlogo-300x83.png" alt="Inserm Logo">
+            <img src="images/icons/cnrs/LOGO_CNRS_BLEU-150x150.png" alt="CNRS Logo">
+            <img src="images/icons/ap-hp/Logo_AP-Hopitaux_de_Paris-768x160.gif" alt="AP-HP Logo">
+            <img src="images/icons/icm/institut_cerveau_quad_uk-300x93.jpg" alt="ICM Logo">
+          </div>
+          <div class="footer-partners">
+            <img src="images/icons/inria/inr_logo_rouge-300x105.jpg" alt="Inria Logo">
+            <img src="images/icons/sorbonne/sorbonne-300x136.jpg" alt="Sorbonne Logo">
+            <img src="images/icons/eu/EN_Co-fundedbytheEU_RGB_POS.png" alt="EU Logo">
+            <img src="images/icons/prairie/logo-PRAIRIE-transparent.png" alt="Prairie Logo">
+          </div>
+        </div>
+
+        <div class="footer-map">
+          <a href="images/plan-acces-ICM.pdf" target="_blank" rel="noopener">
+            <img src="images/maps/map-300x245.png" alt="Map to ICM" style="max-width: 100%; height: auto;">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <div>
+          <p>olivier.colliot@cnrs.fr</p>
+          <p>ninon.burgos@cnrs.fr</p>
+        </div>
+        <h3>Location</h3>
+        <div>
+          <p>Institut du Cerveau<br>Hôpital Pitié Salpêtrière<br>47 Boulevard de l'Hôpital<br>75013 Paris</p>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 ARAMIS Lab — Paris Brain Institute. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      Renderers.JobList.init('job-list', 'data/jobs.yaml');
+    });
+  </script>
+  <script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+- name: "Clinica"
+  icon: "images/icons/clinica/clinica_icon_flat.png"
+  description: |
+    Clinica is a software platform for multimodal brain image analysis in clinical research studies. It makes it easy to apply advanced analysis tools to large scale clinical studies. For that purpose, it integrates a comprehensive set of processing tools for the main neuroimaging modalities: currently MRI (anatomical, functional, diffusion) and PET, in the future, EEG/MEG. For each modality, Clinica allows to easily extract various types of features (regional measures, parametric maps, surfaces, curves, networks). Such features are then subsequently used as input of machine learning, statistical modeling, morphometry or network analysis methods.
+  references:
+    - title: "Clinica: an open source software platform for reproducible clinical neuroscience studies"
+      venue: "Frontiers in Neuroinformatics"
+      year: 2021
+      doi: "10.3389/fninf.2021.689675"
+      pdf: "https://hal.inria.fr/hal-02549242/document"
+    - title: "Convolutional Neural Networks for Classification of Alzheimer's Disease: Overview and Reproducible Evaluation"
+      venue: "Medical Image Analysis"
+      year: 2020
+      doi: "10.1016/j.media.2020.101694"
+      pdf: "https://hal.inria.fr/hal-02562504/document"
+    - title: "New Longitudinal and Deep Learning Pipelines in the Clinica Software Platform"
+      venue: "OHBM"
+      year: 2020
+      doi: ""
+      pdf: "https://hal.inria.fr/hal-02549242/document"
+    - title: "Reproducible evaluation of classification methods in Alzheimer's disease: Framework and application to MRI and PET data"
+      venue: "Neuroimage"
+      year: 2018
+      doi: "10.1016/j.neuroimage.2018.08.050"
+      pdf: "https://hal.inria.fr/hal-01858384/document"
+    - title: "An Automated Pipeline for the Analysis of PET Data on the Cortical Surface"
+      venue: "Frontiers in Neuroinformatics"
+      year: 2018
+      doi: "10.3389/fninf.2018.00094"
+      pdf: "https://www.frontiersin.org/articles/10.3389/fninf.2018.00094/pdf"
+  github: "https://github.com/aramis-lab/clinica"
+  website: "http://www.clinica.run/"
+  email: "olivier.colliot@inria.fr"
+
+- name: "ClinicaDL"
+  icon: "images/icons/clinicadl/version_pieuvre_noire-300x289.png"
+  description: |
+    ClinicaDL is an open-source deep learning software for reproducible neuroimaging processing. This library was developed from the AD-DL project. The combination of ClinicaDL and Clinica allows performing an end-to-end neuroimaging analysis, from the download of raw data sets to the interpretation of trained networks, including neuroimaging preprocessing, quality check, label definition, architecture search, and network training and evaluation. We implemented ClinicaDL to bring answers to three common issues encountered by deep learning users who are not always familiar with neuroimaging data: (1) the format and preprocessing of neuroimaging data sets, (2) the contamination of the evaluation procedure by data leakage and (3) a lack of reproducibility.
+  references:
+    - title: "ClinicaDL: an open-source deep learning software for reproducible neuroimaging processing"
+      venue: "HAL Preprint"
+      year: 2021
+      doi: ""
+      pdf: "https://www.frontiersin.org/articles/10.3389/fninf.2018.00094/pdf"
+  github: "https://github.com/aramis-lab/clinicaDL"
+  website: "https://clinicadl.readthedocs.io/en/stable/"
+  email: "ninon.burgos@inria.fr"
+
+- name: "Leaspy"
+  icon: "images/icons/leaspy/leaspy_logo-300x180.png"
+  description: |
+    Leaspy is a software package for the statistical analysis of longitudinal data, particularly medical data that comes in a form of repeated observations of patients at different time-points. Considering these series of short-term data, the software aims at: recombining them to reconstruct the long-term spatio-temporal trajectory of evolution; positioning each patient observations relatively to the group-average timeline, in term of both temporal differences (time shift and acceleration factor) and spatial differences (different sequences of events, spatial pattern of progression); quantifying impact of cofactors (gender, genetic mutation, environmental factors) on the evolution of the signal; imputing missing values; predicting future observations; simulating virtual patients to un-bias the initial cohort or mimics its characteristics.
+  references:
+    - title: "Intensive application for Alzheimer's Disease progression: AD Course Map charts Alzheimer's disease progression"
+      venue: "Scientific Reports"
+      year: 2021
+      doi: "10.1038/s41598-021-87434-1"
+      pdf: "http://www.jmlr.org/papers/volume18/17-197/17-197.pdf"
+    - title: "A Bayesian mixed-effects model to learn trajectories of changes from repeated manifold-valued observations"
+      venue: "Journal of Machine Learning Research (JMLR)"
+      year: 2017
+      doi: ""
+      pdf: "http://www.jmlr.org/papers/volume18/17-197/17-197.pdf"
+    - title: "Spatiotemporal propagation of the cortical atrophy: population and individual patterns"
+      venue: "Frontiers in Neurology"
+      year: 2018
+      doi: ""
+      pdf: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5945895/"
+  github: "https://github.com/aramis-lab/leaspy"
+  website: "https://disease-progression-modelling.github.io/pages/models/disease_course_mapping.html"
+  email: "stanley.durrleman@inria.fr"
+
+- name: "Deformetrica"
+  icon: "images/icons/deformetrica/deformetrica.png"
+  description: |
+    Deformetrica is a software for the statistical analysis of 2D and 3D shape data. It essentially computes deformations of the 2D or 3D ambient space, which, in turn, warp any object embedded in this space, whether this object is a curve, a surface, a structured or unstructured set of points, or any combination of them.
+  references:
+    - title: "Morphometry of anatomical shape complexes with dense deformations and sparse parameters"
+      venue: "Neuroimage"
+      year: 2014
+      doi: "10.1016/j.neuroimage.2014.06.052"
+      pdf: "http://www.sciencedirect.com/science/article/pii/S1053811914005205"
+    - title: "Deformetrica 4: an open-source software for statistical shape analysis"
+      venue: "International Workshop on Shape in Medical Imaging, Springer"
+      year: 2018
+      doi: ""
+      pdf: "https://hal.inria.fr/hal-01874752/document"
+  github: ""
+  website: "http://www.deformetrica.org/"
+  email: "stanley.durrleman@inria.fr"
+
+- name: "Brain Network Toolbox"
+  icon: "images/icons/brain_net_tools/Logo_alto_100.png"
+  description: |
+    A list of MATLAB routines for characterizing brain network topology though graph theoretical indices can be found at the website of the FreeBorN consortium, which promotes the interaction and visibility of the research teams studying brain connectivity and network theory.
+  references: []
+  github: ""
+  website: "https://sites.google.com/site/fr2eborn/download"
+  email: "fabrizio.devicofallani@gmail.com"

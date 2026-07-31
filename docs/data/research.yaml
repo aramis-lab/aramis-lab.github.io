@@ -1,0 +1,139 @@
+context: |
+  The tremendous progress of neuroimaging, genomic and biomarker technologies has allowed capturing various characteristics of brain diseases in living patients. Collection of multimodal data in large patient databases provides a comprehensive view of brain alterations, biological processes, genetic risk factors and symptoms. The team aims to build numerical models of brain diseases from multimodal patient based on appropriate data-driven approaches. To this end, we develop new data representations and statistical learning approaches that can integrate multiple types of data: neuroimaging, peripheral biomarkers, clinical and omics data (genetics, transcriptomics).
+
+  In particular, we develop methods to highlight networks of interactions among multiple sources of data, to track data changes during disease progression, and to automatically predict current or future clinical outcomes from these data. We apply these models to neurodegenerative diseases (Alzheimer's disease and other dementias, multiple sclerosis, Parkinson's disease, etc.). They shall allow deepening our understanding of neurological diseases and developing new decision support systems for diagnosis, prognosis and design of clinical trials.
+
+axes:
+  - title: "Neuroimaging biomarkers and decision support systems"
+    pis: ["N. Burgos", "O. Colliot"]
+    content: |
+      Neuroimaging provides critical information on anatomical and functional alterations as well as on specific molecular and cellular processes. Our work is focused on the development of computational approaches to extract biomarkers and build computer-aided diagnosis (CAD) systems from MRI and PET data. More specifically, we develop: i) image translation models that can generate biomarkers of specific pathological processes from unspecific routine imaging data; ii) approaches for detecting local abnormalities; iii) frameworks for reproducible and reliable evaluation of CAD systems; iv) methods for training and validating from large-scale hospital data warehouses.
+
+  - title: "Disease progression modeling with longitudinal data"
+    pis: ["S. Tezenas du Montcel", "S. Durrleman"]
+    content: |
+      Longitudinal data sets contain observations of multiple subjects observed at multiple time-points. They offer a unique opportunity to understand temporal processes such as ageing or disease progression. We develop a new generation of statistical methods to infer the dynamics of changes of a series of data such as biomarkers, images or clinical endpoints, together with the variability of such multivariate trajectories within a population of reference. We apply these new models across an array of neurodegenerative diseases to i) understand the heterogeneity in disease progression, in particular how genetic factors may control variations in disease progression, ii) forecast the progression of a new patient at entry of a clinical trial for stratification purposes and iii) the design of new clinical scales for use as outcomes in trials.
+
+  - title: "High-dimensional multimodal data (genetic, environment, imaging)"
+    pis: ["B. Couvy-Duchesne", "O. Colliot"]
+    content: |
+      The field of neuroimaging is at a turning point, owing to the availability of several large research datasets such as the UKBiobank, which comprises more than 50,000 volunteers from the general population with deep phenotyping, multimodal MRI and genotyping data. Such large data promise a finer understanding of the brain association with phenotypic data and disorders as well as improved risk prediction, though they also raise computational and methodological challenges. We work on introducing new efficient algorithms and models that can scale up to the data and that can combine information of different nature (genetic, environment, neuroimaging) and from several independent samples.
+
+  - title: "Computational pathology and high-content microscopy"
+    pis: ["D. Racoceanu", "S. Durrleman"]
+    content: |
+      Computational approaches can help characterize diseases at the microscopic level, from whole slide images in histopathology to high-content microscopy. Benefiting from state-of-the-art deep learning approaches with an increasing interest in explainable and responsible models, these modalities are likely to generate a whole new systemic knowledge. Analyzing morphological and topological micro-heterogeneity allows a deeper understanding of the disease, by providing novel quantitative insights allowing designing multi-scale and multimodal algorithms, able to generate new morphological and topological correlations with patient's stratification. Combined with omics signature, such multi-scale prints (pathomics, radiomics) open the path towards a systemic understanding of complex processes, by providing a knowledgeable assessment, as well as more efficient and reliable predictive simulations. Examples of applications include the characterization of pathological protein aggregates in Alzheimer disease and the study of microglia-like cells integrated into brain organoids.
+
+collaborations:
+  external:
+    methodical:
+      - name: "King's College London, UK"
+        pi: "Sébastien Ourselin"
+        url: "https://www.kcl.ac.uk/people/sebastien-ourselin"
+      - name: "Center for Medical Image Computing, University College London, UK"
+        pi: "Daniel Alexander"
+        url: "http://www0.cs.ucl.ac.uk/staff/D.Alexander/"
+      - name: "Erasmus Medical Center (EMC), Rotterdam, Netherlands"
+        pi: "Stefan Klein, Meike W. Vernooij, Wiro Niessen"
+        url: "http://bigr.nl/people/StefanKlein/"
+      - name: "Tandon School of Engineering, New York University, USA"
+        pi: "Guido Gerig"
+        url: "http://www.sci.utah.edu/~gerig/"
+      - name: "Department of Physics, Queen Mary University of London, UK"
+        pi: "Vito Latora"
+        url: "http://www.maths.qmul.ac.uk/~latora/"
+      - name: "Center for Magnetic Resonance Research, University of Minnesota, USA"
+        pi: "Pierre-François Van de Moortele, Tom Henry, Kamil Ugurbil"
+        url: "http://www.cmrr.umn.edu/facultystaff/pfvdm.shtml"
+      - name: "Inria Epione, Sophia-Antipolis, France"
+        pi: "Nicholas Ayache"
+        url: "http://www-sop.inria.fr/members/Nicholas.Ayache/ayache.html"
+      - name: "Center for Applied Mathematics, ENS Paris-Saclay"
+        pi: "Alain Trouvé"
+        url: "http://atrouve.perso.math.cnrs.fr/"
+      - name: "Université Paris-Descartes"
+        pi: "Joan Glaunès"
+        url: "http://www.mi.parisdescartes.fr/~glaunes/"
+      - name: "Laboratoire AMIS, Université Paul Sabatier, Toulouse"
+        pi: "José Braga, Jean Dumoncel"
+        url: "http://www.anthropobiologie.fr/content.php?itemId=6&id=6"
+      - name: "Institut Pasteur, Paris"
+        pi: "Roberto Toro"
+        url: "http://www.ura2182.cnrs-bellevue.fr/rtoro/"
+      - name: "INSEAD, Fontainebleau"
+        pi: "Theodoros Evgeniou"
+        url: "https://www.insead.edu/faculty-research/faculty/theodoros-evgeniou"
+      - name: "Neurospin, CEA"
+        pi: "Jean-François Mangin, Alexandre Vignaud, Vincent Frouin, Lucie Hertz-Pannier"
+        url: "http://www-dsv.cea.fr/dsv/instituts/institut-d-imagerie-biomedicale-i2bm/services/neurospin-neurospin"
+    medical:
+      - name: "Sainte-Anne Hospital, Paris"
+        pis: ["Catherine Oppenheim", "Marie Sarazin"]
+        url: "http://www.ch-sainte-anne.fr/"
+      - name: "Cycéron, Caen University Hospital"
+        pis: ["Gaël Chételat", "Francis Eustache", "Béatrice Desgranges"]
+        url: "http://www.cyceron.fr/"
+      - name: "Fatebene Fratelli, Brescia, Italy"
+        pis: ["Giovanni Frisoni", "Alberto Redolfi", "Damiano Archetti"]
+        url: "https://www.irccs-fatebenefratelli.it/sito/pagine/fatebenefratelli.php"
+
+  local:
+    methodical:
+      - name: "ICM CENIR Neuroimaging Platform"
+        pis: ["Stéphane Lehéricy", "Eric Bardinet", "Romain Valabrègue"]
+        url: "https://cenir.institutducerveau.org/"
+      - name: "ICM Data Analysis Core"
+        pis: ["Violetta Zujovic", "Stephen Whitmarsh"]
+        url: "https://dac.institutducerveau.org/"
+    medical:
+      - name: "ICM NeuroGen team"
+        pi: "Alexandra Durr"
+        url: "https://parisbraininstitute.org/paris-brain-institute-research-teams/neurogen-brain-development-and-dysfunction-neurogenetic-diseases"
+      - name: "ICM REGAIN-MS team"
+        pis: ["Bruno Stankoff", "Benedetta Bodini", "Céline Louapre"]
+        url: "https://parisbraininstitute.org/paris-brain-institute-research-teams/regain-ms-repair-demyelinating-diseases-biology-clinical-translation"
+      - name: "ICM Frontlab team"
+        pis: ["Isabelle Le Ber", "Lara Migliaccio"]
+        url: "https://parisbraininstitute.org/paris-brain-institute-research-teams/frontlab-prefrontal-cortex-critical-hub-higher-cognitive-functions-health-disease"
+      - name: "ICM MOV'IT team"
+        pis: ["Marie Vidailhet", "Stéphane Lehéricy"]
+        url: "https://parisbraininstitute.org/paris-brain-institute-research-teams/movit-movement-cognition-insights-motor-disorders"
+      - name: "ICM MPP+ team"
+        pi: "Jean-Christophe Corvol"
+        url: "https://parisbraininstitute.org/paris-brain-institute-research-teams/mpp-molecular-pathophysiology-parkinsons-disease"
+      - name: "ICM Cerebral SVD and neurodegeneration team"
+        pi: "Hugues Chabriat"
+        url: "https://parisbraininstitute.org/paris-brain-institute-research-teams/cerebral-small-vessel-disease-and-neurodegeneration"
+      - name: "IM2A"
+        pi: "Bruno Dubois"
+        url: "http://research.icm-institute.org/team/35/homepage"
+      - name: "Department of Neuroradiology, Pitié-Salpêtrière Hospital"
+        url: "http://pitiesalpetriere.aphp.fr/"
+
+funding:
+  - name: "EU Horizon Europe program, project CLARA"
+    url: "https://www.clara-center.eu/"
+  - name: "EU H2020 program, project E-DADS"
+    url: "https://e-dads.github.io/"
+  - name: "EU H2020 program, project Lemerend"
+    url: "https://www.neurodegenerationresearch.eu/wp-content/uploads/2022/06/PROJECT-LeMeReND.pdf"
+  - name: "EU H2020 program, project CADANHIS"
+    url: "https://www.ejprarediseases.org/cadanhis/"
+  - name: "ERC Starting Grant, project LEASP (S. Durrleman)"
+    url: "https://erc.europa.eu/"
+  - name: "Investissements d'avenir, IHU ICM"
+    url: "https://icm-institute.org/fr/missions-ihu/"
+  - name: "France 2030, PRAIRIE-PSAI AI Cluster"
+    url: "https://prairie-institute.fr/"
+  - name: "France 2030, PEPR Santé Numérique, Project REWIND"
+    url: "https://pepr-santenum.fr/2023/11/06/rewind/"
+  - name: "France 2030, RHU, Project Secret-Gift"
+    url: "https://anr.fr/fr/france-2030/france2030/call/recherche-hospitalo-universitaire-en-sante-rhu-appel-a-projets-vague-6-edition-2023/"
+  - name: "ANR JCJC, project ANO-NEURO"
+    url: "http://www.agence-nationale-recherche.fr/"
+  - name: "Inserm MESSIDORE program, project GALAN"
+    url: "https://iresp.net/financements/programmes-et-appels/programme-messidore/"
+  - name: "MEDITWIN project, Use case Alzheimer"
+    url: "https://www.3ds.com/newsroom/press-releases/meditwin-launch"
+  - name: "ICM Big Brain Theory Program (project ImagingDealInMS, project StratifIAD)"
+    url: "https://icm-institute.org/fr/"

@@ -1,0 +1,481 @@
+- title: "Evaluation of MRI-Based Machine Learning Approaches for Computer-Aided Diagnosis of Dementia in a Clinical Data Warehouse"
+  authors:
+    - "Bottani, Simona"
+    - "Burgos, Ninon"
+    - "Maire, Aurélien"
+    - "Saracino, Dario"
+    - "Stroër, Sebastian"
+    - "Dormont, Didier"
+    - "Colliot, Olivier"
+  venue: "Medical Image Analysis"
+  year: 2023
+  doi: "10.1016/j.media.2023.102903"
+  pdf: "https://hal.science/hal-03656136/document"
+  highlight: true
+  axis: "neuroimaging-biomarkers"
+
+- title: "Evaluation of Pseudo-Healthy Image Reconstruction for Anomaly Detection with Deep Generative Models: Application to Brain FDG PET"
+  authors:
+    - "Hassanaly, Ravi"
+    - "Brianceau, Camille"
+    - "Solal, Maëlys"
+    - "Colliot, Olivier"
+    - "Burgos, Ninon"
+  venue: "Journal of Machine Learning for Biomedical Imaging"
+  year: 2024
+  doi: "10.59275/j.melba.2024-b87a"
+  pdf: "https://hal.science/hal-04315738/document"
+  highlight: true
+  axis: "neuroimaging-biomarkers"
+
+- title: "Automatic Rating of Incomplete Hippocampal Inversions Evaluated across Multiple Cohorts"
+  authors:
+    - "Hemforth, Lisa"
+    - "Couvy-Duchesne, Baptiste"
+    - "de Matos, Kevin"
+    - "Brianceau, Camille"
+    - "Joulot, Matthieu"
+    - "Banaschewski, Tobias"
+    - "Bokde, Arun L. W."
+    - "Desrivières, Sylvane"
+    - "Flor, Herta"
+    - "Grigis, Antoine"
+    - "Garavan, Hugh"
+    - "Gowland, Penny"
+    - "Heinz, Andreas"
+    - "Brühl, Rüdiger"
+    - "Martinot, Jean-Luc"
+    - "Paillère Martinot, Marie-Laure"
+    - "Artiges, Eric"
+    - "Papadopoulos, Dimitri"
+    - "Lemaitre, Herve"
+    - "Paus, Tomas"
+    - "Poustka, Luise"
+    - "Hohman, Sarah"
+    - "Holz, Nathalie"
+    - "Fröhner, Juliane H."
+    - "Smolka, Michael N."
+    - "Vaidya, Nilakshi"
+    - "Walter, Henrik"
+    - "Whelan, Robert"
+    - "Schumann, Gunter"
+    - "Büchel, Christian"
+    - "Itterman, Bernd"
+    - "Frouin, Vincent"
+    - "Martin, Alexandre"
+    - "Cury, Claire"
+    - "Colliot, Olivier"
+  venue: "Journal of Machine Learning for Biomedical Imaging"
+  year: 2024
+  doi: "10.59275/j.melba.2024-3d4e"
+  pdf: "https://hal.science/hal-04635141/document"
+  highlight: true
+  axis: "neuroimaging-biomarkers"
+
+- title: "Automatic Motion Artefact Detection in Brain T1-Weighted Magnetic Resonance Images from a Clinical Data Warehouse Using Synthetic Data"
+  authors:
+    - "Loizillon, Sophie"
+    - "Bottani, Simona"
+    - "Maire, Aurélien"
+    - "Ströer, Sebastian"
+    - "Dormont, Didier"
+    - "Colliot, Olivier"
+    - "Burgos, Ninon"
+  venue: "Medical Image Analysis"
+  year: 2024
+  doi: "10.1016/j.media.2023.103073"
+  pdf: "https://inria.hal.science/hal-03910451/document"
+  highlight: true
+  axis: "neuroimaging-biomarkers"
+
+- title: "Predicting PET-Derived Demyelination from Multimodal MRI Using Sketcher-Refiner Adversarial Training for Multiple Sclerosis"
+  authors:
+    - "Wei, Wen"
+    - "Poirion, Emilie"
+    - "Bodini, Benedetta"
+    - "Durrleman, Stanley"
+    - "Ayache, Nicholas"
+    - "Stankoff, Bruno"
+    - "Colliot, Olivier"
+  venue: "Medical Image Analysis"
+  year: 2019
+  doi: "10.1016/j.media.2019.101546"
+  pdf: "https://hal.science/hal-02276634/document"
+  highlight: false
+  axis: "neuroimaging-biomarkers"
+
+- title: "Convolutional Neural Networks for Classification of Alzheimer's Disease: Overview and Reproducible Evaluation"
+  authors:
+    - "Wen, Junhao"
+    - "Thibeau-Sutre, Elina"
+    - "Diaz-Melo, Mauricio"
+    - "Samper-González, Jorge"
+    - "Routier, Alexandre"
+    - "Bottani, Simona"
+    - "Dormont, Didier"
+    - "Durrleman, Stanley"
+    - "Burgos, Ninon"
+    - "Colliot, Olivier"
+  venue: "Medical Image Analysis"
+  year: 2020
+  doi: "10.1016/j.media.2020.101694"
+  pdf: "https://hal.science/hal-02562504/document"
+  highlight: false
+  axis: "neuroimaging-biomarkers"
+
+- title: "Learning the Spatiotemporal Variability in Longitudinal Shape Data Sets"
+  authors:
+    - "Bône, Alexandre"
+    - "Colliot, Olivier"
+    - "Durrleman, Stanley"
+  venue: "International Journal of Computer Vision"
+  year: 2020
+  doi: "10.1007/s11263-020-01343-w"
+  pdf: "https://inria.hal.science/hal-02091549/document"
+  highlight: false
+  axis: "disease-progression"
+
+- title: "CADA-PRO, a Patient Questionnaire Measuring Key Cognitive, Motor, Emotional and Behavioral Outcomes in CADASIL"
+  authors:
+    - "Di Folco, Cécile"
+    - "Jabouley, Aude"
+    - "Reyes, Sonia"
+    - "Machado, Carla"
+    - "Guey, Stéphanie"
+    - "Hervé, Dominique"
+    - "Fernandes, Fanny"
+    - "Agossa, Joseph"
+    - "Chabriat, Hugues"
+    - "Tezenas Du Montcel, Sophie"
+  venue: "Stroke"
+  year: 2024
+  doi: "10.1161/STROKEAHA.124.047692"
+  pdf: "https://hal.science/hal-04689163/document"
+  highlight: false
+  axis: "disease-progression"
+
+- title: "AD Course Map Charts Alzheimer's Disease Progression"
+  authors:
+    - "Koval, Igor"
+    - "Bône, Alexandre"
+    - "Louis, Maxime"
+    - "Lartigue, Thomas"
+    - "Bottani, Simona"
+    - "Marcoux, Arnaud"
+    - "Samper-González, Jorge"
+    - "Burgos, Ninon"
+    - "Charlier, Benjamin"
+    - "Bertrand, Anne"
+    - "Epelbaum, Stéphane"
+    - "Colliot, Olivier"
+    - "Allassonnière, Stéphanie"
+    - "Durrleman, Stanley"
+  venue: "Scientific Reports"
+  year: 2021
+  doi: "10.1038/s41598-021-87434-1"
+  pdf: "https://inria.hal.science/hal-01964821/document"
+  highlight: true
+  axis: "disease-progression"
+
+- title: "Forecasting Individual Progression Trajectories in Huntington Disease Enables More Powered Clinical Trials"
+  authors:
+    - "Koval, Igor"
+    - "Dighiero-Brecht, Thomas"
+    - "Tobin, Allan J."
+    - "Tabrizi, Sarah J."
+    - "Scahill, Rachael I."
+    - "Tezenas Du Montcel, Sophie"
+    - "Durrleman, Stanley"
+    - "Durr, Alexandra"
+  venue: "Scientific Reports"
+  year: 2022
+  doi: "10.1038/s41598-022-18848-8"
+  pdf: "https://inria.hal.science/hal-03877293/document"
+  highlight: false
+  axis: "disease-progression"
+
+- title: "Temporal Dynamics of the Scale for the Assessment and Rating of Ataxia in Spinocerebellar Ataxias"
+  authors:
+    - "Moulaire, Paul"
+    - "Poulet, Pierre Emmanuel"
+    - "Petit, Emilien"
+    - "Klockgether, Thomas"
+    - "Durr, Alexandra"
+    - "Ashisawa, Tetsuo"
+    - "Tezenas Du Montcel, Sophie"
+  venue: "Movement Disorders"
+  year: 2023
+  doi: "10.1002/mds.29255"
+  pdf: "https://hal.science/hal-03831598/document"
+  highlight: false
+  axis: "disease-progression"
+
+- title: "SARA Captures Disparate Progression and Responsiveness in Spinocerebellar Ataxias"
+  authors:
+    - "Petit, Emilien"
+    - "Schmitz-Hübsch, Tanja"
+    - "Coarelli, Giulia"
+    - "Jacobi, Heike"
+    - "Heinzmann, Anna"
+    - "Figueroa, Karla"
+    - "Perlman, Susan"
+    - "Gomez, Christopher"
+    - "Wilmot, George"
+    - "Schmahmann, Jeremy"
+    - "Ying, Sarah"
+    - "Zesiewicz, Theresa"
+    - "Paulson, Henry"
+    - "Shakkottai, Vikram"
+    - "Bushara, Khalaf"
+    - "Kuo, Sheng-Han"
+    - "Geschwind, Michael"
+    - "Xia, Guangbin"
+    - "Pulst, Stefan"
+    - "Subramony, S."
+    - "Ewenczyk, Claire"
+    - "Brice, Alexis"
+    - "Durr, Alexandra"
+    - "Klockgether, Thomas"
+    - "Ashizawa, Tetsuo"
+    - "Tezenas Du Montcel, Sophie"
+  venue: "Journal of Neurology"
+  year: 2024
+  doi: "10.1007/s00415-024-12475-1"
+  pdf: "https://hal.sorbonne-universite.fr/hal-04607900/document"
+  highlight: false
+  axis: "disease-progression"
+
+- title: "Grey-Matter Structure Markers of Alzheimer's Disease, Alzheimer's Conversion, Functioning and Cognition: A Metaanalysis across 11 Cohorts"
+  authors:
+    - "Couvy-Duchesne, Baptiste"
+    - "Frouin, Vincent"
+    - "Bouteloup, Vincent"
+    - "Koussis, Nikitas"
+    - "Sidorenko, Julia"
+    - "Jiang, Jiyang"
+    - "Wink, Alle Meije"
+    - "Lorenzini, Luigi"
+    - "Barkhof, Frederik"
+    - "Trollor, Julian N."
+    - "Mangin, Jean-François"
+    - "Sachdev, Perminder S."
+    - "Brodaty, Henry"
+    - "Lupton, Michelle K."
+    - "Breakspear, Michael"
+    - "Colliot, Olivier"
+    - "Visscher, Peter M."
+    - "Wray, Naomi"
+  venue: "Human Brain Mapping"
+  year: 2024
+  doi: "10.1002/hbm.70089"
+  pdf: "https://hal.science/hal-04815478/document"
+  highlight: true
+  axis: "multimodal-data"
+
+- title: "A Unified Framework for Association and Prediction from Vertex-Wise Grey-Matter Structure"
+  authors:
+    - "Couvy-duchesne, Baptiste"
+    - "Strike, Lachlan T."
+    - "Zhang, Futao"
+    - "Holtz, Yan"
+    - "Zheng, Zhili"
+    - "Kemper, Kathryn E."
+    - "Yengo, Loïc"
+    - "Colliot, Olivier"
+    - "Wright, Margaret"
+    - "Wray, Naomi"
+    - "Yang, Jian"
+    - "Visscher, Peter M."
+  venue: "Human Brain Mapping"
+  year: 2020
+  doi: "10.1002/hbm.25109"
+  pdf: "https://hal.science/hal-02904458/document"
+  highlight: false
+  axis: "multimodal-data"
+
+- title: "Parsimonious Model for Mass-Univariate Vertexwise Analysis"
+  authors:
+    - "Couvy-Duchesne, Baptiste"
+    - "Zhang, Futao"
+    - "Kemper, Kathryn"
+    - "Sidorenko, Julia"
+    - "Wray, Naomi"
+    - "Visscher, Peter"
+    - "Colliot, Olivier"
+    - "Yang, Jian"
+  venue: "Journal of Medical Imaging"
+  year: 2022
+  doi: "10.1117/1.JMI.9.5.052404"
+  pdf: "https://inria.hal.science/hal-03675041/document"
+  highlight: false
+  axis: "multimodal-data"
+
+- title: "Ten years preceding a diagnosis of neurodegenerative disease in Europe and Australia: medication use, health conditions, and biomarkers associated with Alzheimer's disease, Parkinson's disease, and amyotrophic lateral sclerosis"
+  authors:
+    - "Wei, Dang"
+    - "Freydenzonb, Anna"
+    - "Guinebretiere, Octave"
+    - "Zaidi, Karim"
+    - "Yang, Fen"
+    - "Yed, Weimin"
+    - "Hammar, Niklas"
+    - "Modig, Karin"
+    - "Wray, Naomi R."
+    - "Feychting, Maria"
+    - "Hamiéh, Nadine"
+    - "Ventelou, Bruno"
+    - "Lekens, Beranger"
+    - "Gantzer, Laurene"
+    - "Durrleman, Stanley"
+    - "McRae, Allan"
+    - "Couvy-Duchesneb, Baptiste"
+    - "Fang, Fang"
+    - "Nedelec, Thomas"
+  venue: "Lancet EBioMedecine"
+  year: 2025
+  doi: "10.1016/j.ebiom.2025.105585"
+  pdf: "https://hal.science/hal-05028859v1/document"
+  highlight: false
+  axis: "neuro-epidemiology"
+
+- title: "Updated Multiple Sclerosis Incidence in France, 2011–2021"
+  authors:
+    - "Guinebretiere, Octave"
+    - "Pierret, Chloe"
+    - "Calonge, Quentin"
+    - "Januel, Edouard"
+    - "Louapre, Celine"
+    - "Nedelec, Thomas"
+  venue: "Neurology"
+  year: 2025
+  doi: "10.1212/WNL.0000000000213586"
+  pdf: "https://hal.science/PRAIRIE-IA/hal-05034515v1"
+  highlight: false
+  axis: "neuro-epidemiology"
+
+- title: "Time Trends in Incidence of Motor Neuron Diseases in France: A Comprehensive 14-Year Nationwide Study (2010-2023)"
+  authors:
+    - "Guinebretiere, Octave"
+    - "Calonge, Quentin"
+    - "Bruneteau, Gaelle"
+    - "Amador, Maria-Del-Mar"
+    - "Nedelec, Thomas"
+  venue: "European Journal of Neurology"
+  year: 2025
+  doi: "10.1111/ene.70156"
+  pdf: "https://onlinelibrary.wiley.com/doi/10.1111/ene.70156?af=R"
+  highlight: false
+  axis: "neuro-epidemiology"
+
+- title: "Visual Deep Learning-Based Explanation for Neuritic Plaques Segmentation in Alzheimer's Disease Using Weakly Annotated Whole Slide Histopathological Images"
+  authors:
+    - "Jiménez, Gabriel"
+    - "Kar, Anuradha"
+    - "Ounissi, Mehdi"
+    - "Ingrassia, Léa"
+    - "Boluda, Susana"
+    - "Delatour, Benoît"
+    - "Stimmer, Lev"
+    - "Racoceanu, Daniel"
+  venue: "Lecture Notes in Computer Science, Medical Image Computing and Computer Assisted Intervention"
+  year: 2022
+  doi: "10.1007/978-3-031-16434-7_33"
+  pdf: "https://hal.science/hal-03810578/document"
+  highlight: false
+  axis: "computational-pathology"
+
+- title: "A Meta-Graph Approach for Analyzing Whole Slide Histopathological Images of Human Brain Tissue with Alzheimer's Disease Biomarkers"
+  authors:
+    - "Jimenez, Gabriel"
+    - "Mas, Pablo"
+    - "Kar, Anuradha"
+    - "Peyrache, Julien"
+    - "Ingrassia, Lea"
+    - "Boluda, Susana"
+    - "Delatour, Benoît"
+    - "Stimmer, Lev"
+    - "Racoceanu, Daniel"
+  venue: "Medical Imaging 2023: Digital and Computational Pathology, SPIE"
+  year: 2023
+  doi: "10.1117/12.2657475"
+  pdf: "https://hal.science/hal-03936684/document"
+  highlight: false
+  axis: "computational-pathology"
+
+- title: "Tau Protein Discrete Aggregates in Alzheimer's Disease: Neuritic Plaques and Tangles Detection and Segmentation Using Computational Histopathology"
+  authors:
+    - "Maňoušková, K."
+    - "Abadie, V."
+    - "Ounissi, M."
+    - "Jimenez, G."
+    - "Stimmer, L."
+    - "Delatour, B."
+    - "Durrleman, S."
+    - "Racoceanu, D."
+  venue: "Medical Imaging 2022: Digital and Computational Pathology, SPIE"
+  year: 2022
+  doi: "10.1117/12.2613154"
+  pdf: "https://hal.science/hal-03522378/document"
+  highlight: false
+  axis: "computational-pathology"
+
+- title: "PhagoStat a Scalable and Interpretable End to End Framework for Efficient Quantification of Cell Phagocytosis in Neurodegenerative Disease Studies"
+  authors:
+    - "Ounissi, Mehdi"
+    - "Latouche, Morwena"
+    - "Racoceanu, Daniel"
+  venue: "Scientific Reports"
+  year: 2024
+  doi: "10.1038/s41598-024-56081-7"
+  pdf: "https://hal.science/hal-04067345/document"
+  highlight: false
+  axis: "software-development"
+
+- title: "Clinica: An Open Source Software Platform for Reproducible Clinical Neuroscience Studies"
+  authors:
+    - "Routier, Alexandre"
+    - "Burgos, Ninon"
+    - "Diaz, Mauricio"
+    - "Bacci, Michael"
+    - "Bottani, Simona"
+    - "El-Rifai, Omar"
+    - "Fontanella, Sabrina"
+    - "Gori, Pietro"
+    - "Guillon, Jérémy"
+    - "Guyot, Alexis"
+    - "Hassanaly, Ravi"
+    - "Jacquemont, Thomas"
+    - "Lu, Pascal"
+    - "Marcoux, Arnaud"
+    - "Moreau, Tristan"
+    - "Samper-González, Jorge"
+    - "Teichmann, Marc"
+    - "Thibeau-Sutre, Elina"
+    - "Vaillant, Ghislain"
+    - "Wen, Junhao"
+    - "Wild, Adam"
+    - "Habert, Marie-Odile"
+    - "Durrleman, Stanley"
+    - "Colliot, Olivier"
+  venue: "Frontiers in Neuroinformatics"
+  year: 2021
+  doi: "10.3389/fninf.2021.689675"
+  pdf: "https://inria.hal.science/hal-02308126/document"
+  highlight: true
+  axis: "software-development"
+
+- title: "ClinicaDL: An Open-Source Deep Learning Software for Reproducible Neuroimaging Processing"
+  authors:
+    - "Thibeau-Sutre, Elina"
+    - "Diaz, Mauricio"
+    - "Hassanaly, Ravi"
+    - "Routier, Alexandre M."
+    - "Dormont, Didier"
+    - "Colliot, Olivier"
+    - "Burgos, Ninon"
+  venue: "Computer Methods and Programs in Biomedicine"
+  year: 2022
+  doi: "10.1016/j.cmpb.2022.106818"
+  pdf: "https://hal.science/hal-03351976/document"
+  highlight: true
+  axis: "software-development"
