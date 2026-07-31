@@ -39,11 +39,12 @@ const Renderers = {
       this.container = document.getElementById(containerId);
       this.dataPath = dataPath;
       this.currentFilter = 'all';
-      this.renderFilters();
+      this.filtersRendered = false;
       this.loadData();
     },
 
     renderFilters() {
+      if (this.filtersRendered) return;
       const filterContainer = document.createElement('div');
       filterContainer.className = 'team-filters';
       filterContainer.innerHTML = `
@@ -62,10 +63,12 @@ const Renderers = {
           this.render(this.data);
         }
       });
+      this.filtersRendered = true;
     },
 
     async loadData() {
       this.data = await DataLoader.loadYAML(this.dataPath);
+      this.renderFilters();
       this.render(this.data);
     },
 
@@ -81,22 +84,22 @@ const Renderers = {
       const photo = p.photo ? `images/${p.photo}` : 'images/icons/avatar-placeholder.png';
       return `
         <article class="team-card">
-          <img class="team-photo" src="${photo}" alt="${p.name}" loading="lazy">
+          <img class="team-photo" src="${photo}" alt="${p.name}" loading="lazy" onerror="this.src='images/icons/avatar-placeholder.png'">
           <h3 class="team-name">${p.name}</h3>
           <p class="team-role">${p.role}</p>
           <div class="team-links">
-            ${p.website ? `<a href="${p.website}" target="_blank" rel="noopener" aria-label="${p.name} website"><img src="images/icons/website.svg" alt=""></a>` : ''}
-            ${p.email ? `<a href="mailto:${p.email}" aria-label="Email ${p.name}"><img src="images/icons/email.svg" alt=""></a>` : ''}
-            ${p.scholar ? `<a href="${p.scholar}" target="_blank" rel="noopener" aria-label="${p.name} Google Scholar"><img src="images/icons/scholar.svg" alt=""></a>` : ''}
-            ${p.linkedin ? `<a href="${p.linkedin}" target="_blank" rel="noopener" aria-label="${p.name} LinkedIn"><img src="images/icons/linkedin.svg" alt=""></a>` : ''}
-            ${p.twitter ? `<a href="${p.twitter}" target="_blank" rel="noopener" aria-label="${p.name} Twitter"><img src="images/icons/twitter.svg" alt=""></a>` : ''}
+            ${p.website ? `<a href="${p.website}" target="_blank" rel="noopener" aria-label="${p.name} website"><img src="images/icons/website.svg" alt="Website"></a>` : ''}
+            ${p.email ? `<a href="mailto:${p.email}" aria-label="Email ${p.name}"><img src="images/icons/email.svg" alt="Email"></a>` : ''}
+            ${p.scholar ? `<a href="${p.scholar}" target="_blank" rel="noopener" aria-label="${p.name} Google Scholar"><img src="images/icons/scholar.svg" alt="Scholar"></a>` : ''}
+            ${p.linkedin ? `<a href="${p.linkedin}" target="_blank" rel="noopener" aria-label="${p.name} LinkedIn"><img src="images/icons/linkedin.svg" alt="LinkedIn"></a>` : ''}
+            ${p.twitter ? `<a href="${p.twitter}" target="_blank" rel="noopener" aria-label="${p.name} Twitter"><img src="images/icons/twitter.svg" alt="Twitter"></a>` : ''}
           </div>
         </article>
       `;
     }
   },
 
-  // Publication list grouped by year
+  // Publication list grouped by research axis (category)
   PublicationList: {
     init(containerId, dataPath) {
       this.container = document.getElementById(containerId);
@@ -110,21 +113,48 @@ const Renderers = {
     },
 
     render(data) {
-      // Group by year
-      const byYear = data.reduce((acc, pub) => {
-        const year = pub.year || 'Other';
-        if (!acc[year]) acc[year] = [];
-        acc[year].push(pub);
+      // Group by axis
+      const axisOrder = [
+        'neuroimaging-biomarkers',
+        'disease-progression',
+        'multimodal-data',
+        'neuro-epidemiology',
+        'computational-pathology',
+        'software-development'
+      ];
+      const axisLabels = {
+        'neuroimaging-biomarkers': 'Neuroimaging biomarkers and decision support systems',
+        'disease-progression': 'Disease progression modeling with longitudinal data',
+        'multimodal-data': 'High-dimensional multimodal data (genetic, environment, imaging)',
+        'neuro-epidemiology': 'Neuro-epidemiology and real-world data',
+        'computational-pathology': 'Computational pathology and high-content microscopy',
+        'software-development': 'Software development'
+      };
+
+      const byAxis = data.reduce((acc, pub) => {
+        const axis = pub.axis || 'Other';
+        if (!acc[axis]) acc[axis] = [];
+        acc[axis].push(pub);
         return acc;
       }, {});
 
-      // Sort years descending
-      const years = Object.keys(byYear).sort((a, b) => b - a);
+      let html = '';
+      axisOrder.forEach(axis => {
+        if (byAxis[axis] && byAxis[axis].length) {
+          html += `<h2 style="text-align: center; margin: 2.5rem 0 1rem; color: var(--color-secondary);">${axisLabels[axis] || axis}</h2>`;
+          html += byAxis[axis].map(pub => this.itemHTML(pub)).join('');
+        }
+      });
 
-      this.container.innerHTML = years.map(year => `
-        <h3 style="margin: 2rem 0 1rem; color: var(--color-secondary);">${year}</h3>
-        ${byYear[year].map(pub => this.itemHTML(pub)).join('')}
-      `).join('');
+      // Any remaining items not in axisOrder
+      Object.keys(byAxis).forEach(axis => {
+        if (!axisOrder.includes(axis) && byAxis[axis].length) {
+          html += `<h2 style="text-align: center; margin: 2.5rem 0 1rem; color: var(--color-secondary);">${axisLabels[axis] || axis}</h2>`;
+          html += byAxis[axis].map(pub => this.itemHTML(pub)).join('');
+        }
+      });
+
+      this.container.innerHTML = html;
     },
 
     itemHTML(p) {
@@ -143,7 +173,7 @@ const Renderers = {
     }
   },
 
-  // Software grid
+  // Software list (vertical cards, not grid)
   SoftwareGrid: {
     init(containerId, dataPath) {
       this.container = document.getElementById(containerId);
@@ -209,7 +239,14 @@ const Renderers = {
         this.container.innerHTML = '<p style="text-align:center; color: var(--color-text-muted);">No active positions at the moment.</p>';
         return;
       }
-      this.container.innerHTML = data.map(job => this.cardHTML(job)).join('');
+
+      const internshipNote = `
+        <div class="internship-note" style="margin-bottom: 2rem; padding: 1rem; background: var(--color-bg-alt); border-radius: var(--border-radius); border-left: 4px solid var(--color-secondary);">
+          <strong>Please note:</strong> we only host internships of approximately six months (i.e., master's (M2) internships and <em>PFE</em>), with priority given to candidates considering pursuing a PhD.
+        </div>
+      `;
+
+      this.container.innerHTML = internshipNote + data.map(job => this.cardHTML(job)).join('');
     },
 
     cardHTML(j) {
@@ -219,7 +256,6 @@ const Renderers = {
           <header class="job-header">
             <h3 class="job-title">${j.title}</h3>
             <div class="job-meta">
-              ${j.category ? `<span><strong>Type:</strong> ${j.category}</span>` : ''}
               ${j.duration ? `<span><strong>Duration:</strong> ${j.duration}</span>` : ''}
               ${dateStr ? `<span><strong>Start:</strong> ${dateStr}</span>` : ''}
             </div>
@@ -277,18 +313,16 @@ const Renderers = {
         `;
       }
 
-      // Collaborations
+      // Collaborations - render as lists, not columns
       if (data.collaborations) {
         const collabs = data.collaborations;
         html += `
           <section class="research-section">
             <h2>Collaborations</h2>
-            <div class="research-collabs">
-              ${collabs.external?.methodical ? this.collabGroup('External - Methodological', collabs.external.methodical) : ''}
-              ${collabs.external?.medical ? this.collabGroup('External - Medical', collabs.external.medical) : ''}
-              ${collabs.local?.methodical ? this.collabGroup('Local - Methodological', collabs.local.methodical) : ''}
-              ${collabs.local?.medical ? this.collabGroup('Local - Medical', collabs.local.medical) : ''}
-            </div>
+            ${collabs.external?.methodical ? this.collabGroup('External - Methodological', collabs.external.methodical) : ''}
+            ${collabs.external?.medical ? this.collabGroup('External - Medical', collabs.external.medical) : ''}
+            ${collabs.local?.methodical ? this.collabGroup('Local - Methodological', collabs.local.methodical) : ''}
+            ${collabs.local?.medical ? this.collabGroup('Local - Medical', collabs.local.medical) : ''}
           </section>
         `;
       }
@@ -310,14 +344,12 @@ const Renderers = {
 
     collabGroup(title, items) {
       return `
-        <div class="collab-group">
-          <h3>${title}</h3>
-          <ul class="collab-list">
-            ${items.map(item => `
-              <li>${item.url ? `<a href="${item.url}" target="_blank" rel="noopener">${item.name}</a>` : item.name}${item.pis ? ` (${Array.isArray(item.pis) ? item.pis.join(', ') : item.pis})` : ''}</li>
-            `).join('')}
-          </ul>
-        </div>
+        <h3 style="margin-top: 2rem; color: var(--color-secondary);">${title}</h3>
+        <ul class="collab-list">
+          ${items.map(item => `
+            <li>${item.url ? `<a href="${item.url}" target="_blank" rel="noopener">${item.name}</a>` : item.name}${item.pis ? ` (${Array.isArray(item.pis) ? item.pis.join(', ') : item.pis})` : ''}</li>
+          `).join('')}
+        </ul>
       `;
     }
   },
