@@ -33,20 +33,13 @@ docs/
 - **Data-driven** — Content lives in YAML files in `docs/data/`. JavaScript loads YAML and renders HTML components.
 - **GitHub Pages** — Push to `main` branch → automatic deployment.
 
-## Updating Content (No Code Required)
+## Quick Updates (Most Common Changes)
 
-Team members can edit content directly on GitHub.com:
+These are the files that change most often. Team members can edit them via **Pull Requests**:
 
-1. Go to the repository on GitHub
-2. Navigate to `docs/data/`
-3. Click the file to edit (e.g., `people.yaml`)
-4. Click the pencil icon ✏️ to edit
-5. Make changes, commit directly to `main`
-6. Site updates automatically (~1 minute)
+### 1. Adding a Team Member
 
-### Adding a Team Member
-
-Edit `docs/data/people.yaml`:
+**Edit `docs/data/people.yaml`:**
 
 ```yaml
 - name: "First Last"
@@ -60,8 +53,43 @@ Edit `docs/data/people.yaml`:
   twitter: "https://twitter.com/..."
 ```
 
-- Add photo to `docs/images/people/carre/` (square format, naming: `first-last.jpg`)
-- Commit → appears on People page with category filter
+**Steps:**
+1. Add square photo to `docs/images/people/carre/` (naming: `first-last.jpg`)
+2. Open `docs/data/people.yaml` on GitHub → pencil icon ✏️
+3. Add entry at appropriate position (categories grouped)
+4. **Create a Pull Request** (not direct commit to `main`)
+5. Once approved & merged → site updates automatically (~1 min)
+
+### 2. Adding a Job Offer
+
+**Edit `docs/data/jobs.yaml`:**
+
+```yaml
+- title: "PhD: Project Title"
+  year: 2025
+  month: 9
+  category: "phd"          # phd | postdoc | engineer | intern
+  duration: "3 years"
+  start_date: "2025-10-01"
+  contact: "email@domain.org"
+  pdf: "jobs/2025/filename.pdf"
+  active: true             # false to hide
+  description: ""          # optional, shown on job card
+```
+
+**Steps:**
+1. Add PDF to `docs/jobs/YYYY/` (create year folder if needed)
+2. Open `docs/data/jobs.yaml` on GitHub → pencil icon ✏️
+3. Add entry at top (sorted by date)
+4. **Create a Pull Request**
+5. Only entries with `active: true` appear on the Jobs page
+6. Set `active: false` to archive old positions
+
+---
+
+## Advanced Updates (Maintainers)
+
+These files change less frequently. Require familiarity with YAML structure.
 
 ### Adding a Publication
 
@@ -89,7 +117,6 @@ Edit `docs/data/software.yaml`:
   icon: "images/icons/software/icon.png"
   description: |
     Multi-line description of the software.
-    Supports plain text (Markdown not needed here).
   references:
     - title: "Reference paper title"
       venue: "Journal"
@@ -103,7 +130,7 @@ Edit `docs/data/software.yaml`:
 
 ### Updating Research Content
 
-Edit `docs/data/research.yaml`. Supports Markdown in text fields:
+Edit `docs/data/research.yaml` (supports Markdown in text fields):
 
 ```yaml
 context: |
@@ -129,26 +156,23 @@ funding:
     url: "https://..."
 ```
 
-### Adding a Job Offer
+---
 
-1. Add PDF to `docs/jobs/YYYY/` (create year folder if needed)
-2. Edit `docs/data/jobs.yaml`:
+## Contribution Workflow
 
-```yaml
-- title: "PhD: Project Title"
-  year: 2025
-  month: 9
-  category: "phd"          # phd | postdoc | engineer | intern
-  duration: "3 years"
-  start_date: "2025-10-01"
-  contact: "email@domain.org"
-  pdf: "jobs/2025/filename.pdf"
-  active: true             # false to hide
-  description: ""          # optional, shown on job card
-```
+**All changes must go through a Pull Request:**
 
-- Only entries with `active: true` appear on the Jobs page
-- Set `active: false` to archive old positions
+1. Go to the repository on GitHub
+2. Navigate to `docs/data/` → click the file to edit (e.g., `people.yaml`)
+3. Click the pencil icon ✏️ to edit
+4. Make changes
+5. **Create a new branch** → **Propose changes** → **Create Pull Request**
+6. Request review from a maintainer
+7. Once approved & merged → GitHub Pages auto-deploys (~1 minute)
+
+This ensures changes are reviewed and avoids accidental breaks.
+
+---
 
 ## Design Customization
 
