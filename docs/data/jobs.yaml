@@ -5,7 +5,7 @@
   duration: "3 years"
   start_date: "2026-09-01"
   contact: "reuben.dorent@inria.fr"
-  pdf: "jobs/2026/2026_BrainTumorRegistration_phd.pdf"
+  pdf: "job_offers/2026/2026_BrainTumorRegistration_phd.pdf"
   active: true
   description: ""
 
@@ -16,8 +16,8 @@
   duration: "6 months"
   start_date: "2026-03-01"
   contact: "ninon.burgos@icm-institute.org"
-  pdf: "jobs/2026/2026_OptimalT_internship.pdf"
-  active: true
+  pdf: "job_offers/2026/2026_OptimalT_internship.pdf"
+  active: false
   description: ""
 
 - title: "Internship: Synthetic Quality Control for Brain MRI"
@@ -27,6 +27,6 @@
   duration: "6 months"
   start_date: "2026-04-01"
   contact: "ninon.burgos@icm-institute.org"
-  pdf: "jobs/2026/2026_SynthQC_internship.pdf"
-  active: true
+  pdf: "job_offers/2026/2026_SynthQC_internship.pdf"
+  active: false
   description: ""

@@ -109,6 +109,14 @@ p {
   margin: 0 auto;
 }
 
+.axis-title {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -303,6 +311,13 @@ p {
   margin: 0;
 }
 
+.footer-bottom {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  padding-top: 1rem;
+}
+
 .hero {
   padding-top: calc(var(--header-height) + 3rem);
   padding-bottom: 3rem;
@@ -463,6 +478,7 @@ p {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
   line-height: 1.4;
+  color: var(--color-primary);
 }
 
 .publication-meta {
@@ -500,6 +516,23 @@ p {
   width: 80px;
   height: 80px;
   margin-bottom: 1rem;
+}
+
+.software-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.software-header .software-icon {
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.software-header .software-title {
+  margin-bottom: 0;
 }
 
 .software-title {
@@ -676,6 +709,16 @@ p {
   color: var(--color-secondary);
   position: absolute;
   left: 0;
+}
+
+.research-content-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.intro-text p {
+  text-align: justify;
 }
 
 .page-header {
