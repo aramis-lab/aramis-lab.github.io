@@ -463,7 +463,7 @@ const Renderers = {
       // Axes
       if (data.axes && data.axes.length) {
         html += `
-          <section class="research-section">
+          <section class="research-section" id="research-axes">
             <h2>Main Research Axes</h2>
             ${data.axes.map(axis => `
               <article class="research-axis">
@@ -480,7 +480,7 @@ const Renderers = {
       if (data.collaborations) {
         const collabs = data.collaborations;
         html += `
-          <section class="research-section">
+          <section class="research-section" id="collaborations">
             <h2>Collaborations</h2>
             ${collabs.international ? this.collabGroup('International', collabs.international) : ''}
             ${collabs.national ? this.collabGroup('National', collabs.national) : ''}
@@ -501,7 +501,13 @@ const Renderers = {
         `;
       }
 
-      this.container.innerHTML = html;
+      // Buttons linking to each section
+      const sections = document.createElement('div');
+      sections.innerHTML = html;
+      const nav = Array.from(sections.querySelectorAll('.research-section[id]'))
+        .map(sec => `<a href="#${sec.id}">${sec.querySelector('h2').textContent}</a>`).join('');
+
+      this.container.innerHTML = `<nav class="section-nav" aria-label="Page sections">${nav}</nav>` + html;
 
       // Handle hash navigation after rendering
       if (window.location.hash) {
@@ -510,41 +516,6 @@ const Renderers = {
           target.scrollIntoView({ behavior: 'smooth' });
         }
       }
-
-      // Add table of contents after rendering
-      this.addTableOfContents();
-    },
-
-    addTableOfContents() {
-      const headings = this.container.querySelectorAll('h2, h3');
-      if (headings.length < 3) return;
-
-      const toc = document.createElement('nav');
-      toc.className = 'table-of-contents';
-      toc.innerHTML = `
-        <button class="toc-toggle" aria-label="Toggle table of contents">
-          <span class="toc-icon">&#9776;</span> Contents
-        </button>
-        <ul class="toc-list" hidden>
-          ${Array.from(headings).map(h => {
-            const id = h.id || h.textContent.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-            h.id = id;
-            const level = h.tagName.toLowerCase();
-            return `<li class="toc-${level}"><a href="#${id}">${h.textContent}</a></li>`;
-          }).join('')}
-        </ul>
-      `;
-
-      // Insert at the beginning of the container
-      this.container.insertBefore(toc, this.container.firstChild);
-
-      // Toggle functionality
-      const toggle = toc.querySelector('.toc-toggle');
-      const list = toc.querySelector('.toc-list');
-      toggle.addEventListener('click', () => {
-        const hidden = list.toggleAttribute('hidden');
-        toggle.setAttribute('aria-expanded', !hidden);
-      });
     },
 
     collabGroup(title, items) {
