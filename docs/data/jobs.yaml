@@ -6,7 +6,7 @@
   start_date: "2026-09-01"
   contact: "reuben.dorent@inria.fr"
   pdf: "job_offers/2026/2026_BrainTumorRegistration_phd.pdf"
-  active: true
+  active: false
   description: ""
 
 - title: "Internship: Optimal Transport for Medical Imaging"
