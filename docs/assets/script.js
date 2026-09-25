@@ -452,7 +452,8 @@ const Renderers = {
       // Context
       if (data.context) {
         html += `
-          <section class="research-section">
+          <section class="research-section" id="context">
+            <h2>Context and General Aim</h2>
             <div class="research-content-text">
               ${marked.parse(data.context)}
             </div>
