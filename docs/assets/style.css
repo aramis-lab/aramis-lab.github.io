@@ -201,19 +201,23 @@ p {
 }
 
 @media (prefers-color-scheme: dark) {
-  .logo .logo-light {
+  .logo .logo-light,
+  .footer-partners .logo-light {
     display: block;
   }
-  .logo .logo-dark {
+  .logo .logo-dark,
+  .footer-partners .logo-dark {
     display: none;
   }
 }
 
 @media (prefers-color-scheme: light) {
-  .logo .logo-light {
+  .logo .logo-light,
+  .footer-partners .logo-light {
     display: none;
   }
-  .logo .logo-dark {
+  .logo .logo-dark,
+  .footer-partners .logo-dark {
     display: block;
   }
 }
