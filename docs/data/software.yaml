@@ -46,6 +46,7 @@
 
 - name: "Leaspy"
   icon: "images/icons/leaspy/leaspy_logo-300x180.png"
+  iconDark: "images/icons/leaspy/leaspy_logo_white-300x180.png"
   description: |
     Leaspy is a software package for the statistical analysis of longitudinal data, particularly medical data that comes in a form of repeated observations of patients at different time-points. Considering these series of short-term data, the software aims at: recombining them to reconstruct the long-term spatio-temporal trajectory of evolution; positioning each patient observations relatively to the group-average timeline, in term of both temporal differences (time shift and acceleration factor) and spatial differences (different sequences of events, spatial pattern of progression); quantifying impact of cofactors (gender, genetic mutation, environmental factors) on the evolution of the signal; imputing missing values; predicting future observations; simulating virtual patients to un-bias the initial cohort or mimics its characteristics.
   references:
