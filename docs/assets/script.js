@@ -257,6 +257,15 @@ const Renderers = {
         'reproducibility-validation': 'Reproducibility, Benchmarking and Validation: Rigorous Practices to Increase Impact',
         'clinical-translation': 'Translating Computational Innovation into Medical Research and Clinical Practice'
       };
+      // Short labels for the jump links (full title shown on hover)
+      const axisShortLabels = {
+        'representation-learning': 'Multimodal Representation Learning',
+        'disease-progression': 'Disease Progression Modelling',
+        'methodological-challenges': 'Real-World Data',
+        'computational-pathology': 'Computational Pathology',
+        'reproducibility-validation': 'Reproducibility & Validation',
+        'clinical-translation': 'Clinical Translation'
+      };
 
       const byAxis = data.reduce((acc, pub) => {
         const axis = pub.axis || 'Other';
@@ -272,7 +281,7 @@ const Renderers = {
       // Jump links to each axis section
       let html = `
         <nav class="axis-nav" aria-label="Research axes">
-          ${axes.map(axis => `<a href="#${axis}">${axisLabels[axis] || axis}</a>`).join('')}
+          ${axes.map(axis => `<a href="#${axis}" title="${axisLabels[axis] || axis}">${axisShortLabels[axis] || axisLabels[axis] || axis}</a>`).join('')}
         </nav>
       `;
       axes.forEach(axis => {
