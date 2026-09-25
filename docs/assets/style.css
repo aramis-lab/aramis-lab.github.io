@@ -200,6 +200,24 @@ p {
   width: auto;
 }
 
+@media (prefers-color-scheme: dark) {
+  .logo .logo-light {
+    display: block;
+  }
+  .logo .logo-dark {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .logo .logo-light {
+    display: none;
+  }
+  .logo .logo-dark {
+    display: block;
+  }
+}
+
 .nav {
   display: flex;
   align-items: center;
