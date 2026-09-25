@@ -9,7 +9,7 @@
       venue: "Frontiers in Neuroinformatics"
       year: 2021
       doi: "10.3389/fninf.2021.689675"
-      pdf: "https://hal.inria.fr/hal-02549242/document"
+      pdf: "https://inria.hal.science/hal-02308126/document"
     - title: "Convolutional Neural Networks for Classification of Alzheimer's Disease: Overview and Reproducible Evaluation"
       venue: "Medical Image Analysis"
       year: 2020
@@ -18,7 +18,7 @@
     - title: "Reproducible evaluation of classification methods in Alzheimer's disease: Framework and application to MRI and PET data"
       venue: "Neuroimage"
       year: 2018
-      doi: "10.1016/j.neuroimage.2018.08.050"
+      doi: "10.1016/j.neuroimage.2018.08.042"
       pdf: "https://hal.inria.fr/hal-01858384/document"
     - title: "An Automated Pipeline for the Analysis of PET Data on the Cortical Surface"
       venue: "Frontiers in Neuroinformatics"
@@ -36,10 +36,10 @@
     ClinicaDL is a Python open-source software for neuroimaging data processing with deep learning. This software includes many functionalities, such as neuroimaging preprocessing, synthetic dataset generation, label definition, data split with similar demographics, architecture search, network training, performance evaluation and trained network interpretation. The three main objectives of ClinicaDL are to (1) help manipulate neuroimaging data sets, (2) prevent data leakage from biasing results and (3) reproduce deep learning experiments.
   references:
     - title: "ClinicaDL: an open-source deep learning software for reproducible neuroimaging processing"
-      venue: "HAL Preprint"
-      year: 2021
-      doi: ""
-      pdf: "https://www.frontiersin.org/articles/10.3389/fninf.2018.00094/pdf"
+      venue: "Computer Methods and Programs in Biomedicine"
+      year: 2022
+      doi: "10.1016/j.cmpb.2022.106818"
+      pdf: "https://hal.science/hal-03351976/document"
   github: "https://github.com/aramis-lab/clinicaDL"
   website: "https://clinicadl.readthedocs.io/en/stable/"
   email: "ninon.burgos@cnrs.fr"
@@ -54,7 +54,7 @@
       venue: "Scientific Reports"
       year: 2021
       doi: "10.1038/s41598-021-87434-1"
-      pdf: "http://www.jmlr.org/papers/volume18/17-197/17-197.pdf"
+      pdf: "https://www.nature.com/articles/s41598-021-87434-1.pdf"
     - title: "A Bayesian mixed-effects model to learn trajectories of changes from repeated manifold-valued observations"
       venue: "Journal of Machine Learning Research (JMLR)"
       year: 2017
