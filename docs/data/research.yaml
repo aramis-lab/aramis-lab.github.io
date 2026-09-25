@@ -1,7 +1,7 @@
 context: |
   The tremendous progress of neuroimaging, genomic and biomarker technologies has allowed capturing various characteristics of brain diseases in living patients. Collection of multimodal data in large patient databases provides a comprehensive view of brain alterations, biological processes, genetic risk factors and symptoms. The team aims to build numerical models of brain diseases from multimodal patient data using appropriate data-driven approaches. To this end, we develop new data representations and statistical learning approaches that can integrate multiple types of data: neuroimaging, biomarkers, clinical and omics data (genetics, transcriptomics).
 
-  In particular, we develop computational and statistical methods to analyse multimodal patient data in brain disorders, from representation learning and disease progression modelling to addressing real-world data challenges and ensuring rigorous validation for clinical translation. We apply these models to a spectrum of brain disorders (Alzheimer's disease and other dementias, multiple sclerosis, Parkinson's disease, brain tumours, etc.). They shall allow deepening our understanding of neurological diseases, developing new decision support systems for diagnosis, prognosis and design of clinical trials, as well as addressing the methodological challenges of real-world data and ensuring rigorous validation and reproducibility of our approaches.
+  In particular, we develop computational and statistical methods to analyse multimodal patient data in brain disorders, from representation learning and disease progression modelling to addressing real-world data challenges and ensuring rigorous validation for clinical translation. We apply these models to a spectrum of brain disorders (Alzheimer's disease and other dementias, multiple sclerosis, Parkinson's disease, brain tumours, etc.). They shall help deepen our understanding of neurological diseases, develop new decision support systems for diagnosis, prognosis and design of clinical trials, and address the methodological challenges of real-world data and ensuring rigorous validation and reproducibility of our approaches.
 
 axes:
   - id: "representation-learning"
@@ -84,13 +84,13 @@ collaborations:
         pi: "J.-B. Poline"
         focus: "Software development for open and reproducible neuroimaging research"
         url: ""
-      - name: "MIT CSAIL, Boston, USA"
+      - name: "MIT CSAIL, Cambridge, USA"
         pi: "P. Golland"
         focus: "Representation learning"
         url: ""
       - name: "Portland State University, USA"
         pi: "B. Jedynak"
-        focus: "Longitudinal data analysis, differential equations, prediction power inference"
+        focus: "Longitudinal data analysis, differential equations, prediction-powered inference"
         url: ""
       - name: "Technical University of Munich, Germany"
         pi: "N. Navab"
@@ -142,7 +142,7 @@ collaborations:
       pi: "T. Lebouvier"
       focus: "Real-world health data"
       url: ""
-    - name: "Neuroradiology department, CHU Lille"
+    - name: "Department of Neuroradiology, CHU Lille"
       pi: "G. Kuchcinski"
       focus: "AI-based tools to harness the full potential of clinical data warehouses in neuroimaging"
       url: ""
@@ -164,19 +164,19 @@ collaborations:
       pi: "I. Le Ber"
       focus: "Genetic forms of frontotemporal dementia"
       url: ""
-    - name: "ICM FTD Team"
+    - name: "ICM FTD team"
       pi: "I. Le Ber, M. Latouche"
       focus: "Multimodal analysis of imaging and transcriptomic data in frontotemporal dementia"
       url: ""
-    - name: "ICM FTD Team"
+    - name: "ICM FTD team"
       pi: "T. Valero Cabre"
       focus: "Anomaly detection"
       url: ""
-    - name: "ICM MS Team and Department of Neurology, Pitié-Salpêtrière Hospital"
+    - name: "ICM MS team and Department of Neurology, Pitié-Salpêtrière Hospital"
       pi: "B. Stankoff"
       focus: "Multiple sclerosis, analysis of choroid plexuses, imaging genetics"
       url: ""
-    - name: "ICM MS Team and Pitié-Salpêtrière Hospital"
+    - name: "ICM MS team and Pitié-Salpêtrière Hospital"
       pi: "C. Louapre"
       focus: "Multiple sclerosis, national registry"
       url: ""
