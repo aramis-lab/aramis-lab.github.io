@@ -265,24 +265,28 @@ const Renderers = {
         return acc;
       }, {});
 
-      let html = '';
-      axisOrder.forEach(axis => {
-        if (byAxis[axis] && byAxis[axis].length) {
-          html += `<h2 class="axis-title"><a href="research.html#${axis}">${axisLabels[axis] || axis}</a></h2>`;
-          html += `<p class="axis-link"><a href="research.html#${axis}">Read about this research theme &rarr;</a></p>`;
-          html += byAxis[axis].map(pub => this.itemHTML(pub)).join('');
-        }
-      });
+      // Axes in display order, then any not listed in axisOrder
+      const axes = axisOrder.filter(axis => byAxis[axis] && byAxis[axis].length)
+        .concat(Object.keys(byAxis).filter(axis => !axisOrder.includes(axis) && byAxis[axis].length));
 
-      // Any remaining items not in axisOrder
-      Object.keys(byAxis).forEach(axis => {
-        if (!axisOrder.includes(axis) && byAxis[axis].length) {
-          html += `<h2 class="axis-title">${axisLabels[axis] || axis}</h2>`;
-          html += byAxis[axis].map(pub => this.itemHTML(pub)).join('');
-        }
+      // Jump links to each axis section
+      let html = `
+        <nav class="axis-nav" aria-label="Research axes">
+          ${axes.map(axis => `<a href="#${axis}">${axisLabels[axis] || axis}</a>`).join('')}
+        </nav>
+      `;
+      axes.forEach(axis => {
+        html += `<h2 class="axis-title" id="${axis}">${axisLabels[axis] || axis}</h2>`;
+        html += byAxis[axis].map(pub => this.itemHTML(pub)).join('');
       });
 
       this.container.innerHTML = html;
+
+      // Handle hash navigation after rendering
+      if (window.location.hash) {
+        const target = this.container.querySelector(window.location.hash);
+        if (target) target.scrollIntoView();
+      }
     },
 
     itemHTML(p) {
@@ -451,7 +455,7 @@ const Renderers = {
             <h2>Main Research Axes</h2>
             ${data.axes.map(axis => `
               <article class="research-axis">
-                <h3${axis.id ? ` id="${axis.id}"` : ''}>${axis.title}</h3>
+                <h3>${axis.title}</h3>
                 ${axis.pis ? `<p class="pis">PIs involved: ${Array.isArray(axis.pis) ? axis.pis.join(', ') : axis.pis}</p>` : ''}
                 <div class="research-content-text">${marked.parse(axis.content || '')}</div>
               </article>
