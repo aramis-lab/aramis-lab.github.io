@@ -174,7 +174,8 @@ context: |
   Intro paragraph with **bold** and [links](url).
 
 axes:
-  - title: "Axis Title"
+  - id: "representation-learning"  # must match a publication `axis` value (used for links from Publications)
+    title: "Axis Title"
     pis: ["PI Name 1", "PI Name 2"]
     content: |
       Detailed description with *markdown* support.

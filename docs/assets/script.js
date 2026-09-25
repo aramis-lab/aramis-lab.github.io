@@ -268,7 +268,8 @@ const Renderers = {
       let html = '';
       axisOrder.forEach(axis => {
         if (byAxis[axis] && byAxis[axis].length) {
-          html += `<h2 class="axis-title">${axisLabels[axis] || axis}</h2>`;
+          html += `<h2 class="axis-title"><a href="research.html#${axis}">${axisLabels[axis] || axis}</a></h2>`;
+          html += `<p class="axis-link"><a href="research.html#${axis}">Read about this research theme &rarr;</a></p>`;
           html += byAxis[axis].map(pub => this.itemHTML(pub)).join('');
         }
       });
@@ -342,7 +343,7 @@ const Renderers = {
         </details>
       ` : '';
 
-      const iconGitHub = `<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>`;
+      const iconGitHub = `<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>`;
       const iconWebsite = `<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>`;
       const iconEmail = `<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>`;
 
@@ -450,7 +451,7 @@ const Renderers = {
             <h2>Main Research Axes</h2>
             ${data.axes.map(axis => `
               <article class="research-axis">
-                <h3>${axis.title}</h3>
+                <h3${axis.id ? ` id="${axis.id}"` : ''}>${axis.title}</h3>
                 ${axis.pis ? `<p class="pis">PIs involved: ${Array.isArray(axis.pis) ? axis.pis.join(', ') : axis.pis}</p>` : ''}
                 <div class="research-content-text">${marked.parse(axis.content || '')}</div>
               </article>
@@ -476,7 +477,7 @@ const Renderers = {
       if (data.funding && data.funding.length) {
         html += `
           <section class="research-section" id="funding">
-            <h2>Main funding sources</h2>
+            <h2>Main Funding Sources</h2>
             <ul class="funding-list">
               ${data.funding.map(f => `<li>${f.name}</li>`).join('')}
             </ul>

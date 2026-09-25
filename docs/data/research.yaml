@@ -4,32 +4,38 @@ context: |
   In particular, we develop computational and statistical methods to analyse multimodal patient data in brain disorders, from representation learning and disease progression modelling to addressing real-world data challenges and ensuring rigorous validation for clinical translation. We apply these models to a spectrum of brain disorders (Alzheimer's disease and other dementias, multiple sclerosis, Parkinson's disease, brain tumours, etc.). They shall allow deepening our understanding of neurological diseases, developing new decision support systems for diagnosis, prognosis and design of clinical trials, as well as addressing the methodological challenges of real-world data and ensuring rigorous validation and reproducibility of our approaches.
 
 axes:
-  - title: "Representation Learning for Multimodal Medical Data"
+  - id: "representation-learning"
+    title: "Representation Learning for Multimodal Medical Data"
     pis: ["R. Dorent", "N. Burgos", "O. Colliot"]
     content: |
       Neuroimaging technologies produce heterogeneous data modalities that capture complementary aspects of brain diseases. We develop advanced representation learning approaches to integrate information from multiple imaging sources such as MRI and PET, as well as clinical and omics data. Our work focuses on learning latent spaces that capture shared biological variability across modalities while accounting for their different characteristics. We design generative models and self-supervised learning frameworks that can handle incomplete or weakly paired multimodal data, which is common in clinical settings. These representations enable downstream tasks including anomaly detection, patient stratification, image registration and synthesis.
 
-  - title: "Modelling Disease Progression from Longitudinal Data"
+  - id: "disease-progression"
+    title: "Modelling Disease Progression from Longitudinal Data"
     pis: ["S. Tézenas du Montcel", "T. Nedelec", "S. Durrleman"]
     content: |
       Longitudinal datasets offer unique opportunities to understand temporal disease processes such as ageing or neurodegenerative disorders. We develop statistical models to infer the dynamics of biomarker changes, images, and clinical endpoints, together with their variability within a population. Our disease course mapping framework models individual trajectories as time-reparameterised versions of a reference progression scenario, allowing for variable disease onset and progression rates. These models have been validated across multiple neurodegenerative diseases and used for patient stratification and clinical trial design. Current work extends these approaches to capture more complex progression patterns, including non-monotonic courses and treatment responses.
 
-  - title: "Addressing Methodological Challenges of Real-World Data"
+  - id: "methodological-challenges"
+    title: "Addressing Methodological Challenges of Real-World Data"
     pis: ["T. Nedelec", "N. Burgos", "O. Colliot", "S. Tézenas du Montcel", "B. Couvy-Duchesne"]
     content: |
       Real-world data from clinical practice present significant methodological challenges that limit their use for research. For imaging data, we develop robust quality control and analysis pipelines tailored to the variability of routine acquisitions, building on our work demonstrating the drop in performance of machine learning methods when applied to clinical data compared to research datasets. For health records, we develop frameworks for large-scale analysis of national databases such as SNDS, addressing issues of data quality, heterogeneity, and governance constraints. This dual approach enables reliable reuse of both imaging and administrative data for neurological research.
 
-  - title: "Computational Pathology and High-Content Microscopy"
+  - id: "computational-pathology"
+    title: "Computational Pathology and High-Content Microscopy"
     pis: ["D. Racoceanu", "R. Dorent"]
     content: |
       Computational approaches enable characterisation of diseases at the microscopic level, from whole slide images in histopathology to high-content microscopy. We develop trustworthy generative models and physics-informed, explainable AI approaches for digital histopathology, virtual staining, and integrative modelling. Our work combines deep learning with biophysical priors, spatial constraints, and topological descriptors of micro-heterogeneity to enable mechanistic insights and virtual biopsies. Previous achievements include virtual staining algorithms for generating multiple immunohistochemical stains from H&E slides and interpretable frameworks for quantifying cellular processes in neurodegenerative diseases. Current work includes spatial transcriptomics prediction from H&E histology.
 
-  - title: "Reproducibility, Benchmarking and Validation: Rigorous Practices to Increase Impact"
+  - id: "reproducibility-validation"
+    title: "Reproducibility, Benchmarking and Validation: Rigorous Practices to Increase Impact"
     pis: ["O. Colliot", "N. Burgos", "R. Dorent", "T. Nedelec", "S. Tézenas du Montcel", "B. Couvy-Duchesne"]
     content: |
       Medical AI research faces a reproducibility crisis, with many published methods lacking rigorous validation and clinical relevance. We have an established track record in this area, with contributions including reproducible evaluation frameworks for classification and prediction methods in Alzheimer's disease, systematic reviews of prediction models, and critical analyses of bias in neuroimaging datasets. We continue to develop rigorous practices to increase the impact of medical AI research, investigating how to best validate our approaches through systematic methodologies addressing reproducibility, benchmarking, and validation.
 
-  - title: "Translating computational innovation into medical research and clinical practice"
+  - id: "clinical-translation"
+    title: "Translating Computational Innovation into Medical Research and Clinical Practice"
     pis: ["all"]
     content: |
       Identifying, preventing, and managing neurological disorders is increasingly important as populations age. Translating digital and computational innovation into practical clinical tools is central to our work. We co-develop methods with clinicians, neuroradiologists, neurosurgeons, and research consortia from the earliest stages of study conception to deployment in practice.

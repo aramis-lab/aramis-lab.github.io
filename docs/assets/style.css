@@ -118,6 +118,20 @@ p {
   font-weight: 600;
 }
 
+.axis-title a {
+  color: inherit;
+}
+
+.axis-title a:hover {
+  text-decoration: underline;
+}
+
+.axis-link {
+  text-align: center;
+  font-size: 0.875rem;
+  margin: -0.5rem 0 1.5rem;
+}
+
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -332,6 +346,12 @@ p {
 
 .footer-contact p {
   margin: 0;
+}
+
+.footer-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .footer-bottom {
@@ -705,6 +725,7 @@ p {
 }
 
 .research-axis h3 {
+  scroll-margin-top: calc(var(--header-height) + 1rem);
   text-align: center;
   margin-bottom: 1rem;
   color: var(--color-secondary);
@@ -778,7 +799,6 @@ p {
   position: fixed;
   right: 1.5rem;
   top: calc(var(--header-height) + 1.5rem);
-  max-width: 250px;
   z-index: 100;
   font-size: 0.875rem;
 }
@@ -811,7 +831,8 @@ p {
   position: absolute;
   top: 100%;
   right: 0;
-  left: 0;
+  width: 320px;
+  max-width: calc(100vw - 3rem);
   margin-top: 0.5rem;
   padding: 1rem;
   background: var(--color-bg);
