@@ -31,6 +31,7 @@
 
 - name: "ClinicaDL"
   icon: "images/icons/clinicadl/clinicadl_black.png"
+  iconDark: "images/icons/clinicadl/clinicadl_white.png"
   description: |
     ClinicaDL is a Python open-source software for neuroimaging data processing with deep learning. This software includes many functionalities, such as neuroimaging preprocessing, synthetic dataset generation, label definition, data split with similar demographics, architecture search, network training, performance evaluation and trained network interpretation. The three main objectives of ClinicaDL are to (1) help manipulate neuroimaging data sets, (2) prevent data leakage from biasing results and (3) reproduce deep learning experiments.
   references:
