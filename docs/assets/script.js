@@ -257,15 +257,6 @@ const Renderers = {
         'reproducibility-validation': 'Reproducibility, Benchmarking and Validation: Rigorous Practices to Increase Impact',
         'clinical-translation': 'Translating Computational Innovation into Medical Research and Clinical Practice'
       };
-      // Short labels for the jump links (full title shown on hover)
-      const axisShortLabels = {
-        'representation-learning': 'Multimodal Representation Learning',
-        'disease-progression': 'Disease Progression Modelling',
-        'methodological-challenges': 'Real-World Data',
-        'computational-pathology': 'Computational Pathology',
-        'reproducibility-validation': 'Reproducibility & Validation',
-        'clinical-translation': 'Clinical Translation'
-      };
 
       const byAxis = data.reduce((acc, pub) => {
         const axis = pub.axis || 'Other';
@@ -278,10 +269,13 @@ const Renderers = {
       const axes = axisOrder.filter(axis => byAxis[axis] && byAxis[axis].length)
         .concat(Object.keys(byAxis).filter(axis => !axisOrder.includes(axis) && byAxis[axis].length));
 
-      // Jump links to each axis section
+      // Dropdown to jump to each axis section
       let html = `
         <nav class="axis-nav" aria-label="Research axes">
-          ${axes.map(axis => `<a href="#${axis}" title="${axisLabels[axis] || axis}">${axisShortLabels[axis] || axisLabels[axis] || axis}</a>`).join('')}
+          <select class="axis-select" aria-label="Jump to research theme">
+            <option value="">Jump to research theme&hellip;</option>
+            ${axes.map(axis => `<option value="${axis}">${axisLabels[axis] || axis}</option>`).join('')}
+          </select>
         </nav>
       `;
       axes.forEach(axis => {
@@ -290,6 +284,15 @@ const Renderers = {
       });
 
       this.container.innerHTML = html;
+
+      const select = this.container.querySelector('.axis-select');
+      select.addEventListener('change', () => {
+        if (!select.value) return;
+        const target = document.getElementById(select.value);
+        history.replaceState(null, '', `#${select.value}`);
+        target.scrollIntoView({ behavior: 'smooth' });
+        select.value = '';
+      });
 
       // Handle hash navigation after rendering
       if (window.location.hash) {

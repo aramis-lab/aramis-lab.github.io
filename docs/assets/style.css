@@ -124,26 +124,28 @@ p {
 
 .axis-nav {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
   margin-bottom: 2rem;
 }
 
-.axis-nav a {
-  padding: 0.4rem 1rem;
+.axis-select {
+  width: 100%;
+  max-width: 640px;
+  padding: 0.6rem 1rem;
   border: 2px solid var(--color-border);
-  border-radius: 50px;
-  font-size: 0.875rem;
-  font-weight: 600;
+  border-radius: var(--border-radius);
+  background: var(--color-bg);
   color: var(--color-text);
-  transition: all var(--transition);
+  font-family: var(--font-family);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color var(--transition);
 }
 
-.axis-nav a:hover {
+.axis-select:hover,
+.axis-select:focus {
   border-color: var(--color-primary);
-  background: var(--color-primary);
-  color: #fff;
 }
 
 .btn {
