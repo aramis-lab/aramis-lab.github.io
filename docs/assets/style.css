@@ -16,16 +16,29 @@
   --shadow-md: 0 4px 6px rgba(0,0,0,0.07);
   --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
   --transition: 0.2s ease;
+  color-scheme: light;
+}
+
+/* Dark theme: follows the device setting unless the visitor picked a theme (data-theme on <html>) */
+:root[data-theme="dark"] {
+  --color-bg: #1e1e2e;
+  --color-bg-alt: #262640;
+  --color-text: #f0f0f0;
+  --color-text-muted: #bbb;
+  --color-border: #444;
+  --color-primary: #fa4616;
+  color-scheme: dark;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --color-bg: #1e1e2e;
     --color-bg-alt: #262640;
     --color-text: #f0f0f0;
     --color-text-muted: #bbb;
     --color-border: #444;
     --color-primary: #fa4616;
+    color-scheme: dark;
   }
 }
 
@@ -231,31 +244,62 @@ p {
   width: auto;
 }
 
+.logo .logo-light,
+.footer-partners .logo-light,
+.theme-toggle .icon-sun {
+  display: none;
+}
+
+:root[data-theme="dark"] .logo .logo-light,
+:root[data-theme="dark"] .footer-partners .logo-light,
+:root[data-theme="dark"] .theme-toggle .icon-sun {
+  display: block;
+}
+
+:root[data-theme="dark"] .logo .logo-dark,
+:root[data-theme="dark"] .footer-partners .logo-dark,
+:root[data-theme="dark"] .theme-toggle .icon-moon {
+  display: none;
+}
+
 @media (prefers-color-scheme: dark) {
-  .logo .logo-light,
-  .footer-partners .logo-light {
+  :root:not([data-theme="light"]) .logo .logo-light,
+  :root:not([data-theme="light"]) .footer-partners .logo-light,
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun {
     display: block;
   }
-  .logo .logo-dark,
-  .footer-partners .logo-dark {
+  :root:not([data-theme="light"]) .logo .logo-dark,
+  :root:not([data-theme="light"]) .footer-partners .logo-dark,
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon {
     display: none;
   }
 }
 
-@media (prefers-color-scheme: light) {
-  .logo .logo-light,
-  .footer-partners .logo-light {
-    display: none;
-  }
-  .logo .logo-dark,
-  .footer-partners .logo-dark {
-    display: block;
-  }
+.theme-toggle {
+  width: 36px;
+  height: 36px;
+  margin-left: 1.5rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 .nav {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .nav-list {
@@ -578,21 +622,24 @@ p {
   margin-bottom: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  .software-icon.logo-light {
-    display: none;
-  }
-  .software-icon.logo-dark {
-    display: block;
-  }
+.software-icon.logo-dark {
+  display: none;
 }
 
-@media (prefers-color-scheme: light) {
-  .software-icon.logo-light {
-    display: block;
-  }
-  .software-icon.logo-dark {
+:root[data-theme="dark"] .software-icon.logo-light {
+  display: none;
+}
+
+:root[data-theme="dark"] .software-icon.logo-dark {
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .software-icon.logo-light {
     display: none;
+  }
+  :root:not([data-theme="light"]) .software-icon.logo-dark {
+    display: block;
   }
 }
 

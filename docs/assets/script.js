@@ -559,6 +559,22 @@ const Renderers = {
     }
   },
 
+  // Light/dark toggle; saved choice overrides the device setting
+  ThemeToggle: {
+    init() {
+      const toggle = document.querySelector('.theme-toggle');
+      if (!toggle) return;
+      const root = document.documentElement;
+      toggle.addEventListener('click', () => {
+        const current = root.dataset.theme
+          || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        const next = current === 'dark' ? 'light' : 'dark';
+        root.dataset.theme = next;
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+    }
+  },
+
   // Mobile navigation toggle
   MobileNav: {
     init() {
@@ -585,6 +601,7 @@ const Renderers = {
 // Auto-initialize on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
   Renderers.MobileNav.init();
+  Renderers.ThemeToggle.init();
 
   // Initialize components based on container presence
   if (document.getElementById('team-grid')) {
