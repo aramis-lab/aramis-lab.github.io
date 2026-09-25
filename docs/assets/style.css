@@ -542,6 +542,24 @@ p {
   margin-bottom: 1rem;
 }
 
+@media (prefers-color-scheme: dark) {
+  .software-icon.logo-light {
+    display: none;
+  }
+  .software-icon.logo-dark {
+    display: block;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .software-icon.logo-light {
+    display: block;
+  }
+  .software-icon.logo-dark {
+    display: none;
+  }
+}
+
 .software-header {
   display: flex;
   align-items: center;

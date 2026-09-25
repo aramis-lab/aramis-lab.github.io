@@ -332,6 +332,7 @@ const Renderers = {
 
     cardHTML(s) {
       const icon = s.icon ? s.icon : '';
+      const iconDark = s.iconDark ? s.iconDark : '';
       const refs = s.references && s.references.length ? `
         <details class="accordion">
           <summary>References (${s.references.length})</summary>
@@ -348,7 +349,8 @@ const Renderers = {
       return `
         <article class="software-card">
           <header class="software-header">
-            ${icon ? `<img class="software-icon" src="${icon}" alt="${s.name}" loading="lazy" onerror="this.style.display='none'">` : ''}
+            ${icon ? `<img class="software-icon logo-light" src="${icon}" alt="${s.name}" loading="lazy" onerror="this.style.display='none'">` : ''}
+            ${iconDark ? `<img class="software-icon logo-dark" src="${iconDark}" alt="${s.name}" loading="lazy" onerror="this.style.display='none'">` : ''}
             <h3 class="software-title">${s.name}</h3>
           </header>
           <div class="software-desc">${marked.parse(s.description || '')}</div>
