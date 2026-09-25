@@ -20,11 +20,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #1a1a2e;
-    --color-bg-alt: #22223b;
+    --color-bg: #1e1e2e;
+    --color-bg-alt: #262640;
     --color-text: #f0f0f0;
-    --color-text-muted: #aaa;
-    --color-border: #333;
+    --color-text-muted: #bbb;
+    --color-border: #444;
   }
 }
 
