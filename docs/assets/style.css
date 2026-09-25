@@ -474,6 +474,7 @@ p {
   font-weight: 600;
   cursor: pointer;
   transition: all var(--transition);
+  color: var(--color-text);
 }
 
 .team-filter.active,
