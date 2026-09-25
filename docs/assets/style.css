@@ -538,8 +538,10 @@ p {
 
 .software-icon {
   width: 80px;
-  height: 80px;
+  height: auto;
+  max-height: 80px;
   margin-bottom: 1rem;
+  object-fit: contain;
 }
 
 @media (prefers-color-scheme: dark) {
