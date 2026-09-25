@@ -850,13 +850,13 @@ p {
   font-size: 0.8125rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .table-of-contents {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav-toggle {
     display: block;
   }
