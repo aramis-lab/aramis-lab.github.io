@@ -29,7 +29,7 @@ axes:
     content: |
       Medical AI research faces a reproducibility crisis, with many published methods lacking rigorous validation and clinical relevance. We have an established track record in this area, with contributions including reproducible evaluation frameworks for classification and prediction methods in Alzheimer's disease, systematic reviews of prediction models, and critical analyses of bias in neuroimaging datasets. We continue to develop rigorous practices to increase the impact of medical AI research, investigating how to best validate our approaches through systematic methodologies addressing reproducibility, benchmarking, and validation.
 
-  - title: "Translating computational innovation into medical research and clinical practice"
+  - title: "Translating Computational Innovation into Medical Research and Clinical Practice"
     pis: ["all"]
     content: |
       Identifying, preventing, and managing neurological disorders is increasingly important as populations age. Translating digital and computational innovation into practical clinical tools is central to our work. We co-develop methods with clinicians, neuroradiologists, neurosurgeons, and research consortia from the earliest stages of study conception to deployment in practice.
@@ -136,7 +136,7 @@ collaborations:
       pi: "T. Lebouvier"
       focus: "Real-world health data"
       url: ""
-    - name: "Neuroradiology department, CHU Lille"
+    - name: "Neuroradiology Department, CHU Lille"
       pi: "G. Kuchcinski"
       focus: "AI-based tools to harness the full potential of clinical data warehouses in neuroimaging"
       url: ""
@@ -158,19 +158,19 @@ collaborations:
       pi: "I. Le Ber"
       focus: "Genetic forms of frontotemporal dementia"
       url: ""
-    - name: "ICM FTD Team"
+    - name: "ICM FTD team"
       pi: "I. Le Ber, M. Latouche"
       focus: "Multimodal analysis of imaging and transcriptomic data in frontotemporal dementia"
       url: ""
-    - name: "ICM FTD Team"
+    - name: "ICM FTD team"
       pi: "T. Valero Cabre"
       focus: "Anomaly detection"
       url: ""
-    - name: "ICM MS Team and Department of Neurology, Pitié-Salpêtrière Hospital"
+    - name: "ICM MS team and Department of Neurology, Pitié-Salpêtrière Hospital"
       pi: "B. Stankoff"
       focus: "Multiple sclerosis, analysis of choroid plexuses, imaging genetics"
       url: ""
-    - name: "ICM MS Team and Pitié-Salpêtrière Hospital"
+    - name: "ICM MS team and Pitié-Salpêtrière Hospital"
       pi: "C. Louapre"
       focus: "Multiple sclerosis, national registry"
       url: ""

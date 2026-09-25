@@ -265,23 +265,40 @@ const Renderers = {
         return acc;
       }, {});
 
-      let html = '';
-      axisOrder.forEach(axis => {
-        if (byAxis[axis] && byAxis[axis].length) {
-          html += `<h2 class="axis-title">${axisLabels[axis] || axis}</h2>`;
-          html += byAxis[axis].map(pub => this.itemHTML(pub)).join('');
-        }
-      });
+      // Axes in display order, then any not listed in axisOrder
+      const axes = axisOrder.filter(axis => byAxis[axis] && byAxis[axis].length)
+        .concat(Object.keys(byAxis).filter(axis => !axisOrder.includes(axis) && byAxis[axis].length));
 
-      // Any remaining items not in axisOrder
-      Object.keys(byAxis).forEach(axis => {
-        if (!axisOrder.includes(axis) && byAxis[axis].length) {
-          html += `<h2 class="axis-title">${axisLabels[axis] || axis}</h2>`;
-          html += byAxis[axis].map(pub => this.itemHTML(pub)).join('');
-        }
+      // Dropdown to jump to each axis section
+      let html = `
+        <nav class="axis-nav" aria-label="Research axes">
+          <select class="axis-select" aria-label="Jump to research theme">
+            <option value="">Jump to research theme&hellip;</option>
+            ${axes.map(axis => `<option value="${axis}">${axisLabels[axis] || axis}</option>`).join('')}
+          </select>
+        </nav>
+      `;
+      axes.forEach(axis => {
+        html += `<h2 class="axis-title" id="${axis}">${axisLabels[axis] || axis}</h2>`;
+        html += byAxis[axis].map(pub => this.itemHTML(pub)).join('');
       });
 
       this.container.innerHTML = html;
+
+      const select = this.container.querySelector('.axis-select');
+      select.addEventListener('change', () => {
+        if (!select.value) return;
+        const target = document.getElementById(select.value);
+        history.replaceState(null, '', `#${select.value}`);
+        target.scrollIntoView({ behavior: 'smooth' });
+        select.value = '';
+      });
+
+      // Handle hash navigation after rendering
+      if (window.location.hash) {
+        const target = this.container.querySelector(window.location.hash);
+        if (target) target.scrollIntoView();
+      }
     },
 
     itemHTML(p) {
@@ -342,7 +359,7 @@ const Renderers = {
         </details>
       ` : '';
 
-      const iconGitHub = `<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>`;
+      const iconGitHub = `<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>`;
       const iconWebsite = `<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>`;
       const iconEmail = `<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>`;
 
@@ -435,7 +452,8 @@ const Renderers = {
       // Context
       if (data.context) {
         html += `
-          <section class="research-section">
+          <section class="research-section" id="context">
+            <h2>Context and General Aim</h2>
             <div class="research-content-text">
               ${marked.parse(data.context)}
             </div>
@@ -446,7 +464,7 @@ const Renderers = {
       // Axes
       if (data.axes && data.axes.length) {
         html += `
-          <section class="research-section">
+          <section class="research-section" id="research-axes">
             <h2>Main Research Axes</h2>
             ${data.axes.map(axis => `
               <article class="research-axis">
@@ -463,7 +481,7 @@ const Renderers = {
       if (data.collaborations) {
         const collabs = data.collaborations;
         html += `
-          <section class="research-section">
+          <section class="research-section" id="collaborations">
             <h2>Collaborations</h2>
             ${collabs.international ? this.collabGroup('International', collabs.international) : ''}
             ${collabs.national ? this.collabGroup('National', collabs.national) : ''}
@@ -476,7 +494,7 @@ const Renderers = {
       if (data.funding && data.funding.length) {
         html += `
           <section class="research-section" id="funding">
-            <h2>Main funding sources</h2>
+            <h2>Main Funding Sources</h2>
             <ul class="funding-list">
               ${data.funding.map(f => `<li>${f.name}</li>`).join('')}
             </ul>
@@ -484,7 +502,13 @@ const Renderers = {
         `;
       }
 
-      this.container.innerHTML = html;
+      // Buttons linking to each section
+      const sections = document.createElement('div');
+      sections.innerHTML = html;
+      const nav = Array.from(sections.querySelectorAll('.research-section[id]'))
+        .map(sec => `<a href="#${sec.id}">${sec.querySelector('h2').textContent}</a>`).join('');
+
+      this.container.innerHTML = `<nav class="section-nav" aria-label="Page sections">${nav}</nav>` + html;
 
       // Handle hash navigation after rendering
       if (window.location.hash) {
@@ -493,41 +517,6 @@ const Renderers = {
           target.scrollIntoView({ behavior: 'smooth' });
         }
       }
-
-      // Add table of contents after rendering
-      this.addTableOfContents();
-    },
-
-    addTableOfContents() {
-      const headings = this.container.querySelectorAll('h2, h3');
-      if (headings.length < 3) return;
-
-      const toc = document.createElement('nav');
-      toc.className = 'table-of-contents';
-      toc.innerHTML = `
-        <button class="toc-toggle" aria-label="Toggle table of contents">
-          <span class="toc-icon">&#9776;</span> Contents
-        </button>
-        <ul class="toc-list" hidden>
-          ${Array.from(headings).map(h => {
-            const id = h.id || h.textContent.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-            h.id = id;
-            const level = h.tagName.toLowerCase();
-            return `<li class="toc-${level}"><a href="#${id}">${h.textContent}</a></li>`;
-          }).join('')}
-        </ul>
-      `;
-
-      // Insert at the beginning of the container
-      this.container.insertBefore(toc, this.container.firstChild);
-
-      // Toggle functionality
-      const toggle = toc.querySelector('.toc-toggle');
-      const list = toc.querySelector('.toc-list');
-      toggle.addEventListener('click', () => {
-        const hidden = list.toggleAttribute('hidden');
-        toggle.setAttribute('aria-expanded', !hidden);
-      });
     },
 
     collabGroup(title, items) {
@@ -539,6 +528,22 @@ const Renderers = {
           `).join('')}
         </ul>
       `;
+    }
+  },
+
+  // Light/dark toggle; saved choice overrides the device setting
+  ThemeToggle: {
+    init() {
+      const toggle = document.querySelector('.theme-toggle');
+      if (!toggle) return;
+      const root = document.documentElement;
+      toggle.addEventListener('click', () => {
+        const current = root.dataset.theme
+          || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        const next = current === 'dark' ? 'light' : 'dark';
+        root.dataset.theme = next;
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
     }
   },
 
@@ -568,6 +573,7 @@ const Renderers = {
 // Auto-initialize on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
   Renderers.MobileNav.init();
+  Renderers.ThemeToggle.init();
 
   // Initialize components based on container presence
   if (document.getElementById('team-grid')) {
