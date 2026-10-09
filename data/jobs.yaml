@@ -9,6 +9,17 @@
   active: true
   description: ""
 
+- title: "Internship: Leveraging External Data in Clinical Trials: Application of Causal Inference Methods in the Bayesian Framework to Improve Statistical Efficiency"
+  year: 2027
+  month: 3
+  category: "intern"
+  duration: "6 months"
+  start_date: "2027-02-01"
+  contact: "maylis.tran@icm-institute.org"
+  pdf: "job_offers/2027/2027_BayesianCausalInference_internship.pdf"
+  active: true
+  description: ""
+
 - title: "Internship: Optimal Transport for Medical Imaging"
   year: 2026
   month: 3
