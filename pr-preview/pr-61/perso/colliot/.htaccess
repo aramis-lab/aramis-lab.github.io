@@ -1,2 +1,0 @@
-RewriteEngine on
-RewriteRule ^(.*)$ https://oliviercolliot.github.io/$1
