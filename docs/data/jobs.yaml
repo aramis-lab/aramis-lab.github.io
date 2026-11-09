@@ -17,7 +17,7 @@
   start_date: "2027-02-01"
   contact: "maylis.tran@icm-institute.org"
   pdf: "job_offers/2027/2027_BayesianCausalInference_internship.pdf"
-  active: true
+  active: false
   description: ""
 
 - title: "Internship: Optimal Transport for Medical Imaging"
